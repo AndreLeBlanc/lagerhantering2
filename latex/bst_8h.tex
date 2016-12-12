@@ -1,0 +1,453 @@
+\hypertarget{bst_8h}{\section{bst.\-h File Reference}
+\label{bst_8h}\index{bst.\-h@{bst.\-h}}
+}
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structelement__t}{element\-\_\-t} \hyperlink{bst_8h_affc28a27da5fb0849a1b4dab48b1ac3d}{element\-\_\-t}
+\item 
+typedef struct \hyperlink{structset__t}{set\-\_\-t} \hyperlink{bst_8h_ab73a1a14c25c819a39f434855f83db30}{set\-\_\-t}
+\item 
+typedef struct \hyperlink{structiter__t}{iter\-\_\-t} \hyperlink{bst_8h_a1a25c0dac6d0a1b1dbb30629cecf16a4}{iter\-\_\-t}
+\item 
+typedef int \hyperlink{bst_8h_a89b3970927114237f6996d6299633cea}{key\-\_\-comparator\-\_\-t} (void $\ast$key1, void $\ast$key2)
+\item 
+typedef void $\ast$ \hyperlink{bst_8h_a4b88260122a8ac74596183784723c451}{key\-\_\-generator\-\_\-t} (void $\ast$data)
+\item 
+typedef void \hyperlink{bst_8h_ad82eb5c94dd59b2e697aa733d8d3fb14}{key\-\_\-freer\-\_\-t} (void $\ast$key)
+\item 
+typedef void $\ast$ \hyperlink{bst_8h_af84805da77fc54521fb2ef41f1293457}{data\-\_\-copier\-\_\-t} (void $\ast$data)
+\item 
+typedef void \hyperlink{bst_8h_a7fd7f3181df3513703f3bfa1fc047bf1}{data\-\_\-freer\-\_\-t} (void $\ast$data)
+\item 
+typedef void \hyperlink{bst_8h_a1eab2c9741d65b47c9002e3714b30477}{data\-\_\-map\-\_\-fun\-\_\-t} (void $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structset__t}{set\-\_\-t} $\ast$ \hyperlink{bst_8h_a6333970ef7b7c1536d3d1bd49f960a10}{new\-\_\-set} (\hyperlink{bst_8h_a4b88260122a8ac74596183784723c451}{key\-\_\-generator\-\_\-t} $\ast$key\-\_\-gen, \hyperlink{bst_8h_a89b3970927114237f6996d6299633cea}{key\-\_\-comparator\-\_\-t} $\ast$key\-\_\-comp, \hyperlink{bst_8h_ad82eb5c94dd59b2e697aa733d8d3fb14}{key\-\_\-freer\-\_\-t} $\ast$key\-\_\-freer, \hyperlink{bst_8h_af84805da77fc54521fb2ef41f1293457}{data\-\_\-copier\-\_\-t} $\ast$data\-\_\-copier, \hyperlink{bst_8h_a7fd7f3181df3513703f3bfa1fc047bf1}{data\-\_\-freer\-\_\-t} $\ast$data\-\_\-freer)
+\item 
+void \hyperlink{bst_8h_a687446793ffab07647eb45af24fca088}{free\-\_\-set} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set)
+\item 
+bool \hyperlink{bst_8h_a9846260db2b9badece391aa1f999e8ef}{set\-\_\-is\-\_\-empty} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set)
+\item 
+\hyperlink{structelement__t}{element\-\_\-t} $\ast$$\ast$ \hyperlink{bst_8h_a71f9e3e0e3e64b7e7a581b364f2f72e9}{search} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set, void $\ast$data)
+\item 
+void \hyperlink{bst_8h_a025877997a9f03a29c697f265c0504d7}{insert\-\_\-element} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set, void $\ast$data)
+\item 
+void \hyperlink{bst_8h_a5e4cbdf3052a8afdaf853405dc441da0}{delete\-\_\-element} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set, void $\ast$data)
+\item 
+void \hyperlink{bst_8h_a7057ed8f09fbe594d795dcb92c4fd3ba}{set\-\_\-foreachdata} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set, \hyperlink{bst_8h_a1eab2c9741d65b47c9002e3714b30477}{data\-\_\-map\-\_\-fun\-\_\-t} fun)
+\item 
+void $\ast$ \hyperlink{bst_8h_a6d24e1150a24e9c5d51aebe847d3ec02}{get\-\_\-element\-\_\-data} (\hyperlink{structelement__t}{element\-\_\-t} $\ast$elem)
+\item 
+\hyperlink{structiter__t}{iter\-\_\-t} $\ast$ \hyperlink{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}{iter\-\_\-new} (\hyperlink{structset__t}{set\-\_\-t} $\ast$set)
+\item 
+void \hyperlink{bst_8h_a9426c80ecf7e0a2ed409309be44ac9bc}{iter\-\_\-free} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter})
+\item 
+void \hyperlink{bst_8h_a7f769aee270ddb95181a131501efc520}{iter\-\_\-nsteps} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter}, int n)
+\item 
+void \hyperlink{bst_8h_a2421f74d98c49864b83bbf79bfde4623}{iter\-\_\-toindex} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter}, int i)
+\item 
+bool \hyperlink{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter})
+\item 
+bool \hyperlink{bst_8h_ac499e322668ba1a5cecaac1ad9d307e6}{iter\-\_\-start} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter})
+\item 
+void $\ast$ \hyperlink{bst_8h_aed2bd96ef0d4dccf0f7ab84991896c79}{iter\-\_\-get} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter})
+\item 
+void \hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter})
+\item 
+int \hyperlink{bst_8h_a921ed593825343d26b355967ecf2795d}{iter\-\_\-index} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$\hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{bst_8h_af84805da77fc54521fb2ef41f1293457}{\index{bst.\-h@{bst.\-h}!data\-\_\-copier\-\_\-t@{data\-\_\-copier\-\_\-t}}
+\index{data\-\_\-copier\-\_\-t@{data\-\_\-copier\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{data\-\_\-copier\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ data\-\_\-copier\-\_\-t(void $\ast$data)}}\label{bst_8h_af84805da77fc54521fb2ef41f1293457}
+Allocates memory for a copy of data. Allocates new memory for a copy of data. 
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copied data. 
+\end{DoxyReturn}
+\hypertarget{bst_8h_a7fd7f3181df3513703f3bfa1fc047bf1}{\index{bst.\-h@{bst.\-h}!data\-\_\-freer\-\_\-t@{data\-\_\-freer\-\_\-t}}
+\index{data\-\_\-freer\-\_\-t@{data\-\_\-freer\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{data\-\_\-freer\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef void data\-\_\-freer\-\_\-t(void $\ast$data)}}\label{bst_8h_a7fd7f3181df3513703f3bfa1fc047bf1}
+Frees user provided data. Frees user provided data. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{bst_8h_a1eab2c9741d65b47c9002e3714b30477}{\index{bst.\-h@{bst.\-h}!data\-\_\-map\-\_\-fun\-\_\-t@{data\-\_\-map\-\_\-fun\-\_\-t}}
+\index{data\-\_\-map\-\_\-fun\-\_\-t@{data\-\_\-map\-\_\-fun\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{data\-\_\-map\-\_\-fun\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef void data\-\_\-map\-\_\-fun\-\_\-t(void $\ast$data)}}\label{bst_8h_a1eab2c9741d65b47c9002e3714b30477}
+Function to map over data. A function use on any found data. Use in functions that that a predicate as argument. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a7057ed8f09fbe594d795dcb92c4fd3ba}{set\-\_\-foreachdata} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_affc28a27da5fb0849a1b4dab48b1ac3d}{\index{bst.\-h@{bst.\-h}!element\-\_\-t@{element\-\_\-t}}
+\index{element\-\_\-t@{element\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{element\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf element\-\_\-t} {\bf element\-\_\-t}}}\label{bst_8h_affc28a27da5fb0849a1b4dab48b1ac3d}
+An element in the set. An element of type struct \hyperlink{structelement__t}{element\-\_\-t}. \begin{DoxyNote}{Note}
+Elements are automatically created with data when using \hyperlink{list_8c_a43ca2c5deb85c2e260a8c5c6e976e667}{insert\-\_\-element}. 
+
+You may access existing elements using \hyperlink{bst_8h_a71f9e3e0e3e64b7e7a581b364f2f72e9}{search} and \hyperlink{list_8h_a3bdbcd13e4f1256939b27084b72ba101}{iter\-\_\-get}. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a025877997a9f03a29c697f265c0504d7}{insert\-\_\-element} 
+
+\hyperlink{bst_8h_a71f9e3e0e3e64b7e7a581b364f2f72e9}{search} 
+
+\hyperlink{bst_8h_aed2bd96ef0d4dccf0f7ab84991896c79}{iter\-\_\-get} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a1a25c0dac6d0a1b1dbb30629cecf16a4}{\index{bst.\-h@{bst.\-h}!iter\-\_\-t@{iter\-\_\-t}}
+\index{iter\-\_\-t@{iter\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf iter\-\_\-t} {\bf iter\-\_\-t}}}\label{bst_8h_a1a25c0dac6d0a1b1dbb30629cecf16a4}
+An iterator for a set. Iterates a set using various function. Use this for looping a subset of a set, for manipulating the entire set instead use \hyperlink{bst_8h_a7057ed8f09fbe594d795dcb92c4fd3ba}{set\-\_\-foreachdata} Constructor\-: \hyperlink{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}{iter\-\_\-new} Destructor\-: \hyperlink{list_8h_a4a2b61b11b9898d3bf885ab46cfbc39a}{iter\-\_\-free}
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_ac499e322668ba1a5cecaac1ad9d307e6}{iter\-\_\-start} 
+
+\hyperlink{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} 
+
+\hyperlink{bst_8h_a7f769aee270ddb95181a131501efc520}{iter\-\_\-nsteps} 
+
+\hyperlink{bst_8h_a2421f74d98c49864b83bbf79bfde4623}{iter\-\_\-toindex} 
+
+\hyperlink{bst_8h_aed2bd96ef0d4dccf0f7ab84991896c79}{iter\-\_\-get} 
+
+\hyperlink{bst_8h_a921ed593825343d26b355967ecf2795d}{iter\-\_\-index} 
+
+\hyperlink{bst_8h_a7057ed8f09fbe594d795dcb92c4fd3ba}{set\-\_\-foreachdata} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a89b3970927114237f6996d6299633cea}{\index{bst.\-h@{bst.\-h}!key\-\_\-comparator\-\_\-t@{key\-\_\-comparator\-\_\-t}}
+\index{key\-\_\-comparator\-\_\-t@{key\-\_\-comparator\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{key\-\_\-comparator\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int key\-\_\-comparator\-\_\-t(void $\ast$key1, void $\ast$key2)}}\label{bst_8h_a89b3970927114237f6996d6299633cea}
+A key comparator. A comparator for they keys generated by a complementing \hyperlink{bst_8h_a4b88260122a8ac74596183784723c451}{key\-\_\-generator\-\_\-t}. 
+\begin{DoxyParams}{Parameters}
+{\em key1} & A key. \\
+\hline
+{\em key2} & A key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if key1 == key2, $<$0 if key1 $<$ key2, and $>$0 if key1$>$key2. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a4b88260122a8ac74596183784723c451}{key\-\_\-generator\-\_\-t} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_ad82eb5c94dd59b2e697aa733d8d3fb14}{\index{bst.\-h@{bst.\-h}!key\-\_\-freer\-\_\-t@{key\-\_\-freer\-\_\-t}}
+\index{key\-\_\-freer\-\_\-t@{key\-\_\-freer\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{key\-\_\-freer\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef void key\-\_\-freer\-\_\-t(void $\ast$key)}}\label{bst_8h_ad82eb5c94dd59b2e697aa733d8d3fb14}
+A function that frees a key. Frees a key generated by a complementing \hyperlink{bst_8h_a4b88260122a8ac74596183784723c451}{key\-\_\-generator\-\_\-t}. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key. \\
+\hline
+\end{DoxyParams}
+\hypertarget{bst_8h_a4b88260122a8ac74596183784723c451}{\index{bst.\-h@{bst.\-h}!key\-\_\-generator\-\_\-t@{key\-\_\-generator\-\_\-t}}
+\index{key\-\_\-generator\-\_\-t@{key\-\_\-generator\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{key\-\_\-generator\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ key\-\_\-generator\-\_\-t(void $\ast$data)}}\label{bst_8h_a4b88260122a8ac74596183784723c451}
+A key generator. Generates a key based on user provided data. 
+\begin{DoxyParams}{Parameters}
+{\em data} & The data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The key. 
+\end{DoxyReturn}
+\hypertarget{bst_8h_ab73a1a14c25c819a39f434855f83db30}{\index{bst.\-h@{bst.\-h}!set\-\_\-t@{set\-\_\-t}}
+\index{set\-\_\-t@{set\-\_\-t}!bst.h@{bst.\-h}}
+\subsubsection[{set\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf set\-\_\-t} {\bf set\-\_\-t}}}\label{bst_8h_ab73a1a14c25c819a39f434855f83db30}
+A set. A set of type struct \hyperlink{structset__t}{set\-\_\-t}. Constructor\-: \hyperlink{list_8c_a87f5ec9246b684e25d717a22e89d443e}{new\-\_\-set}. Destructor\-: \hyperlink{list_8c_a3c888ee0e923c68adc5edaf2096a700a}{free\-\_\-set}. \begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a6333970ef7b7c1536d3d1bd49f960a10}{new\-\_\-set} 
+
+\hyperlink{bst_8h_a687446793ffab07647eb45af24fca088}{free\-\_\-set} 
+\end{DoxySeeAlso}
+
+
+\subsection{Function Documentation}
+\hypertarget{bst_8h_a5e4cbdf3052a8afdaf853405dc441da0}{\index{bst.\-h@{bst.\-h}!delete\-\_\-element@{delete\-\_\-element}}
+\index{delete\-\_\-element@{delete\-\_\-element}!bst.h@{bst.\-h}}
+\subsubsection[{delete\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a5e4cbdf3052a8afdaf853405dc441da0}
+Deletes an element. Deletes the element with the key based on data. If the element is not found nothing is deleted.  set The set to delete from.  data The data to base the key on. \begin{DoxyWarning}{Warning}
+Successful inserts cause associated iterators to reset using \hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a687446793ffab07647eb45af24fca088}{\index{bst.\-h@{bst.\-h}!free\-\_\-set@{free\-\_\-set}}
+\index{free\-\_\-set@{free\-\_\-set}!bst.h@{bst.\-h}}
+\subsubsection[{free\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}void free\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a687446793ffab07647eb45af24fca088}
+Set destructor. Free the memory allocated by the set, its elements and their data.  set The set to free. \hypertarget{bst_8h_a6d24e1150a24e9c5d51aebe847d3ec02}{\index{bst.\-h@{bst.\-h}!get\-\_\-element\-\_\-data@{get\-\_\-element\-\_\-data}}
+\index{get\-\_\-element\-\_\-data@{get\-\_\-element\-\_\-data}!bst.h@{bst.\-h}}
+\subsubsection[{get\-\_\-element\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ get\-\_\-element\-\_\-data (
+\begin{DoxyParamCaption}
+\item[{{\bf element\-\_\-t} $\ast$}]{elem}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a6d24e1150a24e9c5d51aebe847d3ec02}
+Gets element data. Gets data of an element.  elem The element to retrieve the data from. \begin{DoxyReturn}{Returns}
+The data of the element. 
+\end{DoxyReturn}
+\hypertarget{bst_8h_a025877997a9f03a29c697f265c0504d7}{\index{bst.\-h@{bst.\-h}!insert\-\_\-element@{insert\-\_\-element}}
+\index{insert\-\_\-element@{insert\-\_\-element}!bst.h@{bst.\-h}}
+\subsubsection[{insert\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void insert\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a025877997a9f03a29c697f265c0504d7}
+Inserts an element. Insert a new element into set. Automatically allocates space for the element and its data with the sets user provided \hyperlink{bst_8h_af84805da77fc54521fb2ef41f1293457}{data\-\_\-copier\-\_\-t}. 
+\begin{DoxyParams}{Parameters}
+{\em set} & The set to insert into. \\
+\hline
+{\em data} & The data of the new element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Successful inserts cause associated iterators to reset using \hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset} 
+
+\hyperlink{bst_8h_a5e4cbdf3052a8afdaf853405dc441da0}{delete\-\_\-element} 
+
+\hyperlink{bst_8h_a6333970ef7b7c1536d3d1bd49f960a10}{new\-\_\-set} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}{\index{bst.\-h@{bst.\-h}!iter\-\_\-end@{iter\-\_\-end}}
+\index{iter\-\_\-end@{iter\-\_\-end}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}bool iter\-\_\-end (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}
+Check if at end. Test whether the iterator has additional elements after current position. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the iterator has additional elements, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{bst_8h_a9426c80ecf7e0a2ed409309be44ac9bc}{\index{bst.\-h@{bst.\-h}!iter\-\_\-free@{iter\-\_\-free}}
+\index{iter\-\_\-free@{iter\-\_\-free}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-free (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a9426c80ecf7e0a2ed409309be44ac9bc}
+Iterator destructor. Free the memory allocated by the iterator. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}{iter\-\_\-new} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_aed2bd96ef0d4dccf0f7ab84991896c79}{\index{bst.\-h@{bst.\-h}!iter\-\_\-get@{iter\-\_\-get}}
+\index{iter\-\_\-get@{iter\-\_\-get}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ iter\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_aed2bd96ef0d4dccf0f7ab84991896c79}
+Access the current element. Access the current element of an iterator. 
+\begin{DoxyParams}{Parameters}
+{\em The} & iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current element. 
+\end{DoxyReturn}
+\begin{DoxyInvariant}{Invariant}
+!set\-\_\-is\-\_\-empty(iter\-\_\-t-\/$>$set) 
+\end{DoxyInvariant}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a9846260db2b9badece391aa1f999e8ef}{set\-\_\-is\-\_\-empty} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a921ed593825343d26b355967ecf2795d}{\index{bst.\-h@{bst.\-h}!iter\-\_\-index@{iter\-\_\-index}}
+\index{iter\-\_\-index@{iter\-\_\-index}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int iter\-\_\-index (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a921ed593825343d26b355967ecf2795d}
+Get iterator index. Get the current index of the iterator. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current index. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+proper index only promised if associated set not empty. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a9846260db2b9badece391aa1f999e8ef}{set\-\_\-is\-\_\-empty} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}{\index{bst.\-h@{bst.\-h}!iter\-\_\-new@{iter\-\_\-new}}
+\index{iter\-\_\-new@{iter\-\_\-new}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iter\-\_\-t}$\ast$ iter\-\_\-new (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}
+Iterator constructor. Create an iterator to a list. Needs to be freed using \hyperlink{list_8h_a4a2b61b11b9898d3bf885ab46cfbc39a}{iter\-\_\-free}.  set The set to connect the iterator to. \begin{DoxySeeAlso}{See Also}
+\href{http://en.wikipedia.org/wiki/Iterator}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Iterator} 
+
+\hyperlink{bst_8h_a9426c80ecf7e0a2ed409309be44ac9bc}{iter\-\_\-free} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a7f769aee270ddb95181a131501efc520}{\index{bst.\-h@{bst.\-h}!iter\-\_\-nsteps@{iter\-\_\-nsteps}}
+\index{iter\-\_\-nsteps@{iter\-\_\-nsteps}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-nsteps}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-nsteps (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a7f769aee270ddb95181a131501efc520}
+Step iterator n steps. Iterate n steps in any direction within existing range of a set. \begin{DoxyNote}{Note}
+Iteration only allowed when set is not empty and iterator is within range. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+{\em n} & Number of steps. If n == 0 no iteration occurs, n == positive number over 0 advances the iterator, and n == a negative numbers regresses it. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_ac499e322668ba1a5cecaac1ad9d307e6}{iter\-\_\-start} 
+
+\hyperlink{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} 
+
+\hyperlink{bst_8h_a9846260db2b9badece391aa1f999e8ef}{set\-\_\-is\-\_\-empty} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_afcb93cba877fbbd423087cdd0083599b}{\index{bst.\-h@{bst.\-h}!iter\-\_\-reset@{iter\-\_\-reset}}
+\index{iter\-\_\-reset@{iter\-\_\-reset}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-reset (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_afcb93cba877fbbd423087cdd0083599b}
+Reset iterator position. Sets the set's first element as the current element of the iterator. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\hypertarget{bst_8h_ac499e322668ba1a5cecaac1ad9d307e6}{\index{bst.\-h@{bst.\-h}!iter\-\_\-start@{iter\-\_\-start}}
+\index{iter\-\_\-start@{iter\-\_\-start}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}bool iter\-\_\-start (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_ac499e322668ba1a5cecaac1ad9d307e6}
+Check if at beginning. Test whether the iterator has preceding elements after current position. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the iterator has preceding elements, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{bst_8h_a2421f74d98c49864b83bbf79bfde4623}{\index{bst.\-h@{bst.\-h}!iter\-\_\-toindex@{iter\-\_\-toindex}}
+\index{iter\-\_\-toindex@{iter\-\_\-toindex}!bst.h@{bst.\-h}}
+\subsubsection[{iter\-\_\-toindex}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-toindex (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a2421f74d98c49864b83bbf79bfde4623}
+Step iterator to index. Steps appropriately to get to an index. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator to step. \\
+\hline
+{\em i} & The index to step to. Uses \hyperlink{bst_8h_a7f769aee270ddb95181a131501efc520}{iter\-\_\-nsteps} for the actual iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a7f769aee270ddb95181a131501efc520}{iter\-\_\-nsteps} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a6333970ef7b7c1536d3d1bd49f960a10}{\index{bst.\-h@{bst.\-h}!new\-\_\-set@{new\-\_\-set}}
+\index{new\-\_\-set@{new\-\_\-set}!bst.h@{bst.\-h}}
+\subsubsection[{new\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\-\_\-t}$\ast$ new\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{{\bf key\-\_\-generator\-\_\-t} $\ast$}]{key\-\_\-gen, }
+\item[{{\bf key\-\_\-comparator\-\_\-t} $\ast$}]{key\-\_\-comp, }
+\item[{{\bf key\-\_\-freer\-\_\-t} $\ast$}]{key\-\_\-freer, }
+\item[{{\bf data\-\_\-copier\-\_\-t} $\ast$}]{data\-\_\-copier, }
+\item[{{\bf data\-\_\-freer\-\_\-t} $\ast$}]{data\-\_\-freer}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a6333970ef7b7c1536d3d1bd49f960a10}
+Set constructor. Creates an empty set. 
+\begin{DoxyParams}{Parameters}
+{\em key\-\_\-gen} & The \hyperlink{bst_8h_a4b88260122a8ac74596183784723c451}{key\-\_\-generator\-\_\-t} to generate keys with. \\
+\hline
+{\em key\-\_\-comp} & The \hyperlink{bst_8h_a89b3970927114237f6996d6299633cea}{key\-\_\-comparator\-\_\-t} to compare two keys with. \\
+\hline
+{\em key\-\_\-freer} & The \hyperlink{bst_8h_ad82eb5c94dd59b2e697aa733d8d3fb14}{key\-\_\-freer\-\_\-t} to free a key with. \\
+\hline
+{\em data\-\_\-copier} & The \hyperlink{bst_8h_af84805da77fc54521fb2ef41f1293457}{data\-\_\-copier\-\_\-t} to copy data with. \\
+\hline
+{\em data\-\_\-freer} & The \hyperlink{bst_8h_a7fd7f3181df3513703f3bfa1fc047bf1}{data\-\_\-freer\-\_\-t} to free an elements data with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to an empty set. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+If provided functions are incompatible program may crash. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a687446793ffab07647eb45af24fca088}{free\-\_\-set} 
+\end{DoxySeeAlso}
+\hypertarget{bst_8h_a71f9e3e0e3e64b7e7a581b364f2f72e9}{\index{bst.\-h@{bst.\-h}!search@{search}}
+\index{search@{search}!bst.h@{bst.\-h}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\-\_\-t}$\ast$$\ast$ search (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a71f9e3e0e3e64b7e7a581b364f2f72e9}
+Searches for an element. Search for and access an element with the key based on data.  set The set to search in.  data The data to base the key on. \begin{DoxyReturn}{Returns}
+A pointer to an element pointer if one was matched, otherwise a pointer to an empty element where the searched data belongs in sorted order. 
+\end{DoxyReturn}
+\hypertarget{bst_8h_a7057ed8f09fbe594d795dcb92c4fd3ba}{\index{bst.\-h@{bst.\-h}!set\-\_\-foreachdata@{set\-\_\-foreachdata}}
+\index{set\-\_\-foreachdata@{set\-\_\-foreachdata}!bst.h@{bst.\-h}}
+\subsubsection[{set\-\_\-foreachdata}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-foreachdata (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set, }
+\item[{{\bf data\-\_\-map\-\_\-fun\-\_\-t}}]{fun}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a7057ed8f09fbe594d795dcb92c4fd3ba}
+Iterates and applies predicate to set. Iterate over a set in order. Map the function over the data of each element in the set.  set The set to iterate through.  fun The  data\-\_\-map\-\_\-fun\-\_\-t function to map on each data. \hypertarget{bst_8h_a9846260db2b9badece391aa1f999e8ef}{\index{bst.\-h@{bst.\-h}!set\-\_\-is\-\_\-empty@{set\-\_\-is\-\_\-empty}}
+\index{set\-\_\-is\-\_\-empty@{set\-\_\-is\-\_\-empty}!bst.h@{bst.\-h}}
+\subsubsection[{set\-\_\-is\-\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}bool set\-\_\-is\-\_\-empty (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}}\label{bst_8h_a9846260db2b9badece391aa1f999e8ef}
+Checks if a set is empty. Checks if a set is empty. 
+\begin{DoxyParams}{Parameters}
+{\em set} & The set to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if the set contains one or more elements, true otherwise. 
+\end{DoxyReturn}

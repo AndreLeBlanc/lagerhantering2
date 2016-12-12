@@ -1,0 +1,281 @@
+\hypertarget{list_8c}{\section{list.\-c File Reference}
+\label{list_8c}\index{list.\-c@{list.\-c}}
+}
+{\ttfamily \#include \char`\"{}stdlib.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}assert.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}bst.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structelement__t}{element\-\_\-t}
+\item 
+struct \hyperlink{structset__t}{set\-\_\-t}
+\item 
+struct \hyperlink{struct__iter__t}{\-\_\-iter\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structelement__t}{element\-\_\-t} \hyperlink{list_8c_affc28a27da5fb0849a1b4dab48b1ac3d}{element\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{list_8c_ad6e3593567aec42c31cdf5421912e280}{iter\-\_\-done} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$it)
+\item 
+void $\ast$ \hyperlink{list_8c_a4500f1e4cb23c26601865ce30575abee}{iter\-\_\-get} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$it)
+\item 
+void \hyperlink{list_8c_a95cce76512240fd2d8ebbdedd4688c75}{iter\-\_\-next} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$it)
+\item 
+void \hyperlink{list_8c_ad7cdfa59e41ed926b6dfb32ca1778852}{iter\-\_\-free} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$it)
+\item 
+\hyperlink{structelement__t}{element\-\_\-t} $\ast$ \hyperlink{list_8c_ad9fe6db2b7d6267f71de408a50f93ec5}{list\-\_\-node\-\_\-new} ()
+\item 
+\hyperlink{structset__t}{set\-\_\-t} $\ast$ \hyperlink{list_8c_a87f5ec9246b684e25d717a22e89d443e}{new\-\_\-set} (data\-\_\-comparator $\ast$comp, data\-\_\-freer $\ast$freer)
+\item 
+int \hyperlink{list_8c_ad994f6dee386c0ef8eb2258f0d6157d8}{list\-\_\-len} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l)
+\item 
+void \hyperlink{list_8c_a43ca2c5deb85c2e260a8c5c6e976e667}{insert\-\_\-element} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l, void $\ast$elt)
+\item 
+bool \hyperlink{list_8c_aa5c03a1e733690936b80f9d717563f25}{list\-\_\-nth} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l, int n, void $\ast$$\ast$elt)
+\item 
+bool \hyperlink{list_8c_ab28d28e5dbbf615b8b0a23b54a4c34c8}{list\-\_\-has} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l, data\-\_\-comparator comp, void $\ast$elt)
+\item 
+void \hyperlink{list_8c_aed407d7c890c3bafe9a95c1222e6b0f9}{list\-\_\-foreach} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l, void function(\hyperlink{structset__t}{set\-\_\-t} $\ast$))
+\item 
+\hyperlink{structiter__t}{iter\-\_\-t} $\ast$ \hyperlink{list_8c_aa0f431b5a17738e17392310d7cc060ae}{iter} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l)
+\item 
+\hyperlink{structset__t}{set\-\_\-t} $\ast$ \hyperlink{list_8c_abdd127eba2a0a31174f434169bc6883e}{list\-\_\-clone} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$l, data\-\_\-comparator $\ast$comp, data\-\_\-freer $\ast$freer)
+\item 
+void \hyperlink{list_8c_a3c888ee0e923c68adc5edaf2096a700a}{free\-\_\-set} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l)
+\item 
+void \hyperlink{list_8c_ae965c2487e24d85491901958519809a7}{map\-\_\-on\-\_\-element} (\hyperlink{structset__t}{set\-\_\-t} $\ast$l, void function(\hyperlink{structset__t}{set\-\_\-t} $\ast$))
+\item 
+struct \hyperlink{structelement__t}{element\-\_\-t} $\ast$$\ast$ \hyperlink{list_8c_a4ead075af4108b2e4a902fe5f6b2655b}{get\-\_\-next\-\_\-node} (struct \hyperlink{structelement__t}{element\-\_\-t} $\ast$node)
+\item 
+void \hyperlink{list_8c_a1741c39d3134e52e146b8df52bd868aa}{delete\-\_\-first\-\_\-element} (struct \hyperlink{structset__t}{set\-\_\-t} $\ast$$\ast$list)
+\item 
+struct \hyperlink{structelement__t}{element\-\_\-t} $\ast$$\ast$ \hyperlink{list_8c_ab3d5270d7ce30624eac3b402b474fb89}{delete\-\_\-node} (struct \hyperlink{structelement__t}{element\-\_\-t} $\ast$node)
+\item 
+void \hyperlink{list_8c_ac6c3566c3f3302661d8f09119873a0af}{delete\-\_\-not\-\_\-first\-\_\-element} (struct \hyperlink{structset__t}{set\-\_\-t} $\ast$$\ast$list, int i)
+\item 
+void \hyperlink{list_8c_a31dd3dbb78438dfc73167e388597bdb8}{delet\-\_\-element} (struct \hyperlink{structset__t}{set\-\_\-t} $\ast$$\ast$list, void $\ast$compare)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{list_8c_affc28a27da5fb0849a1b4dab48b1ac3d}{\index{list.\-c@{list.\-c}!element\-\_\-t@{element\-\_\-t}}
+\index{element\-\_\-t@{element\-\_\-t}!list.c@{list.\-c}}
+\subsubsection[{element\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf element\-\_\-t} {\bf element\-\_\-t}}}\label{list_8c_affc28a27da5fb0849a1b4dab48b1ac3d}
+
+
+\subsection{Function Documentation}
+\hypertarget{list_8c_a31dd3dbb78438dfc73167e388597bdb8}{\index{list.\-c@{list.\-c}!delet\-\_\-element@{delet\-\_\-element}}
+\index{delet\-\_\-element@{delet\-\_\-element}!list.c@{list.\-c}}
+\subsubsection[{delet\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void delet\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{struct {\bf set\-\_\-t} $\ast$$\ast$}]{list, }
+\item[{void $\ast$}]{compare}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a31dd3dbb78438dfc73167e388597bdb8}
+\hypertarget{list_8c_a1741c39d3134e52e146b8df52bd868aa}{\index{list.\-c@{list.\-c}!delete\-\_\-first\-\_\-element@{delete\-\_\-first\-\_\-element}}
+\index{delete\-\_\-first\-\_\-element@{delete\-\_\-first\-\_\-element}!list.c@{list.\-c}}
+\subsubsection[{delete\-\_\-first\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-first\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{struct {\bf set\-\_\-t} $\ast$$\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a1741c39d3134e52e146b8df52bd868aa}
+\hypertarget{list_8c_ab3d5270d7ce30624eac3b402b474fb89}{\index{list.\-c@{list.\-c}!delete\-\_\-node@{delete\-\_\-node}}
+\index{delete\-\_\-node@{delete\-\_\-node}!list.c@{list.\-c}}
+\subsubsection[{delete\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf element\-\_\-t}$\ast$$\ast$ delete\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{struct {\bf element\-\_\-t} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ab3d5270d7ce30624eac3b402b474fb89}
+\hypertarget{list_8c_ac6c3566c3f3302661d8f09119873a0af}{\index{list.\-c@{list.\-c}!delete\-\_\-not\-\_\-first\-\_\-element@{delete\-\_\-not\-\_\-first\-\_\-element}}
+\index{delete\-\_\-not\-\_\-first\-\_\-element@{delete\-\_\-not\-\_\-first\-\_\-element}!list.c@{list.\-c}}
+\subsubsection[{delete\-\_\-not\-\_\-first\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-not\-\_\-first\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{struct {\bf set\-\_\-t} $\ast$$\ast$}]{list, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ac6c3566c3f3302661d8f09119873a0af}
+\hypertarget{list_8c_a3c888ee0e923c68adc5edaf2096a700a}{\index{list.\-c@{list.\-c}!free\-\_\-set@{free\-\_\-set}}
+\index{free\-\_\-set@{free\-\_\-set}!list.c@{list.\-c}}
+\subsubsection[{free\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}void free\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a3c888ee0e923c68adc5edaf2096a700a}
+Set destructor. Free the memory allocated by the set, its elements and their data.  set The set to free. \hypertarget{list_8c_a4ead075af4108b2e4a902fe5f6b2655b}{\index{list.\-c@{list.\-c}!get\-\_\-next\-\_\-node@{get\-\_\-next\-\_\-node}}
+\index{get\-\_\-next\-\_\-node@{get\-\_\-next\-\_\-node}!list.c@{list.\-c}}
+\subsubsection[{get\-\_\-next\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf element\-\_\-t}$\ast$$\ast$ get\-\_\-next\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{struct {\bf element\-\_\-t} $\ast$}]{node}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a4ead075af4108b2e4a902fe5f6b2655b}
+\hypertarget{list_8c_a43ca2c5deb85c2e260a8c5c6e976e667}{\index{list.\-c@{list.\-c}!insert\-\_\-element@{insert\-\_\-element}}
+\index{insert\-\_\-element@{insert\-\_\-element}!list.c@{list.\-c}}
+\subsubsection[{insert\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void insert\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{set, }
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a43ca2c5deb85c2e260a8c5c6e976e667}
+Inserts an element. Insert a new element into set. Automatically allocates space for the element and its data with the sets user provided \hyperlink{bst_8h_af84805da77fc54521fb2ef41f1293457}{data\-\_\-copier\-\_\-t}. 
+\begin{DoxyParams}{Parameters}
+{\em set} & The set to insert into. \\
+\hline
+{\em data} & The data of the new element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Successful inserts cause associated iterators to reset using \hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_afcb93cba877fbbd423087cdd0083599b}{iter\-\_\-reset} 
+
+\hyperlink{bst_8h_a5e4cbdf3052a8afdaf853405dc441da0}{delete\-\_\-element} 
+
+\hyperlink{bst_8h_a6333970ef7b7c1536d3d1bd49f960a10}{new\-\_\-set} 
+\end{DoxySeeAlso}
+\hypertarget{list_8c_aa0f431b5a17738e17392310d7cc060ae}{\index{list.\-c@{list.\-c}!iter@{iter}}
+\index{iter@{iter}!list.c@{list.\-c}}
+\subsubsection[{iter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iter\-\_\-t}$\ast$ iter (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{list_8c_aa0f431b5a17738e17392310d7cc060ae}
+\hypertarget{list_8c_ad6e3593567aec42c31cdf5421912e280}{\index{list.\-c@{list.\-c}!iter\-\_\-done@{iter\-\_\-done}}
+\index{iter\-\_\-done@{iter\-\_\-done}!list.c@{list.\-c}}
+\subsubsection[{iter\-\_\-done}]{\setlength{\rightskip}{0pt plus 5cm}bool iter\-\_\-done (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ad6e3593567aec42c31cdf5421912e280}
+Test whether the iterator has additional elements. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if the iterator has additional elements, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{list_8c_ad7cdfa59e41ed926b6dfb32ca1778852}{\index{list.\-c@{list.\-c}!iter\-\_\-free@{iter\-\_\-free}}
+\index{iter\-\_\-free@{iter\-\_\-free}!list.c@{list.\-c}}
+\subsubsection[{iter\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-free (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ad7cdfa59e41ed926b6dfb32ca1778852}
+Iterator destructor. Free the memory allocated by the iterator. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}{iter\-\_\-new} 
+\end{DoxySeeAlso}
+\hypertarget{list_8c_a4500f1e4cb23c26601865ce30575abee}{\index{list.\-c@{list.\-c}!iter\-\_\-get@{iter\-\_\-get}}
+\index{iter\-\_\-get@{iter\-\_\-get}!list.c@{list.\-c}}
+\subsubsection[{iter\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ iter\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a4500f1e4cb23c26601865ce30575abee}
+Access the current element. Access the current element of an iterator. 
+\begin{DoxyParams}{Parameters}
+{\em The} & iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current element. 
+\end{DoxyReturn}
+\begin{DoxyInvariant}{Invariant}
+!set\-\_\-is\-\_\-empty(iter\-\_\-t-\/$>$set) 
+\end{DoxyInvariant}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a9846260db2b9badece391aa1f999e8ef}{set\-\_\-is\-\_\-empty} 
+\end{DoxySeeAlso}
+\hypertarget{list_8c_a95cce76512240fd2d8ebbdedd4688c75}{\index{list.\-c@{list.\-c}!iter\-\_\-next@{iter\-\_\-next}}
+\index{iter\-\_\-next@{iter\-\_\-next}!list.c@{list.\-c}}
+\subsubsection[{iter\-\_\-next}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-next (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{it}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a95cce76512240fd2d8ebbdedd4688c75}
+Advance the iterator by one step. \begin{DoxyWarning}{Warning}
+Must only be called if \hyperlink{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}{iter\-\_\-done} returns {\ttfamily false}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}{iter\-\_\-done}
+\end{DoxySeeAlso}
+Advance the iterator by one step. \begin{DoxyWarning}{Warning}
+Must only be called if \hyperlink{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} returns {\ttfamily false}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8c_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} 
+
+\hyperlink{bst_8c_aec0e18fd9fee3bfae17741a91aedb46e}{iter\-\_\-previous} 
+\end{DoxySeeAlso}
+\hypertarget{list_8c_abdd127eba2a0a31174f434169bc6883e}{\index{list.\-c@{list.\-c}!list\-\_\-clone@{list\-\_\-clone}}
+\index{list\-\_\-clone@{list\-\_\-clone}!list.c@{list.\-c}}
+\subsubsection[{list\-\_\-clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\-\_\-t}$\ast$ list\-\_\-clone (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{l, }
+\item[{data\-\_\-comparator $\ast$}]{comp, }
+\item[{data\-\_\-freer $\ast$}]{freer}
+\end{DoxyParamCaption}
+)}}\label{list_8c_abdd127eba2a0a31174f434169bc6883e}
+\hypertarget{list_8c_aed407d7c890c3bafe9a95c1222e6b0f9}{\index{list.\-c@{list.\-c}!list\-\_\-foreach@{list\-\_\-foreach}}
+\index{list\-\_\-foreach@{list\-\_\-foreach}!list.c@{list.\-c}}
+\subsubsection[{list\-\_\-foreach}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-foreach (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{l, }
+\item[{void }]{functionset\-\_\-t $\ast$}
+\end{DoxyParamCaption}
+)}}\label{list_8c_aed407d7c890c3bafe9a95c1222e6b0f9}
+\hypertarget{list_8c_ab28d28e5dbbf615b8b0a23b54a4c34c8}{\index{list.\-c@{list.\-c}!list\-\_\-has@{list\-\_\-has}}
+\index{list\-\_\-has@{list\-\_\-has}!list.c@{list.\-c}}
+\subsubsection[{list\-\_\-has}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-\_\-has (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{l, }
+\item[{data\-\_\-comparator}]{comp, }
+\item[{void $\ast$}]{elt}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ab28d28e5dbbf615b8b0a23b54a4c34c8}
+\hypertarget{list_8c_ad994f6dee386c0ef8eb2258f0d6157d8}{\index{list.\-c@{list.\-c}!list\-\_\-len@{list\-\_\-len}}
+\index{list\-\_\-len@{list\-\_\-len}!list.c@{list.\-c}}
+\subsubsection[{list\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int list\-\_\-len (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ad994f6dee386c0ef8eb2258f0d6157d8}
+\hypertarget{list_8c_ad9fe6db2b7d6267f71de408a50f93ec5}{\index{list.\-c@{list.\-c}!list\-\_\-node\-\_\-new@{list\-\_\-node\-\_\-new}}
+\index{list\-\_\-node\-\_\-new@{list\-\_\-node\-\_\-new}!list.c@{list.\-c}}
+\subsubsection[{list\-\_\-node\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf element\-\_\-t}$\ast$ list\-\_\-node\-\_\-new (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ad9fe6db2b7d6267f71de408a50f93ec5}
+\hypertarget{list_8c_aa5c03a1e733690936b80f9d717563f25}{\index{list.\-c@{list.\-c}!list\-\_\-nth@{list\-\_\-nth}}
+\index{list\-\_\-nth@{list\-\_\-nth}!list.c@{list.\-c}}
+\subsubsection[{list\-\_\-nth}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-\_\-nth (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{l, }
+\item[{int}]{n, }
+\item[{void $\ast$$\ast$}]{elt}
+\end{DoxyParamCaption}
+)}}\label{list_8c_aa5c03a1e733690936b80f9d717563f25}
+\hypertarget{list_8c_ae965c2487e24d85491901958519809a7}{\index{list.\-c@{list.\-c}!map\-\_\-on\-\_\-element@{map\-\_\-on\-\_\-element}}
+\index{map\-\_\-on\-\_\-element@{map\-\_\-on\-\_\-element}!list.c@{list.\-c}}
+\subsubsection[{map\-\_\-on\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void map\-\_\-on\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf set\-\_\-t} $\ast$}]{l, }
+\item[{void }]{functionset\-\_\-t $\ast$}
+\end{DoxyParamCaption}
+)}}\label{list_8c_ae965c2487e24d85491901958519809a7}
+\hypertarget{list_8c_a87f5ec9246b684e25d717a22e89d443e}{\index{list.\-c@{list.\-c}!new\-\_\-set@{new\-\_\-set}}
+\index{new\-\_\-set@{new\-\_\-set}!list.c@{list.\-c}}
+\subsubsection[{new\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf set\-\_\-t}$\ast$ new\-\_\-set (
+\begin{DoxyParamCaption}
+\item[{data\-\_\-comparator $\ast$}]{comp, }
+\item[{data\-\_\-freer $\ast$}]{freer}
+\end{DoxyParamCaption}
+)}}\label{list_8c_a87f5ec9246b684e25d717a22e89d443e}

@@ -1,0 +1,252 @@
+\hypertarget{storageui_8c}{\section{storageui.\-c File Reference}
+\label{storageui_8c}\index{storageui.\-c@{storageui.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include $<$ctype.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}storageui.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}storage.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{storageui_8c_a73725e2f8c9bb6473cf18c5c908ede73}{read\-String} (char $\ast$$\ast$out, int max\-Buffer)
+\item 
+char \hyperlink{storageui_8c_afe1807590f364e31f69df0a63b520d33}{ask\-For\-Char} (char $\ast$valid, char $\ast$menu, char show\-Menu)
+\item 
+void \hyperlink{storageui_8c_ac6efc7d4f174b77c5c71cce391427125}{ask\-For\-String} (char $\ast$question, char $\ast$$\ast$out, int max\-Buffer)
+\item 
+int \hyperlink{storageui_8c_a91d96a11709a76de7d5441e37cb46240}{ask\-For\-Int} (char $\ast$question)
+\item 
+void \hyperlink{storageui_8c_ac976fcc43ab8b1a57f4c70d39886d010}{ask\-Set\-Int} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g, char $\ast$attribute\-Name, bool valid\-Fun(int), void set\-Fun(\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, int))
+\item 
+void \hyperlink{storageui_8c_a0e74e82fc9a5a4226b647e2a8d8d9893}{ui\-Print\-Goods} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g)
+\item 
+int \hyperlink{storageui_8c_a0e5ccd4baccbc85514f1ea46df9439d7}{ui\-List\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, int start, int end)
+\item 
+void \hyperlink{storageui_8c_ae5652955dfe958c750350df684eae7d5}{ui\-Edit\-Name} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, char $\ast$out, int string\-Max)
+\item 
+void \hyperlink{storageui_8c_a95ea2a715e214c005eec86419a263e7d}{ui\-Edit\-Description} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g)
+\item 
+void \hyperlink{storageui_8c_a47bc05150f313bd00693d66a6d419b10}{ui\-Edit\-Shelf} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g)
+\item 
+void \hyperlink{storageui_8c_adf63d49f49be85de9e2838c2dafe8c54}{ui\-Edit\-Goods\-Run\-Cmd} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g, char command)
+\item 
+void \hyperlink{storageui_8c_a70d0054363886069df0a6baab81efe41}{ui\-Add\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s)
+\item 
+int \hyperlink{storageui_8c_ad660c663ad98c3c768edfcc191d5b32b}{ui\-Browse\-Catalogue} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s)
+\item 
+void \hyperlink{storageui_8c_af25627f66f3b2809c3f8ec118dad0ed5}{ui\-Edit\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g)
+\item 
+int \hyperlink{storageui_8c_a69e69724b6a01f7fbac108adcac5ba2c}{ask\-For\-Int\-Browse} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, char $\ast$q, int b)
+\item 
+void \hyperlink{storageui_8c_ae44138b3cb9ff10053ea431783d8d662}{run\-Command} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, char c)
+\item 
+void \hyperlink{storageui_8c_ab7253a6e5683a72f39b63069b9c2e17c}{start\-Main\-Menu} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{storageui_8c_afe1807590f364e31f69df0a63b520d33}{\index{storageui.\-c@{storageui.\-c}!ask\-For\-Char@{ask\-For\-Char}}
+\index{ask\-For\-Char@{ask\-For\-Char}!storageui.c@{storageui.\-c}}
+\subsubsection[{ask\-For\-Char}]{\setlength{\rightskip}{0pt plus 5cm}char ask\-For\-Char (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{valid, }
+\item[{char $\ast$}]{menu, }
+\item[{char}]{show\-Menu}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_afe1807590f364e31f69df0a63b520d33}
+Keeps prompting user for a character and until an accepted character is read. 
+\begin{DoxyParams}{Parameters}
+{\em valid} & A string representing valid characters. \\
+\hline
+{\em menu} & A menu to show the user, has all valid characters and their meaning. \\
+\hline
+{\em show\-Menu} & The character the user has to press to see the menu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the char that was read. 
+\end{DoxyReturn}
+\hypertarget{storageui_8c_a91d96a11709a76de7d5441e37cb46240}{\index{storageui.\-c@{storageui.\-c}!ask\-For\-Int@{ask\-For\-Int}}
+\index{ask\-For\-Int@{ask\-For\-Int}!storageui.c@{storageui.\-c}}
+\subsubsection[{ask\-For\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int ask\-For\-Int (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{question}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a91d96a11709a76de7d5441e37cb46240}
+Keeps prompting until user inputs a correct int. 
+\begin{DoxyParams}{Parameters}
+{\em question} & The prompt message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The users answer. 
+\end{DoxyReturn}
+\hypertarget{storageui_8c_a69e69724b6a01f7fbac108adcac5ba2c}{\index{storageui.\-c@{storageui.\-c}!ask\-For\-Int\-Browse@{ask\-For\-Int\-Browse}}
+\index{ask\-For\-Int\-Browse@{ask\-For\-Int\-Browse}!storageui.c@{storageui.\-c}}
+\subsubsection[{ask\-For\-Int\-Browse}]{\setlength{\rightskip}{0pt plus 5cm}int ask\-For\-Int\-Browse (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{char $\ast$}]{q, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a69e69724b6a01f7fbac108adcac5ba2c}
+\hypertarget{storageui_8c_ac6efc7d4f174b77c5c71cce391427125}{\index{storageui.\-c@{storageui.\-c}!ask\-For\-String@{ask\-For\-String}}
+\index{ask\-For\-String@{ask\-For\-String}!storageui.c@{storageui.\-c}}
+\subsubsection[{ask\-For\-String}]{\setlength{\rightskip}{0pt plus 5cm}void ask\-For\-String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{question, }
+\item[{char $\ast$$\ast$}]{out, }
+\item[{int}]{max\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_ac6efc7d4f174b77c5c71cce391427125}
+Prompts user for a string and writes it to out. 
+\begin{DoxyParams}{Parameters}
+{\em question} & The prompt message. \\
+\hline
+{\em out} & A pointer to the string to write the string to. \\
+\hline
+{\em max\-Buffer} & Mmax string length to accept. \\
+\hline
+\end{DoxyParams}
+\hypertarget{storageui_8c_ac976fcc43ab8b1a57f4c70d39886d010}{\index{storageui.\-c@{storageui.\-c}!ask\-Set\-Int@{ask\-Set\-Int}}
+\index{ask\-Set\-Int@{ask\-Set\-Int}!storageui.c@{storageui.\-c}}
+\subsubsection[{ask\-Set\-Int}]{\setlength{\rightskip}{0pt plus 5cm}void ask\-Set\-Int (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{g, }
+\item[{char $\ast$}]{attribute\-Name, }
+\item[{bool }]{valid\-Funint, }
+\item[{void }]{set\-FunGoods\-T $\ast$, int}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_ac976fcc43ab8b1a57f4c70d39886d010}
+Prompts user for an int until a valid value is input and then sets edits the goods. 
+\begin{DoxyParams}{Parameters}
+{\em g} & The goods to edit. \\
+\hline
+{\em attribute\-Name} & The readable name of what is being edited in the goods. \\
+\hline
+{\em valid\-Fun} & The validation function. \\
+\hline
+{\em set\-Fun} & The set function. \\
+\hline
+\end{DoxyParams}
+\hypertarget{storageui_8c_a73725e2f8c9bb6473cf18c5c908ede73}{\index{storageui.\-c@{storageui.\-c}!read\-String@{read\-String}}
+\index{read\-String@{read\-String}!storageui.c@{storageui.\-c}}
+\subsubsection[{read\-String}]{\setlength{\rightskip}{0pt plus 5cm}void read\-String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{out, }
+\item[{int}]{max\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a73725e2f8c9bb6473cf18c5c908ede73}
+Reads a string from stdin and allocates memory for it. 
+\begin{DoxyParams}{Parameters}
+{\em out} & A pointer to the string to allocate and write to. \\
+\hline
+{\em max\-Buffer} & Max string length to accept. \\
+\hline
+\end{DoxyParams}
+\hypertarget{storageui_8c_ae44138b3cb9ff10053ea431783d8d662}{\index{storageui.\-c@{storageui.\-c}!run\-Command@{run\-Command}}
+\index{run\-Command@{run\-Command}!storageui.c@{storageui.\-c}}
+\subsubsection[{run\-Command}]{\setlength{\rightskip}{0pt plus 5cm}void run\-Command (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_ae44138b3cb9ff10053ea431783d8d662}
+\hypertarget{storageui_8c_ab7253a6e5683a72f39b63069b9c2e17c}{\index{storageui.\-c@{storageui.\-c}!start\-Main\-Menu@{start\-Main\-Menu}}
+\index{start\-Main\-Menu@{start\-Main\-Menu}!storageui.c@{storageui.\-c}}
+\subsubsection[{start\-Main\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void start\-Main\-Menu (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{store}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_ab7253a6e5683a72f39b63069b9c2e17c}
+Starts the user interface with a store. 
+\begin{DoxyParams}{Parameters}
+{\em store} & The store to work against. \\
+\hline
+\end{DoxyParams}
+\hypertarget{storageui_8c_a70d0054363886069df0a6baab81efe41}{\index{storageui.\-c@{storageui.\-c}!ui\-Add\-Goods@{ui\-Add\-Goods}}
+\index{ui\-Add\-Goods@{ui\-Add\-Goods}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Add\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Add\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a70d0054363886069df0a6baab81efe41}
+\hypertarget{storageui_8c_ad660c663ad98c3c768edfcc191d5b32b}{\index{storageui.\-c@{storageui.\-c}!ui\-Browse\-Catalogue@{ui\-Browse\-Catalogue}}
+\index{ui\-Browse\-Catalogue@{ui\-Browse\-Catalogue}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Browse\-Catalogue}]{\setlength{\rightskip}{0pt plus 5cm}int ui\-Browse\-Catalogue (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_ad660c663ad98c3c768edfcc191d5b32b}
+\hypertarget{storageui_8c_a95ea2a715e214c005eec86419a263e7d}{\index{storageui.\-c@{storageui.\-c}!ui\-Edit\-Description@{ui\-Edit\-Description}}
+\index{ui\-Edit\-Description@{ui\-Edit\-Description}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Edit\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Edit\-Description (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a95ea2a715e214c005eec86419a263e7d}
+\hypertarget{storageui_8c_af25627f66f3b2809c3f8ec118dad0ed5}{\index{storageui.\-c@{storageui.\-c}!ui\-Edit\-Goods@{ui\-Edit\-Goods}}
+\index{ui\-Edit\-Goods@{ui\-Edit\-Goods}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Edit\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Edit\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{{\bf Goods\-T} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_af25627f66f3b2809c3f8ec118dad0ed5}
+\hypertarget{storageui_8c_adf63d49f49be85de9e2838c2dafe8c54}{\index{storageui.\-c@{storageui.\-c}!ui\-Edit\-Goods\-Run\-Cmd@{ui\-Edit\-Goods\-Run\-Cmd}}
+\index{ui\-Edit\-Goods\-Run\-Cmd@{ui\-Edit\-Goods\-Run\-Cmd}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Edit\-Goods\-Run\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Edit\-Goods\-Run\-Cmd (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{{\bf Goods\-T} $\ast$}]{g, }
+\item[{char}]{command}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_adf63d49f49be85de9e2838c2dafe8c54}
+\hypertarget{storageui_8c_ae5652955dfe958c750350df684eae7d5}{\index{storageui.\-c@{storageui.\-c}!ui\-Edit\-Name@{ui\-Edit\-Name}}
+\index{ui\-Edit\-Name@{ui\-Edit\-Name}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Edit\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Edit\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{char $\ast$}]{out, }
+\item[{int}]{string\-Max}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_ae5652955dfe958c750350df684eae7d5}
+\hypertarget{storageui_8c_a47bc05150f313bd00693d66a6d419b10}{\index{storageui.\-c@{storageui.\-c}!ui\-Edit\-Shelf@{ui\-Edit\-Shelf}}
+\index{ui\-Edit\-Shelf@{ui\-Edit\-Shelf}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Edit\-Shelf}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Edit\-Shelf (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{{\bf Goods\-T} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a47bc05150f313bd00693d66a6d419b10}
+\hypertarget{storageui_8c_a0e5ccd4baccbc85514f1ea46df9439d7}{\index{storageui.\-c@{storageui.\-c}!ui\-List\-Goods@{ui\-List\-Goods}}
+\index{ui\-List\-Goods@{ui\-List\-Goods}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-List\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}int ui\-List\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{int}]{start, }
+\item[{int}]{end}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a0e5ccd4baccbc85514f1ea46df9439d7}
+Lists a range of goods of a storage. 
+\begin{DoxyParams}{Parameters}
+{\em s} & The storage. \\
+\hline
+{\em start} & The start of the range. \\
+\hline
+{\em end} & The end of the range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the last listed goods if start index is valid, otherwise start index is returned. 
+\end{DoxyReturn}
+\hypertarget{storageui_8c_a0e74e82fc9a5a4226b647e2a8d8d9893}{\index{storageui.\-c@{storageui.\-c}!ui\-Print\-Goods@{ui\-Print\-Goods}}
+\index{ui\-Print\-Goods@{ui\-Print\-Goods}!storageui.c@{storageui.\-c}}
+\subsubsection[{ui\-Print\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void ui\-Print\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{g}
+\end{DoxyParamCaption}
+)}}\label{storageui_8c_a0e74e82fc9a5a4226b647e2a8d8d9893}

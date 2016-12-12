@@ -1,0 +1,246 @@
+\hypertarget{list_8h}{\section{list.\-h File Reference}
+\label{list_8h}\index{list.\-h@{list.\-h}}
+}
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}util.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$list.\-c$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \-\_\-list\-\_\-t \hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t}
+\item 
+typedef struct \hyperlink{struct__iter__t}{\-\_\-iter\-\_\-t} \hyperlink{list_8h_acaf69c5c30c617e8adb6727a76ada487}{iter\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$ \hyperlink{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}{list\-\_\-new} ()
+\item 
+void \hyperlink{list_8h_a97e5eb115d554d4496fead77273d1e2d}{list\-\_\-add} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$, void $\ast$)
+\item 
+int \hyperlink{list_8h_a60df0d67f9ba7ef08837be69810a868e}{list\-\_\-len} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$)
+\item 
+bool \hyperlink{list_8h_a548a5ca8b83f626bec84d07c3d2980e7}{list\-\_\-nth} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$, int n, void $\ast$$\ast$res)
+\item 
+bool \hyperlink{list_8h_a3131d4329817067e692def8de72f9030}{list\-\_\-has} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$, comparator comp, void $\ast$elt)
+\item 
+void \hyperlink{list_8h_a0e3672236df8a53b3558101cc40c7694}{list\-\_\-foreach} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$l, void function(\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$))
+\item 
+\hyperlink{structiter__t}{iter\-\_\-t} $\ast$ \hyperlink{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{iter} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$)
+\item 
+void \hyperlink{list_8h_a2394fa8d238729679542074468051c09}{iter\-\_\-next} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$)
+\item 
+bool \hyperlink{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}{iter\-\_\-done} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$)
+\item 
+void $\ast$ \hyperlink{list_8h_a3bdbcd13e4f1256939b27084b72ba101}{iter\-\_\-get} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$)
+\item 
+void \hyperlink{list_8h_a4a2b61b11b9898d3bf885ab46cfbc39a}{iter\-\_\-free} (\hyperlink{structiter__t}{iter\-\_\-t} $\ast$)
+\item 
+\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$ \hyperlink{list_8h_a237338d77010c94ff48818cab7117277}{list\-\_\-clone} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$)
+\item 
+void \hyperlink{list_8h_af715c06c704af470136b76093778fe8d}{list\-\_\-free} ()
+\item 
+void \hyperlink{list_8h_ac62921099b1a45d338b04f23c91f1d9a}{map\-\_\-on\-\_\-element} (\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$l, void function(\hyperlink{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{list\-\_\-t} $\ast$))
+\item 
+void \hyperlink{list_8h_a9382c0141420349012e585c3a83405ba}{delete\-\_\-first\-\_\-element} (struct \-\_\-list\-\_\-t $\ast$$\ast$list)
+\item 
+void \hyperlink{list_8h_ae5e6771a1f7f2fd28cbfeb85d0a0fb05}{delete\-\_\-not\-\_\-first\-\_\-element} (struct \-\_\-list\-\_\-node\-\_\-t $\ast$l)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{list_8h_acaf69c5c30c617e8adb6727a76ada487}{\index{list.\-h@{list.\-h}!iter\-\_\-t@{iter\-\_\-t}}
+\index{iter\-\_\-t@{iter\-\_\-t}!list.h@{list.\-h}}
+\subsubsection[{iter\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-iter\-\_\-t} {\bf iter\-\_\-t}}}\label{list_8h_acaf69c5c30c617e8adb6727a76ada487}
+\hypertarget{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}{\index{list.\-h@{list.\-h}!list\-\_\-t@{list\-\_\-t}}
+\index{list\-\_\-t@{list\-\_\-t}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct \-\_\-list\-\_\-t {\bf list\-\_\-t}}}\label{list_8h_a12ad5afee26e79d11d5b06e4c8663ab0}
+
+
+\subsection{Function Documentation}
+\hypertarget{list_8h_a9382c0141420349012e585c3a83405ba}{\index{list.\-h@{list.\-h}!delete\-\_\-first\-\_\-element@{delete\-\_\-first\-\_\-element}}
+\index{delete\-\_\-first\-\_\-element@{delete\-\_\-first\-\_\-element}!list.h@{list.\-h}}
+\subsubsection[{delete\-\_\-first\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-first\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{struct \-\_\-list\-\_\-t $\ast$$\ast$}]{list}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a9382c0141420349012e585c3a83405ba}
+deletes the first element in a list \hypertarget{list_8h_ae5e6771a1f7f2fd28cbfeb85d0a0fb05}{\index{list.\-h@{list.\-h}!delete\-\_\-not\-\_\-first\-\_\-element@{delete\-\_\-not\-\_\-first\-\_\-element}}
+\index{delete\-\_\-not\-\_\-first\-\_\-element@{delete\-\_\-not\-\_\-first\-\_\-element}!list.h@{list.\-h}}
+\subsubsection[{delete\-\_\-not\-\_\-first\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void delete\-\_\-not\-\_\-first\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{struct \-\_\-list\-\_\-node\-\_\-t $\ast$}]{l}
+\end{DoxyParamCaption}
+)}}\label{list_8h_ae5e6771a1f7f2fd28cbfeb85d0a0fb05}
+deletes the element after the element you send in \hypertarget{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}{\index{list.\-h@{list.\-h}!iter@{iter}}
+\index{iter@{iter}!list.h@{list.\-h}}
+\subsubsection[{iter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iter\-\_\-t}$\ast$ iter (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a192e8bf9c9a1102589fcb51cf4468a7b}
+Create an iterator to a list. Needs to be freed using \hyperlink{list_8h_a4a2b61b11b9898d3bf885ab46cfbc39a}{iter\-\_\-free}. \begin{DoxySeeAlso}{See Also}
+\href{http://en.wikipedia.org/wiki/Iterator}{\tt http\-://en.\-wikipedia.\-org/wiki/\-Iterator} 
+\end{DoxySeeAlso}
+\hypertarget{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}{\index{list.\-h@{list.\-h}!iter\-\_\-done@{iter\-\_\-done}}
+\index{iter\-\_\-done@{iter\-\_\-done}!list.h@{list.\-h}}
+\subsubsection[{iter\-\_\-done}]{\setlength{\rightskip}{0pt plus 5cm}bool iter\-\_\-done (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}
+Test whether the iterator has additional elements. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if the iterator has additional elements, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{list_8h_a4a2b61b11b9898d3bf885ab46cfbc39a}{\index{list.\-h@{list.\-h}!iter\-\_\-free@{iter\-\_\-free}}
+\index{iter\-\_\-free@{iter\-\_\-free}!list.h@{list.\-h}}
+\subsubsection[{iter\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-free (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a4a2b61b11b9898d3bf885ab46cfbc39a}
+Free the memory allocated by the iterator.
+
+Iterator destructor. Free the memory allocated by the iterator. 
+\begin{DoxyParams}{Parameters}
+{\em iter} & The iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_afd2967ac3d885fbfb03c1deffab784b3}{iter\-\_\-new} 
+\end{DoxySeeAlso}
+\hypertarget{list_8h_a3bdbcd13e4f1256939b27084b72ba101}{\index{list.\-h@{list.\-h}!iter\-\_\-get@{iter\-\_\-get}}
+\index{iter\-\_\-get@{iter\-\_\-get}!list.h@{list.\-h}}
+\subsubsection[{iter\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ iter\-\_\-get (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a3bdbcd13e4f1256939b27084b72ba101}
+Access the current element. \begin{DoxyReturn}{Returns}
+The current element.
+\end{DoxyReturn}
+Access the current element. Access the current element of an iterator. 
+\begin{DoxyParams}{Parameters}
+{\em The} & iterator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current element. 
+\end{DoxyReturn}
+\begin{DoxyInvariant}{Invariant}
+!set\-\_\-is\-\_\-empty(iter\-\_\-t-\/$>$set) 
+\end{DoxyInvariant}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8h_a9846260db2b9badece391aa1f999e8ef}{set\-\_\-is\-\_\-empty} 
+\end{DoxySeeAlso}
+\hypertarget{list_8h_a2394fa8d238729679542074468051c09}{\index{list.\-h@{list.\-h}!iter\-\_\-next@{iter\-\_\-next}}
+\index{iter\-\_\-next@{iter\-\_\-next}!list.h@{list.\-h}}
+\subsubsection[{iter\-\_\-next}]{\setlength{\rightskip}{0pt plus 5cm}void iter\-\_\-next (
+\begin{DoxyParamCaption}
+\item[{{\bf iter\-\_\-t} $\ast$}]{iter}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a2394fa8d238729679542074468051c09}
+Advance the iterator by one step. \begin{DoxyWarning}{Warning}
+Must only be called if \hyperlink{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}{iter\-\_\-done} returns {\ttfamily false}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{list_8h_ae87df5ecdcb6f56f562bdae494ca23b8}{iter\-\_\-done}
+\end{DoxySeeAlso}
+Advance the iterator by one step. \begin{DoxyWarning}{Warning}
+Must only be called if \hyperlink{bst_8h_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} returns {\ttfamily false}. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{bst_8c_a203ce24619b8f1c6ae825f6566ee87e5}{iter\-\_\-end} 
+
+\hyperlink{bst_8c_aec0e18fd9fee3bfae17741a91aedb46e}{iter\-\_\-previous} 
+\end{DoxySeeAlso}
+\hypertarget{list_8h_a97e5eb115d554d4496fead77273d1e2d}{\index{list.\-h@{list.\-h}!list\-\_\-add@{list\-\_\-add}}
+\index{list\-\_\-add@{list\-\_\-add}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{, }
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a97e5eb115d554d4496fead77273d1e2d}
+Add an item to a list (at the end); \hypertarget{list_8h_a237338d77010c94ff48818cab7117277}{\index{list.\-h@{list.\-h}!list\-\_\-clone@{list\-\_\-clone}}
+\index{list\-\_\-clone@{list\-\_\-clone}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list\-\_\-t}$\ast$ list\-\_\-clone (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a237338d77010c94ff48818cab7117277}
+Make a shallow clone of a list. This operation is {\itshape shallow}, it will {\itshape not} clone the elements, just the list's spine. \begin{DoxyReturn}{Returns}
+A shallow clone of the list. 
+\end{DoxyReturn}
+\hypertarget{list_8h_a0e3672236df8a53b3558101cc40c7694}{\index{list.\-h@{list.\-h}!list\-\_\-foreach@{list\-\_\-foreach}}
+\index{list\-\_\-foreach@{list\-\_\-foreach}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-foreach}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-foreach (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{l, }
+\item[{void }]{functionlist\-\_\-t $\ast$}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a0e3672236df8a53b3558101cc40c7694}
+Iterate over a list. Execute the function once for each element in the list and in order. \hypertarget{list_8h_af715c06c704af470136b76093778fe8d}{\index{list.\-h@{list.\-h}!list\-\_\-free@{list\-\_\-free}}
+\index{list\-\_\-free@{list\-\_\-free}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void list\-\_\-free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_af715c06c704af470136b76093778fe8d}
+Frees all memory that the list allocated. \hypertarget{list_8h_a3131d4329817067e692def8de72f9030}{\index{list.\-h@{list.\-h}!list\-\_\-has@{list\-\_\-has}}
+\index{list\-\_\-has@{list\-\_\-has}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-has}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-\_\-has (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{, }
+\item[{comparator}]{comp, }
+\item[{void $\ast$}]{elt}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a3131d4329817067e692def8de72f9030}
+Test whether a certain element exists. 
+\begin{DoxyParams}{Parameters}
+{\em comp} & The comparator\-\_\-t to search with. \\
+\hline
+{\em elt} & The element to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if there is at least one element in the list that, compared using the comparator\-\_\-t, compares equal to {\ttfamily elt}. 
+\end{DoxyReturn}
+\hypertarget{list_8h_a60df0d67f9ba7ef08837be69810a868e}{\index{list.\-h@{list.\-h}!list\-\_\-len@{list\-\_\-len}}
+\index{list\-\_\-len@{list\-\_\-len}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}int list\-\_\-len (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a60df0d67f9ba7ef08837be69810a868e}
+Calculate the length of the list. \begin{DoxyReturn}{Returns}
+The list's length. 
+\end{DoxyReturn}
+\hypertarget{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}{\index{list.\-h@{list.\-h}!list\-\_\-new@{list\-\_\-new}}
+\index{list\-\_\-new@{list\-\_\-new}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf list\-\_\-t}$\ast$ list\-\_\-new (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a9dd3eafdb56dcc64689f78fb4acdff3f}
+Create an empty list. \hypertarget{list_8h_a548a5ca8b83f626bec84d07c3d2980e7}{\index{list.\-h@{list.\-h}!list\-\_\-nth@{list\-\_\-nth}}
+\index{list\-\_\-nth@{list\-\_\-nth}!list.h@{list.\-h}}
+\subsubsection[{list\-\_\-nth}]{\setlength{\rightskip}{0pt plus 5cm}bool list\-\_\-nth (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{, }
+\item[{int}]{n, }
+\item[{void $\ast$$\ast$}]{res}
+\end{DoxyParamCaption}
+)}}\label{list_8h_a548a5ca8b83f626bec84d07c3d2980e7}
+Access the nth member of a list. Zero-\/based. {\ttfamily $\ast$res} will be assigned to the list element at this location if the list is long enough, to {\ttfamily N\-U\-L\-L} otherwise. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if the list is long enough, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\hypertarget{list_8h_ac62921099b1a45d338b04f23c91f1d9a}{\index{list.\-h@{list.\-h}!map\-\_\-on\-\_\-element@{map\-\_\-on\-\_\-element}}
+\index{map\-\_\-on\-\_\-element@{map\-\_\-on\-\_\-element}!list.h@{list.\-h}}
+\subsubsection[{map\-\_\-on\-\_\-element}]{\setlength{\rightskip}{0pt plus 5cm}void map\-\_\-on\-\_\-element (
+\begin{DoxyParamCaption}
+\item[{{\bf list\-\_\-t} $\ast$}]{l, }
+\item[{void }]{functionlist\-\_\-t $\ast$}
+\end{DoxyParamCaption}
+)}}\label{list_8h_ac62921099b1a45d338b04f23c91f1d9a}
+apply function on one specific element of the list 

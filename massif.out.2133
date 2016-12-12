@@ -1,0 +1,3203 @@
+desc: (none)
+cmd: ./main
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=20646746
+mem_heap_B=89367
+mem_heap_extra_B=10713
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=46982437
+mem_heap_B=97647
+mem_heap_extra_B=15873
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=69806400
+mem_heap_B=103174
+mem_heap_extra_B=19202
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=96803335
+mem_heap_B=108570
+mem_heap_extra_B=22422
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=115753683
+mem_heap_B=112014
+mem_heap_extra_B=24482
+mem_stacks_B=0
+heap_tree=detailed
+n8: 112014 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 17160 0x401BC4: new_element (bst.c:189)
+  n2: 17160 0x402619: insert_element (bst.c:346)
+   n1: 11440 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 11440 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 5720 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 5720 0x401302: main (main.c:10)
+     n1: 5720 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 5720 0x401302: main (main.c:10)
+   n1: 5720 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 5720 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 5720 0x401302: main (main.c:10)
+ n2: 9216 0x4022D7: new_set (bst.c:293)
+  n1: 9152 0x40241F: copy_set (bst.c:313)
+   n1: 9152 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 9152 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 9152 0x405D87: set_data_copier (storage.c:270)
+      n1: 9152 0x401BF7: new_element (bst.c:191)
+       n1: 9152 0x402619: insert_element (bst.c:346)
+        n1: 9152 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 9152 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 9152 0x401302: main (main.c:10)
+  n0: 64 in 2 places, all below massif's threshold (01.00%)
+ n1: 4576 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 4576 0x405D87: set_data_copier (storage.c:270)
+   n1: 4576 0x401BF7: new_element (bst.c:191)
+    n1: 4576 0x402619: insert_element (bst.c:346)
+     n1: 4576 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 4576 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 4576 0x401302: main (main.c:10)
+ n1: 3432 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 3432 0x401BF7: new_element (bst.c:191)
+   n1: 3432 0x402619: insert_element (bst.c:346)
+    n1: 3432 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 3432 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 1716 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 1716 0x401302: main (main.c:10)
+      n1: 1716 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 1716 0x401302: main (main.c:10)
+ n0: 3357 in 9 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2037 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 2037 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2037 0x405D87: set_data_copier (storage.c:270)
+    n1: 2037 0x401BF7: new_element (bst.c:191)
+     n1: 2037 0x402619: insert_element (bst.c:346)
+      n1: 2037 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2037 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2037 0x401302: main (main.c:10)
+#-----------
+snapshot=6
+#-----------
+time=144026721
+mem_heap_B=116438
+mem_heap_extra_B=27098
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=159474383
+mem_heap_B=118686
+mem_heap_extra_B=28434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=186649864
+mem_heap_B=122682
+mem_heap_extra_B=30766
+mem_stacks_B=0
+heap_tree=detailed
+n9: 122682 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 21640 0x401BC4: new_element (bst.c:189)
+  n2: 21640 0x402619: insert_element (bst.c:346)
+   n1: 14400 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 14400 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 7200 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 7200 0x401302: main (main.c:10)
+     n1: 7200 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 7200 0x401302: main (main.c:10)
+   n1: 7240 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 7240 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 7240 0x401302: main (main.c:10)
+ n2: 11712 0x4022D7: new_set (bst.c:293)
+  n1: 11584 0x40241F: copy_set (bst.c:313)
+   n1: 11584 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 11584 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 11584 0x405D87: set_data_copier (storage.c:270)
+      n1: 11584 0x401BF7: new_element (bst.c:191)
+       n1: 11584 0x402619: insert_element (bst.c:346)
+        n1: 11584 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 11584 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 11584 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 5792 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 5792 0x405D87: set_data_copier (storage.c:270)
+   n1: 5792 0x401BF7: new_element (bst.c:191)
+    n1: 5792 0x402619: insert_element (bst.c:346)
+     n1: 5792 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 5792 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 5792 0x401302: main (main.c:10)
+ n1: 4320 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 4320 0x401BF7: new_element (bst.c:191)
+   n1: 4320 0x402619: insert_element (bst.c:346)
+    n1: 4320 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 4320 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 2160 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 2160 0x401302: main (main.c:10)
+      n1: 2160 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 2160 0x401302: main (main.c:10)
+ n0: 2791 in 8 places, all below massif's threshold (01.00%)
+ n1: 2607 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 2607 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2607 0x405D87: set_data_copier (storage.c:270)
+    n1: 2607 0x401BF7: new_element (bst.c:191)
+     n1: 2607 0x402619: insert_element (bst.c:346)
+      n1: 2607 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2607 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2607 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 1584 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 1584 0x401C24: new_element (bst.c:192)
+   n1: 1584 0x402619: insert_element (bst.c:346)
+    n1: 1584 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 1584 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 1584 in 2 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=9
+#-----------
+time=204588413
+mem_heap_B=124587
+mem_heap_extra_B=31941
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=230903809
+mem_heap_B=127678
+mem_heap_extra_B=33778
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=250924454
+mem_heap_B=129926
+mem_heap_extra_B=35114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=271713435
+mem_heap_B=132174
+mem_heap_extra_B=36450
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=300199211
+mem_heap_B=135208
+mem_heap_extra_B=38240
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=322849253
+mem_heap_B=137456
+mem_heap_extra_B=39576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=334501781
+mem_heap_B=138580
+mem_heap_extra_B=40244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=361484243
+mem_heap_B=141109
+mem_heap_extra_B=41747
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=378536092
+mem_heap_B=142571
+mem_heap_extra_B=42629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=397666439
+mem_heap_B=144600
+mem_heap_extra_B=43792
+mem_stacks_B=0
+heap_tree=detailed
+n11: 144600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 31000 0x401BC4: new_element (bst.c:189)
+  n2: 31000 0x402619: insert_element (bst.c:346)
+   n1: 20640 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 20640 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 10320 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 10320 0x401302: main (main.c:10)
+     n1: 10320 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 10320 0x401302: main (main.c:10)
+   n1: 10360 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 10360 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 10360 0x401302: main (main.c:10)
+ n2: 16704 0x4022D7: new_set (bst.c:293)
+  n1: 16576 0x40241F: copy_set (bst.c:313)
+   n1: 16576 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 16576 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 16576 0x405D87: set_data_copier (storage.c:270)
+      n1: 16576 0x401BF7: new_element (bst.c:191)
+       n1: 16576 0x402619: insert_element (bst.c:346)
+        n1: 16576 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 16576 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 16576 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 8288 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 8288 0x405D87: set_data_copier (storage.c:270)
+   n1: 8288 0x401BF7: new_element (bst.c:191)
+    n1: 8288 0x402619: insert_element (bst.c:346)
+     n1: 8288 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 8288 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 8288 0x401302: main (main.c:10)
+ n1: 6192 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 6192 0x401BF7: new_element (bst.c:191)
+   n1: 6192 0x402619: insert_element (bst.c:346)
+    n1: 6192 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 6192 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3096 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3096 0x401302: main (main.c:10)
+      n1: 3096 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3096 0x401302: main (main.c:10)
+ n1: 3777 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 3777 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3777 0x405D87: set_data_copier (storage.c:270)
+    n1: 3777 0x401BF7: new_element (bst.c:191)
+     n1: 3777 0x402619: insert_element (bst.c:346)
+      n1: 3777 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3777 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3777 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2364 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2364 0x401C24: new_element (bst.c:192)
+   n1: 2364 0x402619: insert_element (bst.c:346)
+    n1: 2364 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2364 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2364 in 2 places, all below massif's threshold (01.00%)
+ n1: 1964 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 1964 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 1964 0x405D87: set_data_copier (storage.c:270)
+    n1: 1964 0x401BF7: new_element (bst.c:191)
+     n1: 1964 0x402619: insert_element (bst.c:346)
+      n1: 1964 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 1964 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 1964 0x401302: main (main.c:10)
+ n1: 1964 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 1964 0x401C24: new_element (bst.c:192)
+   n1: 1964 0x402619: insert_element (bst.c:346)
+    n1: 1964 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 1964 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 1964 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=19
+#-----------
+time=413960801
+mem_heap_B=146005
+mem_heap_extra_B=44627
+mem_stacks_B=0
+heap_tree=detailed
+n11: 146005 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 31600 0x401BC4: new_element (bst.c:189)
+  n2: 31600 0x402619: insert_element (bst.c:346)
+   n1: 21040 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 21040 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 10520 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 10520 0x401302: main (main.c:10)
+     n1: 10520 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 10520 0x401302: main (main.c:10)
+   n1: 10560 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 10560 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 10560 0x401302: main (main.c:10)
+ n2: 17024 0x4022D7: new_set (bst.c:293)
+  n1: 16896 0x40241F: copy_set (bst.c:313)
+   n1: 16896 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 16896 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 16896 0x405D87: set_data_copier (storage.c:270)
+      n1: 16896 0x401BF7: new_element (bst.c:191)
+       n1: 16896 0x402619: insert_element (bst.c:346)
+        n1: 16896 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 16896 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 16896 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 8448 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 8448 0x405D87: set_data_copier (storage.c:270)
+   n1: 8448 0x401BF7: new_element (bst.c:191)
+    n1: 8448 0x402619: insert_element (bst.c:346)
+     n1: 8448 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 8448 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 8448 0x401302: main (main.c:10)
+ n1: 6312 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 6312 0x401BF7: new_element (bst.c:191)
+   n1: 6312 0x402619: insert_element (bst.c:346)
+    n1: 6312 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 6312 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3156 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3156 0x401302: main (main.c:10)
+      n1: 3156 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3156 0x401302: main (main.c:10)
+ n1: 3852 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 3852 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3852 0x405D87: set_data_copier (storage.c:270)
+    n1: 3852 0x401BF7: new_element (bst.c:191)
+     n1: 3852 0x402619: insert_element (bst.c:346)
+      n1: 3852 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3852 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3852 0x401302: main (main.c:10)
+ n1: 2414 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2414 0x401C24: new_element (bst.c:192)
+   n1: 2414 0x402619: insert_element (bst.c:346)
+    n1: 2414 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2414 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2414 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2004 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2004 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2004 0x405D87: set_data_copier (storage.c:270)
+    n1: 2004 0x401BF7: new_element (bst.c:191)
+     n1: 2004 0x402619: insert_element (bst.c:346)
+      n1: 2004 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2004 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2004 0x401302: main (main.c:10)
+ n1: 2004 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2004 0x401C24: new_element (bst.c:192)
+   n1: 2004 0x402619: insert_element (bst.c:346)
+    n1: 2004 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2004 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2004 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=20
+#-----------
+time=430658692
+mem_heap_B=147410
+mem_heap_extra_B=45462
+mem_stacks_B=0
+heap_tree=detailed
+n11: 147410 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 32200 0x401BC4: new_element (bst.c:189)
+  n2: 32200 0x402619: insert_element (bst.c:346)
+   n1: 21440 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 21440 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 10720 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 10720 0x401302: main (main.c:10)
+     n1: 10720 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 10720 0x401302: main (main.c:10)
+   n1: 10760 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 10760 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 10760 0x401302: main (main.c:10)
+ n2: 17344 0x4022D7: new_set (bst.c:293)
+  n1: 17216 0x40241F: copy_set (bst.c:313)
+   n1: 17216 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 17216 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 17216 0x405D87: set_data_copier (storage.c:270)
+      n1: 17216 0x401BF7: new_element (bst.c:191)
+       n1: 17216 0x402619: insert_element (bst.c:346)
+        n1: 17216 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 17216 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 17216 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 8608 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 8608 0x405D87: set_data_copier (storage.c:270)
+   n1: 8608 0x401BF7: new_element (bst.c:191)
+    n1: 8608 0x402619: insert_element (bst.c:346)
+     n1: 8608 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 8608 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 8608 0x401302: main (main.c:10)
+ n1: 6432 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 6432 0x401BF7: new_element (bst.c:191)
+   n1: 6432 0x402619: insert_element (bst.c:346)
+    n1: 6432 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 6432 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3216 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3216 0x401302: main (main.c:10)
+      n1: 3216 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3216 0x401302: main (main.c:10)
+ n1: 3927 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 3927 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3927 0x405D87: set_data_copier (storage.c:270)
+    n1: 3927 0x401BF7: new_element (bst.c:191)
+     n1: 3927 0x402619: insert_element (bst.c:346)
+      n1: 3927 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3927 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3927 0x401302: main (main.c:10)
+ n1: 2464 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2464 0x401C24: new_element (bst.c:192)
+   n1: 2464 0x402619: insert_element (bst.c:346)
+    n1: 2464 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2464 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2464 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2044 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2044 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2044 0x405D87: set_data_copier (storage.c:270)
+    n1: 2044 0x401BF7: new_element (bst.c:191)
+     n1: 2044 0x402619: insert_element (bst.c:346)
+      n1: 2044 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2044 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2044 0x401302: main (main.c:10)
+ n1: 2044 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2044 0x401C24: new_element (bst.c:192)
+   n1: 2044 0x402619: insert_element (bst.c:346)
+    n1: 2044 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2044 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2044 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=21
+#-----------
+time=452865153
+mem_heap_B=148977
+mem_heap_extra_B=46423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=482991125
+mem_heap_B=151625
+mem_heap_extra_B=47967
+mem_stacks_B=0
+heap_tree=detailed
+n11: 151625 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 34000 0x401BC4: new_element (bst.c:189)
+  n2: 34000 0x402619: insert_element (bst.c:346)
+   n1: 22640 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 22640 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 11320 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 11320 0x401302: main (main.c:10)
+     n1: 11320 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 11320 0x401302: main (main.c:10)
+   n1: 11360 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 11360 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 11360 0x401302: main (main.c:10)
+ n2: 18304 0x4022D7: new_set (bst.c:293)
+  n1: 18176 0x40241F: copy_set (bst.c:313)
+   n1: 18176 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 18176 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 18176 0x405D87: set_data_copier (storage.c:270)
+      n1: 18176 0x401BF7: new_element (bst.c:191)
+       n1: 18176 0x402619: insert_element (bst.c:346)
+        n1: 18176 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 18176 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 18176 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 9088 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 9088 0x405D87: set_data_copier (storage.c:270)
+   n1: 9088 0x401BF7: new_element (bst.c:191)
+    n1: 9088 0x402619: insert_element (bst.c:346)
+     n1: 9088 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 9088 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 9088 0x401302: main (main.c:10)
+ n1: 6792 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 6792 0x401BF7: new_element (bst.c:191)
+   n1: 6792 0x402619: insert_element (bst.c:346)
+    n1: 6792 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 6792 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3396 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3396 0x401302: main (main.c:10)
+      n1: 3396 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3396 0x401302: main (main.c:10)
+ n1: 4152 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4152 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4152 0x405D87: set_data_copier (storage.c:270)
+    n1: 4152 0x401BF7: new_element (bst.c:191)
+     n1: 4152 0x402619: insert_element (bst.c:346)
+      n1: 4152 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4152 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4152 0x401302: main (main.c:10)
+ n1: 2614 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2614 0x401C24: new_element (bst.c:192)
+   n1: 2614 0x402619: insert_element (bst.c:346)
+    n1: 2614 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2614 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2614 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2164 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2164 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2164 0x405D87: set_data_copier (storage.c:270)
+    n1: 2164 0x401BF7: new_element (bst.c:191)
+     n1: 2164 0x402619: insert_element (bst.c:346)
+      n1: 2164 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2164 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2164 0x401302: main (main.c:10)
+ n1: 2164 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2164 0x401C24: new_element (bst.c:192)
+   n1: 2164 0x402619: insert_element (bst.c:346)
+    n1: 2164 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2164 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2164 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=23
+#-----------
+time=501246464
+mem_heap_B=153030
+mem_heap_extra_B=48802
+mem_stacks_B=0
+heap_tree=detailed
+n11: 153030 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 34600 0x401BC4: new_element (bst.c:189)
+  n2: 34600 0x402619: insert_element (bst.c:346)
+   n1: 23040 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 23040 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 11520 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 11520 0x401302: main (main.c:10)
+     n1: 11520 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 11520 0x401302: main (main.c:10)
+   n1: 11560 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 11560 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 11560 0x401302: main (main.c:10)
+ n2: 18624 0x4022D7: new_set (bst.c:293)
+  n1: 18496 0x40241F: copy_set (bst.c:313)
+   n1: 18496 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 18496 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 18496 0x405D87: set_data_copier (storage.c:270)
+      n1: 18496 0x401BF7: new_element (bst.c:191)
+       n1: 18496 0x402619: insert_element (bst.c:346)
+        n1: 18496 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 18496 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 18496 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 9248 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 9248 0x405D87: set_data_copier (storage.c:270)
+   n1: 9248 0x401BF7: new_element (bst.c:191)
+    n1: 9248 0x402619: insert_element (bst.c:346)
+     n1: 9248 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 9248 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 9248 0x401302: main (main.c:10)
+ n1: 6912 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 6912 0x401BF7: new_element (bst.c:191)
+   n1: 6912 0x402619: insert_element (bst.c:346)
+    n1: 6912 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 6912 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3456 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3456 0x401302: main (main.c:10)
+      n1: 3456 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3456 0x401302: main (main.c:10)
+ n1: 4227 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4227 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4227 0x405D87: set_data_copier (storage.c:270)
+    n1: 4227 0x401BF7: new_element (bst.c:191)
+     n1: 4227 0x402619: insert_element (bst.c:346)
+      n1: 4227 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4227 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4227 0x401302: main (main.c:10)
+ n1: 2664 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2664 0x401C24: new_element (bst.c:192)
+   n1: 2664 0x402619: insert_element (bst.c:346)
+    n1: 2664 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2664 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2664 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2204 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2204 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2204 0x405D87: set_data_copier (storage.c:270)
+    n1: 2204 0x401BF7: new_element (bst.c:191)
+     n1: 2204 0x402619: insert_element (bst.c:346)
+      n1: 2204 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2204 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2204 0x401302: main (main.c:10)
+ n1: 2204 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2204 0x401C24: new_element (bst.c:192)
+   n1: 2204 0x402619: insert_element (bst.c:346)
+    n1: 2204 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2204 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2204 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=24
+#-----------
+time=519861128
+mem_heap_B=154435
+mem_heap_extra_B=49637
+mem_stacks_B=0
+heap_tree=detailed
+n11: 154435 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 35200 0x401BC4: new_element (bst.c:189)
+  n2: 35200 0x402619: insert_element (bst.c:346)
+   n1: 23440 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 23440 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 11720 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 11720 0x401302: main (main.c:10)
+     n1: 11720 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 11720 0x401302: main (main.c:10)
+   n1: 11760 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 11760 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 11760 0x401302: main (main.c:10)
+ n2: 18944 0x4022D7: new_set (bst.c:293)
+  n1: 18816 0x40241F: copy_set (bst.c:313)
+   n1: 18816 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 18816 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 18816 0x405D87: set_data_copier (storage.c:270)
+      n1: 18816 0x401BF7: new_element (bst.c:191)
+       n1: 18816 0x402619: insert_element (bst.c:346)
+        n1: 18816 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 18816 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 18816 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 9408 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 9408 0x405D87: set_data_copier (storage.c:270)
+   n1: 9408 0x401BF7: new_element (bst.c:191)
+    n1: 9408 0x402619: insert_element (bst.c:346)
+     n1: 9408 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 9408 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 9408 0x401302: main (main.c:10)
+ n1: 7032 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7032 0x401BF7: new_element (bst.c:191)
+   n1: 7032 0x402619: insert_element (bst.c:346)
+    n1: 7032 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7032 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3516 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3516 0x401302: main (main.c:10)
+      n1: 3516 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3516 0x401302: main (main.c:10)
+ n1: 4302 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4302 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4302 0x405D87: set_data_copier (storage.c:270)
+    n1: 4302 0x401BF7: new_element (bst.c:191)
+     n1: 4302 0x402619: insert_element (bst.c:346)
+      n1: 4302 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4302 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4302 0x401302: main (main.c:10)
+ n1: 2714 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2714 0x401C24: new_element (bst.c:192)
+   n1: 2714 0x402619: insert_element (bst.c:346)
+    n1: 2714 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2714 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2714 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2244 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2244 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2244 0x405D87: set_data_copier (storage.c:270)
+    n1: 2244 0x401BF7: new_element (bst.c:191)
+     n1: 2244 0x402619: insert_element (bst.c:346)
+      n1: 2244 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2244 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2244 0x401302: main (main.c:10)
+ n1: 2244 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2244 0x401C24: new_element (bst.c:192)
+   n1: 2244 0x402619: insert_element (bst.c:346)
+    n1: 2244 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2244 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2244 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=25
+#-----------
+time=538908322
+mem_heap_B=155840
+mem_heap_extra_B=50472
+mem_stacks_B=0
+heap_tree=detailed
+n11: 155840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 35800 0x401BC4: new_element (bst.c:189)
+  n2: 35800 0x402619: insert_element (bst.c:346)
+   n1: 23840 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 23840 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 11920 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 11920 0x401302: main (main.c:10)
+     n1: 11920 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 11920 0x401302: main (main.c:10)
+   n1: 11960 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 11960 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 11960 0x401302: main (main.c:10)
+ n2: 19264 0x4022D7: new_set (bst.c:293)
+  n1: 19136 0x40241F: copy_set (bst.c:313)
+   n1: 19136 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 19136 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 19136 0x405D87: set_data_copier (storage.c:270)
+      n1: 19136 0x401BF7: new_element (bst.c:191)
+       n1: 19136 0x402619: insert_element (bst.c:346)
+        n1: 19136 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 19136 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 19136 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 9568 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 9568 0x405D87: set_data_copier (storage.c:270)
+   n1: 9568 0x401BF7: new_element (bst.c:191)
+    n1: 9568 0x402619: insert_element (bst.c:346)
+     n1: 9568 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 9568 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 9568 0x401302: main (main.c:10)
+ n1: 7152 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7152 0x401BF7: new_element (bst.c:191)
+   n1: 7152 0x402619: insert_element (bst.c:346)
+    n1: 7152 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7152 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3576 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3576 0x401302: main (main.c:10)
+      n1: 3576 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3576 0x401302: main (main.c:10)
+ n1: 4377 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4377 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4377 0x405D87: set_data_copier (storage.c:270)
+    n1: 4377 0x401BF7: new_element (bst.c:191)
+     n1: 4377 0x402619: insert_element (bst.c:346)
+      n1: 4377 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4377 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4377 0x401302: main (main.c:10)
+ n1: 2764 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2764 0x401C24: new_element (bst.c:192)
+   n1: 2764 0x402619: insert_element (bst.c:346)
+    n1: 2764 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2764 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2764 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2284 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2284 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2284 0x405D87: set_data_copier (storage.c:270)
+    n1: 2284 0x401BF7: new_element (bst.c:191)
+     n1: 2284 0x402619: insert_element (bst.c:346)
+      n1: 2284 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2284 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2284 0x401302: main (main.c:10)
+ n1: 2284 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2284 0x401C24: new_element (bst.c:192)
+   n1: 2284 0x402619: insert_element (bst.c:346)
+    n1: 2284 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2284 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2284 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=26
+#-----------
+time=558211629
+mem_heap_B=157245
+mem_heap_extra_B=51307
+mem_stacks_B=0
+heap_tree=detailed
+n11: 157245 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 36400 0x401BC4: new_element (bst.c:189)
+  n2: 36400 0x402619: insert_element (bst.c:346)
+   n1: 24240 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 24240 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 12120 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 12120 0x401302: main (main.c:10)
+     n1: 12120 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 12120 0x401302: main (main.c:10)
+   n1: 12160 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 12160 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 12160 0x401302: main (main.c:10)
+ n2: 19584 0x4022D7: new_set (bst.c:293)
+  n1: 19456 0x40241F: copy_set (bst.c:313)
+   n1: 19456 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 19456 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 19456 0x405D87: set_data_copier (storage.c:270)
+      n1: 19456 0x401BF7: new_element (bst.c:191)
+       n1: 19456 0x402619: insert_element (bst.c:346)
+        n1: 19456 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 19456 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 19456 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 9728 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 9728 0x405D87: set_data_copier (storage.c:270)
+   n1: 9728 0x401BF7: new_element (bst.c:191)
+    n1: 9728 0x402619: insert_element (bst.c:346)
+     n1: 9728 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 9728 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 9728 0x401302: main (main.c:10)
+ n1: 7272 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7272 0x401BF7: new_element (bst.c:191)
+   n1: 7272 0x402619: insert_element (bst.c:346)
+    n1: 7272 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7272 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3636 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3636 0x401302: main (main.c:10)
+      n1: 3636 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3636 0x401302: main (main.c:10)
+ n1: 4452 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4452 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4452 0x405D87: set_data_copier (storage.c:270)
+    n1: 4452 0x401BF7: new_element (bst.c:191)
+     n1: 4452 0x402619: insert_element (bst.c:346)
+      n1: 4452 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4452 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4452 0x401302: main (main.c:10)
+ n1: 2814 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2814 0x401C24: new_element (bst.c:192)
+   n1: 2814 0x402619: insert_element (bst.c:346)
+    n1: 2814 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2814 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2814 in 2 places, all below massif's threshold (01.00%)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n1: 2324 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2324 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2324 0x405D87: set_data_copier (storage.c:270)
+    n1: 2324 0x401BF7: new_element (bst.c:191)
+     n1: 2324 0x402619: insert_element (bst.c:346)
+      n1: 2324 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2324 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2324 0x401302: main (main.c:10)
+ n1: 2324 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2324 0x401C24: new_element (bst.c:192)
+   n1: 2324 0x402619: insert_element (bst.c:346)
+    n1: 2324 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2324 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2324 0x401302: main (main.c:10)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=27
+#-----------
+time=573856100
+mem_heap_B=158026
+mem_heap_extra_B=51814
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=597751258
+mem_heap_B=160055
+mem_heap_extra_B=52977
+mem_stacks_B=0
+heap_tree=detailed
+n11: 160055 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 37600 0x401BC4: new_element (bst.c:189)
+  n2: 37600 0x402619: insert_element (bst.c:346)
+   n1: 25040 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 25040 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 12520 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 12520 0x401302: main (main.c:10)
+     n1: 12520 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 12520 0x401302: main (main.c:10)
+   n1: 12560 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 12560 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 12560 0x401302: main (main.c:10)
+ n2: 20224 0x4022D7: new_set (bst.c:293)
+  n1: 20096 0x40241F: copy_set (bst.c:313)
+   n1: 20096 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 20096 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 20096 0x405D87: set_data_copier (storage.c:270)
+      n1: 20096 0x401BF7: new_element (bst.c:191)
+       n1: 20096 0x402619: insert_element (bst.c:346)
+        n1: 20096 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 20096 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 20096 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 10048 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 10048 0x405D87: set_data_copier (storage.c:270)
+   n1: 10048 0x401BF7: new_element (bst.c:191)
+    n1: 10048 0x402619: insert_element (bst.c:346)
+     n1: 10048 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 10048 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 10048 0x401302: main (main.c:10)
+ n1: 7512 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7512 0x401BF7: new_element (bst.c:191)
+   n1: 7512 0x402619: insert_element (bst.c:346)
+    n1: 7512 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7512 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3756 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3756 0x401302: main (main.c:10)
+      n1: 3756 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3756 0x401302: main (main.c:10)
+ n1: 4602 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4602 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4602 0x405D87: set_data_copier (storage.c:270)
+    n1: 4602 0x401BF7: new_element (bst.c:191)
+     n1: 4602 0x402619: insert_element (bst.c:346)
+      n1: 4602 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4602 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4602 0x401302: main (main.c:10)
+ n1: 2914 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2914 0x401C24: new_element (bst.c:192)
+   n1: 2914 0x402619: insert_element (bst.c:346)
+    n1: 2914 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2914 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2914 in 2 places, all below massif's threshold (01.00%)
+ n1: 2404 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2404 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2404 0x405D87: set_data_copier (storage.c:270)
+    n1: 2404 0x401BF7: new_element (bst.c:191)
+     n1: 2404 0x402619: insert_element (bst.c:346)
+      n1: 2404 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2404 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2404 0x401302: main (main.c:10)
+ n1: 2404 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2404 0x401C24: new_element (bst.c:192)
+   n1: 2404 0x402619: insert_element (bst.c:346)
+    n1: 2404 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2404 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2404 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=29
+#-----------
+time=618009844
+mem_heap_B=161460
+mem_heap_extra_B=53812
+mem_stacks_B=0
+heap_tree=detailed
+n11: 161460 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 38200 0x401BC4: new_element (bst.c:189)
+  n2: 38200 0x402619: insert_element (bst.c:346)
+   n1: 25440 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 25440 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 12720 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 12720 0x401302: main (main.c:10)
+     n1: 12720 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 12720 0x401302: main (main.c:10)
+   n1: 12760 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 12760 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 12760 0x401302: main (main.c:10)
+ n2: 20544 0x4022D7: new_set (bst.c:293)
+  n1: 20416 0x40241F: copy_set (bst.c:313)
+   n1: 20416 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 20416 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 20416 0x405D87: set_data_copier (storage.c:270)
+      n1: 20416 0x401BF7: new_element (bst.c:191)
+       n1: 20416 0x402619: insert_element (bst.c:346)
+        n1: 20416 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 20416 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 20416 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 10208 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 10208 0x405D87: set_data_copier (storage.c:270)
+   n1: 10208 0x401BF7: new_element (bst.c:191)
+    n1: 10208 0x402619: insert_element (bst.c:346)
+     n1: 10208 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 10208 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 10208 0x401302: main (main.c:10)
+ n1: 7632 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7632 0x401BF7: new_element (bst.c:191)
+   n1: 7632 0x402619: insert_element (bst.c:346)
+    n1: 7632 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7632 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3816 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3816 0x401302: main (main.c:10)
+      n1: 3816 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3816 0x401302: main (main.c:10)
+ n1: 4677 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4677 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4677 0x405D87: set_data_copier (storage.c:270)
+    n1: 4677 0x401BF7: new_element (bst.c:191)
+     n1: 4677 0x402619: insert_element (bst.c:346)
+      n1: 4677 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4677 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4677 0x401302: main (main.c:10)
+ n1: 2964 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 2964 0x401C24: new_element (bst.c:192)
+   n1: 2964 0x402619: insert_element (bst.c:346)
+    n1: 2964 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 2964 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 2964 in 2 places, all below massif's threshold (01.00%)
+ n1: 2444 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2444 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2444 0x405D87: set_data_copier (storage.c:270)
+    n1: 2444 0x401BF7: new_element (bst.c:191)
+     n1: 2444 0x402619: insert_element (bst.c:346)
+      n1: 2444 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2444 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2444 0x401302: main (main.c:10)
+ n1: 2444 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2444 0x401C24: new_element (bst.c:192)
+   n1: 2444 0x402619: insert_element (bst.c:346)
+    n1: 2444 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2444 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2444 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=30
+#-----------
+time=638559818
+mem_heap_B=162865
+mem_heap_extra_B=54647
+mem_stacks_B=0
+heap_tree=detailed
+n11: 162865 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 38800 0x401BC4: new_element (bst.c:189)
+  n2: 38800 0x402619: insert_element (bst.c:346)
+   n1: 25840 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 25840 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 12920 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 12920 0x401302: main (main.c:10)
+     n1: 12920 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 12920 0x401302: main (main.c:10)
+   n1: 12960 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 12960 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 12960 0x401302: main (main.c:10)
+ n2: 20864 0x4022D7: new_set (bst.c:293)
+  n1: 20736 0x40241F: copy_set (bst.c:313)
+   n1: 20736 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 20736 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 20736 0x405D87: set_data_copier (storage.c:270)
+      n1: 20736 0x401BF7: new_element (bst.c:191)
+       n1: 20736 0x402619: insert_element (bst.c:346)
+        n1: 20736 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 20736 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 20736 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 10368 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 10368 0x405D87: set_data_copier (storage.c:270)
+   n1: 10368 0x401BF7: new_element (bst.c:191)
+    n1: 10368 0x402619: insert_element (bst.c:346)
+     n1: 10368 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 10368 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 10368 0x401302: main (main.c:10)
+ n1: 7752 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7752 0x401BF7: new_element (bst.c:191)
+   n1: 7752 0x402619: insert_element (bst.c:346)
+    n1: 7752 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7752 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3876 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3876 0x401302: main (main.c:10)
+      n1: 3876 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3876 0x401302: main (main.c:10)
+ n1: 4752 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4752 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4752 0x405D87: set_data_copier (storage.c:270)
+    n1: 4752 0x401BF7: new_element (bst.c:191)
+     n1: 4752 0x402619: insert_element (bst.c:346)
+      n1: 4752 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4752 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4752 0x401302: main (main.c:10)
+ n1: 3014 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3014 0x401C24: new_element (bst.c:192)
+   n1: 3014 0x402619: insert_element (bst.c:346)
+    n1: 3014 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3014 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3014 in 2 places, all below massif's threshold (01.00%)
+ n1: 2484 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2484 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2484 0x405D87: set_data_copier (storage.c:270)
+    n1: 2484 0x401BF7: new_element (bst.c:191)
+     n1: 2484 0x402619: insert_element (bst.c:346)
+      n1: 2484 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2484 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2484 0x401302: main (main.c:10)
+ n1: 2484 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2484 0x401C24: new_element (bst.c:192)
+   n1: 2484 0x402619: insert_element (bst.c:346)
+    n1: 2484 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2484 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2484 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=31
+#-----------
+time=659472154
+mem_heap_B=164270
+mem_heap_extra_B=55482
+mem_stacks_B=0
+heap_tree=detailed
+n11: 164270 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 39400 0x401BC4: new_element (bst.c:189)
+  n2: 39400 0x402619: insert_element (bst.c:346)
+   n1: 26240 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 26240 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 13120 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 13120 0x401302: main (main.c:10)
+     n1: 13120 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 13120 0x401302: main (main.c:10)
+   n1: 13160 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 13160 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 13160 0x401302: main (main.c:10)
+ n2: 21184 0x4022D7: new_set (bst.c:293)
+  n1: 21056 0x40241F: copy_set (bst.c:313)
+   n1: 21056 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 21056 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 21056 0x405D87: set_data_copier (storage.c:270)
+      n1: 21056 0x401BF7: new_element (bst.c:191)
+       n1: 21056 0x402619: insert_element (bst.c:346)
+        n1: 21056 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 21056 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 21056 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 10528 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 10528 0x405D87: set_data_copier (storage.c:270)
+   n1: 10528 0x401BF7: new_element (bst.c:191)
+    n1: 10528 0x402619: insert_element (bst.c:346)
+     n1: 10528 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 10528 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 10528 0x401302: main (main.c:10)
+ n1: 7872 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7872 0x401BF7: new_element (bst.c:191)
+   n1: 7872 0x402619: insert_element (bst.c:346)
+    n1: 7872 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7872 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3936 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3936 0x401302: main (main.c:10)
+      n1: 3936 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3936 0x401302: main (main.c:10)
+ n1: 4827 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4827 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4827 0x405D87: set_data_copier (storage.c:270)
+    n1: 4827 0x401BF7: new_element (bst.c:191)
+     n1: 4827 0x402619: insert_element (bst.c:346)
+      n1: 4827 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4827 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4827 0x401302: main (main.c:10)
+ n1: 3064 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3064 0x401C24: new_element (bst.c:192)
+   n1: 3064 0x402619: insert_element (bst.c:346)
+    n1: 3064 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3064 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3064 in 2 places, all below massif's threshold (01.00%)
+ n1: 2524 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2524 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2524 0x405D87: set_data_copier (storage.c:270)
+    n1: 2524 0x401BF7: new_element (bst.c:191)
+     n1: 2524 0x402619: insert_element (bst.c:346)
+      n1: 2524 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2524 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2524 0x401302: main (main.c:10)
+ n1: 2524 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2524 0x401C24: new_element (bst.c:192)
+   n1: 2524 0x402619: insert_element (bst.c:346)
+    n1: 2524 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2524 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2524 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=32
+#-----------
+time=680690340
+mem_heap_B=165675
+mem_heap_extra_B=56317
+mem_stacks_B=0
+heap_tree=detailed
+n11: 165675 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 40000 0x401BC4: new_element (bst.c:189)
+  n2: 40000 0x402619: insert_element (bst.c:346)
+   n1: 26640 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 26640 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 13320 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 13320 0x401302: main (main.c:10)
+     n1: 13320 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 13320 0x401302: main (main.c:10)
+   n1: 13360 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 13360 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 13360 0x401302: main (main.c:10)
+ n2: 21504 0x4022D7: new_set (bst.c:293)
+  n1: 21376 0x40241F: copy_set (bst.c:313)
+   n1: 21376 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 21376 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 21376 0x405D87: set_data_copier (storage.c:270)
+      n1: 21376 0x401BF7: new_element (bst.c:191)
+       n1: 21376 0x402619: insert_element (bst.c:346)
+        n1: 21376 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 21376 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 21376 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 10688 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 10688 0x405D87: set_data_copier (storage.c:270)
+   n1: 10688 0x401BF7: new_element (bst.c:191)
+    n1: 10688 0x402619: insert_element (bst.c:346)
+     n1: 10688 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 10688 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 10688 0x401302: main (main.c:10)
+ n1: 7992 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 7992 0x401BF7: new_element (bst.c:191)
+   n1: 7992 0x402619: insert_element (bst.c:346)
+    n1: 7992 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 7992 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 3996 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 3996 0x401302: main (main.c:10)
+      n1: 3996 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 3996 0x401302: main (main.c:10)
+ n1: 4902 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4902 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4902 0x405D87: set_data_copier (storage.c:270)
+    n1: 4902 0x401BF7: new_element (bst.c:191)
+     n1: 4902 0x402619: insert_element (bst.c:346)
+      n1: 4902 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4902 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4902 0x401302: main (main.c:10)
+ n1: 3114 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3114 0x401C24: new_element (bst.c:192)
+   n1: 3114 0x402619: insert_element (bst.c:346)
+    n1: 3114 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3114 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3114 in 2 places, all below massif's threshold (01.00%)
+ n1: 2564 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2564 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2564 0x405D87: set_data_copier (storage.c:270)
+    n1: 2564 0x401BF7: new_element (bst.c:191)
+     n1: 2564 0x402619: insert_element (bst.c:346)
+      n1: 2564 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2564 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2564 0x401302: main (main.c:10)
+ n1: 2564 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2564 0x401C24: new_element (bst.c:192)
+   n1: 2564 0x402619: insert_element (bst.c:346)
+    n1: 2564 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2564 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2564 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=33
+#-----------
+time=702282407
+mem_heap_B=167080
+mem_heap_extra_B=57152
+mem_stacks_B=0
+heap_tree=detailed
+n11: 167080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 40600 0x401BC4: new_element (bst.c:189)
+  n2: 40600 0x402619: insert_element (bst.c:346)
+   n1: 27040 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 27040 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 13520 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 13520 0x401302: main (main.c:10)
+     n1: 13520 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 13520 0x401302: main (main.c:10)
+   n1: 13560 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 13560 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 13560 0x401302: main (main.c:10)
+ n2: 21824 0x4022D7: new_set (bst.c:293)
+  n1: 21696 0x40241F: copy_set (bst.c:313)
+   n1: 21696 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 21696 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 21696 0x405D87: set_data_copier (storage.c:270)
+      n1: 21696 0x401BF7: new_element (bst.c:191)
+       n1: 21696 0x402619: insert_element (bst.c:346)
+        n1: 21696 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 21696 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 21696 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 10848 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 10848 0x405D87: set_data_copier (storage.c:270)
+   n1: 10848 0x401BF7: new_element (bst.c:191)
+    n1: 10848 0x402619: insert_element (bst.c:346)
+     n1: 10848 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 10848 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 10848 0x401302: main (main.c:10)
+ n1: 8112 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 8112 0x401BF7: new_element (bst.c:191)
+   n1: 8112 0x402619: insert_element (bst.c:346)
+    n1: 8112 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 8112 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 4056 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 4056 0x401302: main (main.c:10)
+      n1: 4056 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 4056 0x401302: main (main.c:10)
+ n1: 4977 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 4977 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 4977 0x405D87: set_data_copier (storage.c:270)
+    n1: 4977 0x401BF7: new_element (bst.c:191)
+     n1: 4977 0x402619: insert_element (bst.c:346)
+      n1: 4977 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 4977 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 4977 0x401302: main (main.c:10)
+ n1: 3164 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3164 0x401C24: new_element (bst.c:192)
+   n1: 3164 0x402619: insert_element (bst.c:346)
+    n1: 3164 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3164 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3164 in 2 places, all below massif's threshold (01.00%)
+ n1: 2604 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2604 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2604 0x405D87: set_data_copier (storage.c:270)
+    n1: 2604 0x401BF7: new_element (bst.c:191)
+     n1: 2604 0x402619: insert_element (bst.c:346)
+      n1: 2604 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2604 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2604 0x401302: main (main.c:10)
+ n1: 2604 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2604 0x401C24: new_element (bst.c:192)
+   n1: 2604 0x402619: insert_element (bst.c:346)
+    n1: 2604 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2604 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2604 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=34
+#-----------
+time=728592360
+mem_heap_B=168495
+mem_heap_extra_B=58049
+mem_stacks_B=0
+heap_tree=detailed
+n11: 168495 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 41280 0x401BC4: new_element (bst.c:189)
+  n2: 41280 0x402619: insert_element (bst.c:346)
+   n1: 27520 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 27520 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 13760 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 13760 0x401302: main (main.c:10)
+     n1: 13760 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 13760 0x401302: main (main.c:10)
+   n1: 13760 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 13760 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 13760 0x401302: main (main.c:10)
+ n2: 22080 0x4022D7: new_set (bst.c:293)
+  n1: 22016 0x40241F: copy_set (bst.c:313)
+   n1: 22016 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 22016 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 22016 0x405D87: set_data_copier (storage.c:270)
+      n1: 22016 0x401BF7: new_element (bst.c:191)
+       n1: 22016 0x402619: insert_element (bst.c:346)
+        n1: 22016 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 22016 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 22016 0x401302: main (main.c:10)
+  n0: 64 in 2 places, all below massif's threshold (01.00%)
+ n1: 11008 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 11008 0x405D87: set_data_copier (storage.c:270)
+   n1: 11008 0x401BF7: new_element (bst.c:191)
+    n1: 11008 0x402619: insert_element (bst.c:346)
+     n1: 11008 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 11008 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 11008 0x401302: main (main.c:10)
+ n1: 8256 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 8256 0x401BF7: new_element (bst.c:191)
+   n1: 8256 0x402619: insert_element (bst.c:346)
+    n1: 8256 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 8256 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 4128 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 4128 0x401302: main (main.c:10)
+      n1: 4128 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 4128 0x401302: main (main.c:10)
+ n1: 5052 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 5052 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 5052 0x405D87: set_data_copier (storage.c:270)
+    n1: 5052 0x401BF7: new_element (bst.c:191)
+     n1: 5052 0x402619: insert_element (bst.c:346)
+      n1: 5052 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 5052 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 5052 0x401302: main (main.c:10)
+ n1: 3224 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3224 0x401C24: new_element (bst.c:192)
+   n1: 3224 0x402619: insert_element (bst.c:346)
+    n1: 3224 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3224 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3224 in 2 places, all below massif's threshold (01.00%)
+ n1: 2644 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2644 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2644 0x405D87: set_data_copier (storage.c:270)
+    n1: 2644 0x401BF7: new_element (bst.c:191)
+     n1: 2644 0x402619: insert_element (bst.c:346)
+      n1: 2644 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2644 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2644 0x401302: main (main.c:10)
+ n1: 2644 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2644 0x401C24: new_element (bst.c:192)
+   n1: 2644 0x402619: insert_element (bst.c:346)
+    n1: 2644 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2644 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2644 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 71 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=35
+#-----------
+time=750997361
+mem_heap_B=170171
+mem_heap_extra_B=58989
+mem_stacks_B=0
+heap_tree=detailed
+n11: 170171 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 41920 0x401BC4: new_element (bst.c:189)
+  n2: 41920 0x402619: insert_element (bst.c:346)
+   n1: 27920 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 27920 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 13960 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 13960 0x401302: main (main.c:10)
+     n1: 13960 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 13960 0x401302: main (main.c:10)
+   n1: 14000 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 14000 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 14000 0x401302: main (main.c:10)
+ n2: 22528 0x4022D7: new_set (bst.c:293)
+  n1: 22400 0x40241F: copy_set (bst.c:313)
+   n1: 22400 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 22400 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 22400 0x405D87: set_data_copier (storage.c:270)
+      n1: 22400 0x401BF7: new_element (bst.c:191)
+       n1: 22400 0x402619: insert_element (bst.c:346)
+        n1: 22400 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 22400 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 22400 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 11200 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 11200 0x405D87: set_data_copier (storage.c:270)
+   n1: 11200 0x401BF7: new_element (bst.c:191)
+    n1: 11200 0x402619: insert_element (bst.c:346)
+     n1: 11200 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 11200 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 11200 0x401302: main (main.c:10)
+ n1: 8376 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 8376 0x401BF7: new_element (bst.c:191)
+   n1: 8376 0x402619: insert_element (bst.c:346)
+    n1: 8376 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 8376 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 4188 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 4188 0x401302: main (main.c:10)
+      n1: 4188 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 4188 0x401302: main (main.c:10)
+ n1: 5142 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 5142 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 5142 0x405D87: set_data_copier (storage.c:270)
+    n1: 5142 0x401BF7: new_element (bst.c:191)
+     n1: 5142 0x402619: insert_element (bst.c:346)
+      n1: 5142 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 5142 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 5142 0x401302: main (main.c:10)
+ n1: 3274 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3274 0x401C24: new_element (bst.c:192)
+   n1: 3274 0x402619: insert_element (bst.c:346)
+    n1: 3274 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3274 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3274 in 2 places, all below massif's threshold (01.00%)
+ n1: 2692 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2692 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2692 0x405D87: set_data_copier (storage.c:270)
+    n1: 2692 0x401BF7: new_element (bst.c:191)
+     n1: 2692 0x402619: insert_element (bst.c:346)
+      n1: 2692 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2692 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2692 0x401302: main (main.c:10)
+ n1: 2692 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2692 0x401C24: new_element (bst.c:192)
+   n1: 2692 0x402619: insert_element (bst.c:346)
+    n1: 2692 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2692 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2692 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=36
+#-----------
+time=764542738
+mem_heap_B=170671
+mem_heap_extra_B=59329
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=787482118
+mem_heap_B=172076
+mem_heap_extra_B=60164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=820234620
+mem_heap_B=174043
+mem_heap_extra_B=61333
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=839301824
+mem_heap_B=175167
+mem_heap_extra_B=62001
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=858633457
+mem_heap_B=176634
+mem_heap_extra_B=62830
+mem_stacks_B=0
+heap_tree=detailed
+n11: 176634 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 44680 0x401BC4: new_element (bst.c:189)
+  n2: 44680 0x402619: insert_element (bst.c:346)
+   n1: 29760 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 29760 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 14880 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 14880 0x401302: main (main.c:10)
+     n1: 14880 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 14880 0x401302: main (main.c:10)
+   n1: 14920 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 14920 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 14920 0x401302: main (main.c:10)
+ n2: 24000 0x4022D7: new_set (bst.c:293)
+  n1: 23872 0x40241F: copy_set (bst.c:313)
+   n1: 23872 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 23872 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 23872 0x405D87: set_data_copier (storage.c:270)
+      n1: 23872 0x401BF7: new_element (bst.c:191)
+       n1: 23872 0x402619: insert_element (bst.c:346)
+        n1: 23872 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 23872 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 23872 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 11936 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 11936 0x405D87: set_data_copier (storage.c:270)
+   n1: 11936 0x401BF7: new_element (bst.c:191)
+    n1: 11936 0x402619: insert_element (bst.c:346)
+     n1: 11936 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 11936 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 11936 0x401302: main (main.c:10)
+ n1: 8928 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 8928 0x401BF7: new_element (bst.c:191)
+   n1: 8928 0x402619: insert_element (bst.c:346)
+    n1: 8928 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 8928 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 4464 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 4464 0x401302: main (main.c:10)
+      n1: 4464 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 4464 0x401302: main (main.c:10)
+ n1: 5487 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 5487 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 5487 0x405D87: set_data_copier (storage.c:270)
+    n1: 5487 0x401BF7: new_element (bst.c:191)
+     n1: 5487 0x402619: insert_element (bst.c:346)
+      n1: 5487 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 5487 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 5487 0x401302: main (main.c:10)
+ n1: 3504 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3504 0x401C24: new_element (bst.c:192)
+   n1: 3504 0x402619: insert_element (bst.c:346)
+    n1: 3504 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3504 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3504 in 2 places, all below massif's threshold (01.00%)
+ n1: 2876 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 2876 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 2876 0x405D87: set_data_copier (storage.c:270)
+    n1: 2876 0x401BF7: new_element (bst.c:191)
+     n1: 2876 0x402619: insert_element (bst.c:346)
+      n1: 2876 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 2876 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 2876 0x401302: main (main.c:10)
+ n1: 2876 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 2876 0x401C24: new_element (bst.c:192)
+   n1: 2876 0x402619: insert_element (bst.c:346)
+    n1: 2876 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 2876 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 2876 0x401302: main (main.c:10)
+ n1: 2400 0x405044: createUndoDB (storage.c:51)
+  n1: 2400 0x4060D1: createStore (storage.c:320)
+   n0: 2400 0x4012DB: main (main.c:8)
+ n0: 111 in 6 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=41
+#-----------
+time=875702842
+mem_heap_B=177358
+mem_heap_extra_B=63290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=902982023
+mem_heap_B=178820
+mem_heap_extra_B=64172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=933289443
+mem_heap_B=180506
+mem_heap_extra_B=65174
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=964194540
+mem_heap_B=182192
+mem_heap_extra_B=66176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=995716100
+mem_heap_B=183878
+mem_heap_extra_B=67178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1027608190
+mem_heap_B=185564
+mem_heap_extra_B=68180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1060000648
+mem_heap_B=187250
+mem_heap_extra_B=69182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1076380126
+mem_heap_B=188436
+mem_heap_extra_B=69844
+mem_stacks_B=0
+heap_tree=detailed
+n10: 188436 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 49720 0x401BC4: new_element (bst.c:189)
+  n2: 49720 0x402619: insert_element (bst.c:346)
+   n1: 33120 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 33120 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 16560 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 16560 0x401302: main (main.c:10)
+     n1: 16560 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 16560 0x401302: main (main.c:10)
+   n1: 16600 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 16600 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 16600 0x401302: main (main.c:10)
+ n2: 26688 0x4022D7: new_set (bst.c:293)
+  n1: 26560 0x40241F: copy_set (bst.c:313)
+   n1: 26560 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 26560 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 26560 0x405D87: set_data_copier (storage.c:270)
+      n1: 26560 0x401BF7: new_element (bst.c:191)
+       n1: 26560 0x402619: insert_element (bst.c:346)
+        n1: 26560 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 26560 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 26560 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 13280 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 13280 0x405D87: set_data_copier (storage.c:270)
+   n1: 13280 0x401BF7: new_element (bst.c:191)
+    n1: 13280 0x402619: insert_element (bst.c:346)
+     n1: 13280 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 13280 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 13280 0x401302: main (main.c:10)
+ n1: 9936 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 9936 0x401BF7: new_element (bst.c:191)
+   n1: 9936 0x402619: insert_element (bst.c:346)
+    n1: 9936 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 9936 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 4968 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 4968 0x401302: main (main.c:10)
+      n1: 4968 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 4968 0x401302: main (main.c:10)
+ n1: 6117 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6117 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6117 0x405D87: set_data_copier (storage.c:270)
+    n1: 6117 0x401BF7: new_element (bst.c:191)
+     n1: 6117 0x402619: insert_element (bst.c:346)
+      n1: 6117 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6117 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6117 0x401302: main (main.c:10)
+ n1: 3924 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3924 0x401C24: new_element (bst.c:192)
+   n1: 3924 0x402619: insert_element (bst.c:346)
+    n1: 3924 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3924 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3924 in 2 places, all below massif's threshold (01.00%)
+ n1: 3212 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3212 0x401C24: new_element (bst.c:192)
+   n1: 3212 0x402619: insert_element (bst.c:346)
+    n1: 3212 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3212 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3212 0x401302: main (main.c:10)
+ n1: 3212 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3212 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3212 0x405D87: set_data_copier (storage.c:270)
+    n1: 3212 0x401BF7: new_element (bst.c:191)
+     n1: 3212 0x402619: insert_element (bst.c:346)
+      n1: 3212 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3212 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3212 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=49
+#-----------
+time=1101145776
+mem_heap_B=189441
+mem_heap_extra_B=70471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1109481313
+mem_heap_B=190122
+mem_heap_extra_B=70846
+mem_stacks_B=0
+heap_tree=detailed
+n10: 190122 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 50440 0x401BC4: new_element (bst.c:189)
+  n2: 50440 0x402619: insert_element (bst.c:346)
+   n1: 33600 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 33600 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 16800 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 16800 0x401302: main (main.c:10)
+     n1: 16800 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 16800 0x401302: main (main.c:10)
+   n1: 16840 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 16840 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 16840 0x401302: main (main.c:10)
+ n2: 27072 0x4022D7: new_set (bst.c:293)
+  n1: 26944 0x40241F: copy_set (bst.c:313)
+   n1: 26944 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 26944 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 26944 0x405D87: set_data_copier (storage.c:270)
+      n1: 26944 0x401BF7: new_element (bst.c:191)
+       n1: 26944 0x402619: insert_element (bst.c:346)
+        n1: 26944 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 26944 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 26944 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 13472 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 13472 0x405D87: set_data_copier (storage.c:270)
+   n1: 13472 0x401BF7: new_element (bst.c:191)
+    n1: 13472 0x402619: insert_element (bst.c:346)
+     n1: 13472 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 13472 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 13472 0x401302: main (main.c:10)
+ n1: 10080 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10080 0x401BF7: new_element (bst.c:191)
+   n1: 10080 0x402619: insert_element (bst.c:346)
+    n1: 10080 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10080 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5040 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5040 0x401302: main (main.c:10)
+      n1: 5040 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5040 0x401302: main (main.c:10)
+ n1: 6207 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6207 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6207 0x405D87: set_data_copier (storage.c:270)
+    n1: 6207 0x401BF7: new_element (bst.c:191)
+     n1: 6207 0x402619: insert_element (bst.c:346)
+      n1: 6207 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6207 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6207 0x401302: main (main.c:10)
+ n1: 3984 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 3984 0x401C24: new_element (bst.c:192)
+   n1: 3984 0x402619: insert_element (bst.c:346)
+    n1: 3984 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 3984 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 3984 in 2 places, all below massif's threshold (01.00%)
+ n1: 3260 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3260 0x401C24: new_element (bst.c:192)
+   n1: 3260 0x402619: insert_element (bst.c:346)
+    n1: 3260 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3260 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3260 0x401302: main (main.c:10)
+ n1: 3260 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3260 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3260 0x405D87: set_data_copier (storage.c:270)
+    n1: 3260 0x401BF7: new_element (bst.c:191)
+     n1: 3260 0x402619: insert_element (bst.c:346)
+      n1: 3260 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3260 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3260 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=51
+#-----------
+time=1123375487
+mem_heap_B=190565
+mem_heap_extra_B=71139
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1137382965
+mem_heap_B=191184
+mem_heap_extra_B=71520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1143045977
+mem_heap_B=191808
+mem_heap_extra_B=71848
+mem_stacks_B=0
+heap_tree=detailed
+n10: 191808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 51160 0x401BC4: new_element (bst.c:189)
+  n2: 51160 0x402619: insert_element (bst.c:346)
+   n1: 34080 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 34080 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 17040 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 17040 0x401302: main (main.c:10)
+     n1: 17040 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 17040 0x401302: main (main.c:10)
+   n1: 17080 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 17080 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 17080 0x401302: main (main.c:10)
+ n2: 27456 0x4022D7: new_set (bst.c:293)
+  n1: 27328 0x40241F: copy_set (bst.c:313)
+   n1: 27328 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 27328 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 27328 0x405D87: set_data_copier (storage.c:270)
+      n1: 27328 0x401BF7: new_element (bst.c:191)
+       n1: 27328 0x402619: insert_element (bst.c:346)
+        n1: 27328 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 27328 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 27328 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 13664 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 13664 0x405D87: set_data_copier (storage.c:270)
+   n1: 13664 0x401BF7: new_element (bst.c:191)
+    n1: 13664 0x402619: insert_element (bst.c:346)
+     n1: 13664 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 13664 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 13664 0x401302: main (main.c:10)
+ n1: 10224 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10224 0x401BF7: new_element (bst.c:191)
+   n1: 10224 0x402619: insert_element (bst.c:346)
+    n1: 10224 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10224 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5112 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5112 0x401302: main (main.c:10)
+      n1: 5112 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5112 0x401302: main (main.c:10)
+ n1: 6297 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6297 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6297 0x405D87: set_data_copier (storage.c:270)
+    n1: 6297 0x401BF7: new_element (bst.c:191)
+     n1: 6297 0x402619: insert_element (bst.c:346)
+      n1: 6297 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6297 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6297 0x401302: main (main.c:10)
+ n1: 4044 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4044 0x401C24: new_element (bst.c:192)
+   n1: 4044 0x402619: insert_element (bst.c:346)
+    n1: 4044 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4044 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4044 in 2 places, all below massif's threshold (01.00%)
+ n1: 3308 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3308 0x401C24: new_element (bst.c:192)
+   n1: 3308 0x402619: insert_element (bst.c:346)
+    n1: 3308 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3308 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3308 0x401302: main (main.c:10)
+ n1: 3308 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3308 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3308 0x405D87: set_data_copier (storage.c:270)
+    n1: 3308 0x401BF7: new_element (bst.c:191)
+     n1: 3308 0x402619: insert_element (bst.c:346)
+      n1: 3308 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3308 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3308 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=54
+#-----------
+time=1157176138
+mem_heap_B=192251
+mem_heap_extra_B=72141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1171388463
+mem_heap_B=192870
+mem_heap_extra_B=72522
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1177125901
+mem_heap_B=193494
+mem_heap_extra_B=72850
+mem_stacks_B=0
+heap_tree=detailed
+n10: 193494 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 51880 0x401BC4: new_element (bst.c:189)
+  n2: 51880 0x402619: insert_element (bst.c:346)
+   n1: 34560 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 34560 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 17280 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 17280 0x401302: main (main.c:10)
+     n1: 17280 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 17280 0x401302: main (main.c:10)
+   n1: 17320 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 17320 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 17320 0x401302: main (main.c:10)
+ n2: 27840 0x4022D7: new_set (bst.c:293)
+  n1: 27712 0x40241F: copy_set (bst.c:313)
+   n1: 27712 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 27712 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 27712 0x405D87: set_data_copier (storage.c:270)
+      n1: 27712 0x401BF7: new_element (bst.c:191)
+       n1: 27712 0x402619: insert_element (bst.c:346)
+        n1: 27712 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 27712 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 27712 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 13856 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 13856 0x405D87: set_data_copier (storage.c:270)
+   n1: 13856 0x401BF7: new_element (bst.c:191)
+    n1: 13856 0x402619: insert_element (bst.c:346)
+     n1: 13856 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 13856 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 13856 0x401302: main (main.c:10)
+ n1: 10368 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10368 0x401BF7: new_element (bst.c:191)
+   n1: 10368 0x402619: insert_element (bst.c:346)
+    n1: 10368 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10368 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5184 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5184 0x401302: main (main.c:10)
+      n1: 5184 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5184 0x401302: main (main.c:10)
+ n1: 6387 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6387 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6387 0x405D87: set_data_copier (storage.c:270)
+    n1: 6387 0x401BF7: new_element (bst.c:191)
+     n1: 6387 0x402619: insert_element (bst.c:346)
+      n1: 6387 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6387 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6387 0x401302: main (main.c:10)
+ n1: 4104 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4104 0x401C24: new_element (bst.c:192)
+   n1: 4104 0x402619: insert_element (bst.c:346)
+    n1: 4104 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4104 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4104 in 2 places, all below massif's threshold (01.00%)
+ n1: 3356 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3356 0x401C24: new_element (bst.c:192)
+   n1: 3356 0x402619: insert_element (bst.c:346)
+    n1: 3356 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3356 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3356 0x401302: main (main.c:10)
+ n1: 3356 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3356 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3356 0x405D87: set_data_copier (storage.c:270)
+    n1: 3356 0x401BF7: new_element (bst.c:191)
+     n1: 3356 0x402619: insert_element (bst.c:346)
+      n1: 3356 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3356 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3356 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=57
+#-----------
+time=1191442777
+mem_heap_B=193937
+mem_heap_extra_B=73143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1205881118
+mem_heap_B=194556
+mem_heap_extra_B=73524
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1211725697
+mem_heap_B=195180
+mem_heap_extra_B=73852
+mem_stacks_B=0
+heap_tree=detailed
+n10: 195180 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 52600 0x401BC4: new_element (bst.c:189)
+  n2: 52600 0x402619: insert_element (bst.c:346)
+   n1: 35040 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 35040 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 17520 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 17520 0x401302: main (main.c:10)
+     n1: 17520 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 17520 0x401302: main (main.c:10)
+   n1: 17560 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 17560 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 17560 0x401302: main (main.c:10)
+ n2: 28224 0x4022D7: new_set (bst.c:293)
+  n1: 28096 0x40241F: copy_set (bst.c:313)
+   n1: 28096 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 28096 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 28096 0x405D87: set_data_copier (storage.c:270)
+      n1: 28096 0x401BF7: new_element (bst.c:191)
+       n1: 28096 0x402619: insert_element (bst.c:346)
+        n1: 28096 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 28096 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 28096 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 14048 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 14048 0x405D87: set_data_copier (storage.c:270)
+   n1: 14048 0x401BF7: new_element (bst.c:191)
+    n1: 14048 0x402619: insert_element (bst.c:346)
+     n1: 14048 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 14048 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 14048 0x401302: main (main.c:10)
+ n1: 10512 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10512 0x401BF7: new_element (bst.c:191)
+   n1: 10512 0x402619: insert_element (bst.c:346)
+    n1: 10512 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10512 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5256 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5256 0x401302: main (main.c:10)
+      n1: 5256 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5256 0x401302: main (main.c:10)
+ n1: 6477 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6477 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6477 0x405D87: set_data_copier (storage.c:270)
+    n1: 6477 0x401BF7: new_element (bst.c:191)
+     n1: 6477 0x402619: insert_element (bst.c:346)
+      n1: 6477 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6477 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6477 0x401302: main (main.c:10)
+ n1: 4164 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4164 0x401C24: new_element (bst.c:192)
+   n1: 4164 0x402619: insert_element (bst.c:346)
+    n1: 4164 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4164 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4164 in 2 places, all below massif's threshold (01.00%)
+ n1: 3404 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3404 0x401C24: new_element (bst.c:192)
+   n1: 3404 0x402619: insert_element (bst.c:346)
+    n1: 3404 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3404 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3404 0x401302: main (main.c:10)
+ n1: 3404 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3404 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3404 0x405D87: set_data_copier (storage.c:270)
+    n1: 3404 0x401BF7: new_element (bst.c:191)
+     n1: 3404 0x402619: insert_element (bst.c:346)
+      n1: 3404 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3404 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3404 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=60
+#-----------
+time=1226262697
+mem_heap_B=195623
+mem_heap_extra_B=74145
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1237971714
+mem_heap_B=196185
+mem_heap_extra_B=74479
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1249745897
+mem_heap_B=196747
+mem_heap_extra_B=74813
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1252696094
+mem_heap_B=196876
+mem_heap_extra_B=74916
+mem_stacks_B=0
+heap_tree=detailed
+n10: 196876 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 53400 0x401BC4: new_element (bst.c:189)
+  n2: 53400 0x402619: insert_element (bst.c:346)
+   n1: 35600 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 35600 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 17800 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 17800 0x401302: main (main.c:10)
+     n1: 17800 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 17800 0x401302: main (main.c:10)
+   n1: 17800 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 17800 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 17800 0x401302: main (main.c:10)
+ n2: 28544 0x4022D7: new_set (bst.c:293)
+  n1: 28480 0x40241F: copy_set (bst.c:313)
+   n1: 28480 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 28480 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 28480 0x405D87: set_data_copier (storage.c:270)
+      n1: 28480 0x401BF7: new_element (bst.c:191)
+       n1: 28480 0x402619: insert_element (bst.c:346)
+        n1: 28480 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 28480 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 28480 0x401302: main (main.c:10)
+  n0: 64 in 2 places, all below massif's threshold (01.00%)
+ n1: 14240 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 14240 0x405D87: set_data_copier (storage.c:270)
+   n1: 14240 0x401BF7: new_element (bst.c:191)
+    n1: 14240 0x402619: insert_element (bst.c:346)
+     n1: 14240 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 14240 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 14240 0x401302: main (main.c:10)
+ n1: 10680 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10680 0x401BF7: new_element (bst.c:191)
+   n1: 10680 0x402619: insert_element (bst.c:346)
+    n1: 10680 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10680 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5340 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5340 0x401302: main (main.c:10)
+      n1: 5340 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5340 0x401302: main (main.c:10)
+ n1: 6567 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6567 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6567 0x405D87: set_data_copier (storage.c:270)
+    n1: 6567 0x401BF7: new_element (bst.c:191)
+     n1: 6567 0x402619: insert_element (bst.c:346)
+      n1: 6567 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6567 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6567 0x401302: main (main.c:10)
+ n1: 4234 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4234 0x401C24: new_element (bst.c:192)
+   n1: 4234 0x402619: insert_element (bst.c:346)
+    n1: 4234 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4234 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4234 in 2 places, all below massif's threshold (01.00%)
+ n1: 3452 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3452 0x401C24: new_element (bst.c:192)
+   n1: 3452 0x402619: insert_element (bst.c:346)
+    n1: 3452 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3452 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3452 0x401302: main (main.c:10)
+ n1: 3452 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3452 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3452 0x405D87: set_data_copier (storage.c:270)
+    n1: 3452 0x401BF7: new_element (bst.c:191)
+     n1: 3452 0x402619: insert_element (bst.c:346)
+      n1: 3452 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3452 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3452 0x401302: main (main.c:10)
+ n0: 2471 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=64
+#-----------
+time=1264551974
+mem_heap_B=197366
+mem_heap_extra_B=75194
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1276485153
+mem_heap_B=197928
+mem_heap_extra_B=75528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1288445973
+mem_heap_B=198490
+mem_heap_extra_B=75862
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1288474927
+mem_heap_B=198833
+mem_heap_extra_B=76023
+mem_stacks_B=0
+heap_tree=detailed
+n10: 198833 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 54160 0x401BC4: new_element (bst.c:189)
+  n2: 54160 0x402619: insert_element (bst.c:346)
+   n1: 36080 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 36080 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 18040 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 18040 0x401302: main (main.c:10)
+     n1: 18040 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 18040 0x401302: main (main.c:10)
+   n1: 18080 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 18080 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 18080 0x401302: main (main.c:10)
+ n2: 29056 0x4022D7: new_set (bst.c:293)
+  n1: 28928 0x40241F: copy_set (bst.c:313)
+   n1: 28928 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 28928 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 28928 0x405D87: set_data_copier (storage.c:270)
+      n1: 28928 0x401BF7: new_element (bst.c:191)
+       n1: 28928 0x402619: insert_element (bst.c:346)
+        n1: 28928 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 28928 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 28928 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 14464 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 14464 0x405D87: set_data_copier (storage.c:270)
+   n1: 14464 0x401BF7: new_element (bst.c:191)
+    n1: 14464 0x402619: insert_element (bst.c:346)
+     n1: 14464 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 14464 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 14464 0x401302: main (main.c:10)
+ n1: 10824 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10824 0x401BF7: new_element (bst.c:191)
+   n1: 10824 0x402619: insert_element (bst.c:346)
+    n1: 10824 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10824 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5412 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5412 0x401302: main (main.c:10)
+      n1: 5412 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5412 0x401302: main (main.c:10)
+ n1: 6672 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6672 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6672 0x405D87: set_data_copier (storage.c:270)
+    n1: 6672 0x401BF7: new_element (bst.c:191)
+     n1: 6672 0x402619: insert_element (bst.c:346)
+      n1: 6672 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6672 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6672 0x401302: main (main.c:10)
+ n1: 4294 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4294 0x401C24: new_element (bst.c:192)
+   n1: 4294 0x402619: insert_element (bst.c:346)
+    n1: 4294 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4294 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4294 in 2 places, all below massif's threshold (01.00%)
+ n1: 3508 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3508 0x401C24: new_element (bst.c:192)
+   n1: 3508 0x402619: insert_element (bst.c:346)
+    n1: 3508 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3508 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3508 0x401302: main (main.c:10)
+ n1: 3508 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3508 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3508 0x405D87: set_data_copier (storage.c:270)
+    n1: 3508 0x401BF7: new_element (bst.c:191)
+     n1: 3508 0x402619: insert_element (bst.c:346)
+      n1: 3508 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3508 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3508 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=68
+#-----------
+time=1300469557
+mem_heap_B=199052
+mem_heap_extra_B=76196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1312562408
+mem_heap_B=199614
+mem_heap_extra_B=76530
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1324726813
+mem_heap_B=200176
+mem_heap_extra_B=76864
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1330838427
+mem_heap_B=200529
+mem_heap_extra_B=77087
+mem_stacks_B=0
+heap_tree=detailed
+n10: 200529 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 54960 0x401BC4: new_element (bst.c:189)
+  n2: 54960 0x402619: insert_element (bst.c:346)
+   n1: 36640 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 36640 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 18320 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 18320 0x401302: main (main.c:10)
+     n1: 18320 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 18320 0x401302: main (main.c:10)
+   n1: 18320 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 18320 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 18320 0x401302: main (main.c:10)
+ n2: 29376 0x4022D7: new_set (bst.c:293)
+  n1: 29312 0x40241F: copy_set (bst.c:313)
+   n1: 29312 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 29312 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 29312 0x405D87: set_data_copier (storage.c:270)
+      n1: 29312 0x401BF7: new_element (bst.c:191)
+       n1: 29312 0x402619: insert_element (bst.c:346)
+        n1: 29312 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 29312 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 29312 0x401302: main (main.c:10)
+  n0: 64 in 2 places, all below massif's threshold (01.00%)
+ n1: 14656 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 14656 0x405D87: set_data_copier (storage.c:270)
+   n1: 14656 0x401BF7: new_element (bst.c:191)
+    n1: 14656 0x402619: insert_element (bst.c:346)
+     n1: 14656 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 14656 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 14656 0x401302: main (main.c:10)
+ n1: 10992 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 10992 0x401BF7: new_element (bst.c:191)
+   n1: 10992 0x402619: insert_element (bst.c:346)
+    n1: 10992 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 10992 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5496 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5496 0x401302: main (main.c:10)
+      n1: 5496 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5496 0x401302: main (main.c:10)
+ n1: 6762 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6762 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6762 0x405D87: set_data_copier (storage.c:270)
+    n1: 6762 0x401BF7: new_element (bst.c:191)
+     n1: 6762 0x402619: insert_element (bst.c:346)
+      n1: 6762 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6762 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6762 0x401302: main (main.c:10)
+ n1: 4364 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4364 0x401C24: new_element (bst.c:192)
+   n1: 4364 0x402619: insert_element (bst.c:346)
+    n1: 4364 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4364 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4364 in 2 places, all below massif's threshold (01.00%)
+ n1: 3556 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3556 0x401C24: new_element (bst.c:192)
+   n1: 3556 0x402619: insert_element (bst.c:346)
+    n1: 3556 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3556 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3556 0x401302: main (main.c:10)
+ n1: 3556 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3556 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3556 0x405D87: set_data_copier (storage.c:270)
+    n1: 3556 0x401BF7: new_element (bst.c:191)
+     n1: 3556 0x402619: insert_element (bst.c:346)
+      n1: 3556 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3556 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3556 0x401302: main (main.c:10)
+ n0: 2471 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=72
+#-----------
+time=1343094118
+mem_heap_B=201019
+mem_heap_extra_B=77365
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1355396614
+mem_heap_B=201581
+mem_heap_extra_B=77699
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1367766447
+mem_heap_B=202143
+mem_heap_extra_B=78033
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1367800979
+mem_heap_B=202486
+mem_heap_extra_B=78194
+mem_stacks_B=0
+heap_tree=detailed
+n10: 202486 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 55720 0x401BC4: new_element (bst.c:189)
+  n2: 55720 0x402619: insert_element (bst.c:346)
+   n1: 37120 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 37120 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 18560 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 18560 0x401302: main (main.c:10)
+     n1: 18560 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 18560 0x401302: main (main.c:10)
+   n1: 18600 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 18600 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 18600 0x401302: main (main.c:10)
+ n2: 29888 0x4022D7: new_set (bst.c:293)
+  n1: 29760 0x40241F: copy_set (bst.c:313)
+   n1: 29760 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 29760 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 29760 0x405D87: set_data_copier (storage.c:270)
+      n1: 29760 0x401BF7: new_element (bst.c:191)
+       n1: 29760 0x402619: insert_element (bst.c:346)
+        n1: 29760 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 29760 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 29760 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 14880 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 14880 0x405D87: set_data_copier (storage.c:270)
+   n1: 14880 0x401BF7: new_element (bst.c:191)
+    n1: 14880 0x402619: insert_element (bst.c:346)
+     n1: 14880 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 14880 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 14880 0x401302: main (main.c:10)
+ n1: 11136 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 11136 0x401BF7: new_element (bst.c:191)
+   n1: 11136 0x402619: insert_element (bst.c:346)
+    n1: 11136 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 11136 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5568 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5568 0x401302: main (main.c:10)
+      n1: 5568 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5568 0x401302: main (main.c:10)
+ n1: 6867 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6867 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6867 0x405D87: set_data_copier (storage.c:270)
+    n1: 6867 0x401BF7: new_element (bst.c:191)
+     n1: 6867 0x402619: insert_element (bst.c:346)
+      n1: 6867 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6867 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6867 0x401302: main (main.c:10)
+ n1: 4424 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4424 0x401C24: new_element (bst.c:192)
+   n1: 4424 0x402619: insert_element (bst.c:346)
+    n1: 4424 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4424 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4424 in 2 places, all below massif's threshold (01.00%)
+ n1: 3612 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3612 0x401C24: new_element (bst.c:192)
+   n1: 3612 0x402619: insert_element (bst.c:346)
+    n1: 3612 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3612 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3612 0x401302: main (main.c:10)
+ n1: 3612 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3612 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3612 0x405D87: set_data_copier (storage.c:270)
+    n1: 3612 0x401BF7: new_element (bst.c:191)
+     n1: 3612 0x402619: insert_element (bst.c:346)
+      n1: 3612 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3612 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3612 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=76
+#-----------
+time=1380208275
+mem_heap_B=202705
+mem_heap_extra_B=78367
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1392724463
+mem_heap_B=203267
+mem_heap_extra_B=78701
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1405299413
+mem_heap_B=203829
+mem_heap_extra_B=79035
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=1411636479
+mem_heap_B=204453
+mem_heap_extra_B=79363
+mem_stacks_B=0
+heap_tree=detailed
+n10: 204453 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 56560 0x401BC4: new_element (bst.c:189)
+  n2: 56560 0x402619: insert_element (bst.c:346)
+   n1: 37680 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 37680 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 18840 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 18840 0x401302: main (main.c:10)
+     n1: 18840 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 18840 0x401302: main (main.c:10)
+   n1: 18880 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 18880 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 18880 0x401302: main (main.c:10)
+ n2: 30336 0x4022D7: new_set (bst.c:293)
+  n1: 30208 0x40241F: copy_set (bst.c:313)
+   n1: 30208 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 30208 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 30208 0x405D87: set_data_copier (storage.c:270)
+      n1: 30208 0x401BF7: new_element (bst.c:191)
+       n1: 30208 0x402619: insert_element (bst.c:346)
+        n1: 30208 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 30208 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 30208 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 15104 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 15104 0x405D87: set_data_copier (storage.c:270)
+   n1: 15104 0x401BF7: new_element (bst.c:191)
+    n1: 15104 0x402619: insert_element (bst.c:346)
+     n1: 15104 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 15104 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 15104 0x401302: main (main.c:10)
+ n1: 11304 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 11304 0x401BF7: new_element (bst.c:191)
+   n1: 11304 0x402619: insert_element (bst.c:346)
+    n1: 11304 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 11304 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5652 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5652 0x401302: main (main.c:10)
+      n1: 5652 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5652 0x401302: main (main.c:10)
+ n1: 6972 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 6972 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 6972 0x405D87: set_data_copier (storage.c:270)
+    n1: 6972 0x401BF7: new_element (bst.c:191)
+     n1: 6972 0x402619: insert_element (bst.c:346)
+      n1: 6972 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 6972 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 6972 0x401302: main (main.c:10)
+ n1: 4494 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4494 0x401C24: new_element (bst.c:192)
+   n1: 4494 0x402619: insert_element (bst.c:346)
+    n1: 4494 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4494 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4494 in 2 places, all below massif's threshold (01.00%)
+ n1: 3668 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3668 0x401C24: new_element (bst.c:192)
+   n1: 3668 0x402619: insert_element (bst.c:346)
+    n1: 3668 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3668 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3668 0x401302: main (main.c:10)
+ n1: 3668 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3668 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3668 0x405D87: set_data_copier (storage.c:270)
+    n1: 3668 0x401BF7: new_element (bst.c:191)
+     n1: 3668 0x402619: insert_element (bst.c:346)
+      n1: 3668 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3668 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3668 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=80
+#-----------
+time=1424263571
+mem_heap_B=204672
+mem_heap_extra_B=79536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=1436993770
+mem_heap_B=205234
+mem_heap_extra_B=79870
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=1449801648
+mem_heap_B=205796
+mem_heap_extra_B=80204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=1456275146
+mem_heap_B=206420
+mem_heap_extra_B=80532
+mem_stacks_B=0
+heap_tree=detailed
+n10: 206420 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 57400 0x401BC4: new_element (bst.c:189)
+  n2: 57400 0x402619: insert_element (bst.c:346)
+   n1: 38240 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 38240 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 19120 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 19120 0x401302: main (main.c:10)
+     n1: 19120 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 19120 0x401302: main (main.c:10)
+   n1: 19160 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 19160 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 19160 0x401302: main (main.c:10)
+ n2: 30784 0x4022D7: new_set (bst.c:293)
+  n1: 30656 0x40241F: copy_set (bst.c:313)
+   n1: 30656 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 30656 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 30656 0x405D87: set_data_copier (storage.c:270)
+      n1: 30656 0x401BF7: new_element (bst.c:191)
+       n1: 30656 0x402619: insert_element (bst.c:346)
+        n1: 30656 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 30656 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 30656 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 15328 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 15328 0x405D87: set_data_copier (storage.c:270)
+   n1: 15328 0x401BF7: new_element (bst.c:191)
+    n1: 15328 0x402619: insert_element (bst.c:346)
+     n1: 15328 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 15328 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 15328 0x401302: main (main.c:10)
+ n1: 11472 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 11472 0x401BF7: new_element (bst.c:191)
+   n1: 11472 0x402619: insert_element (bst.c:346)
+    n1: 11472 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 11472 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5736 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5736 0x401302: main (main.c:10)
+      n1: 5736 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5736 0x401302: main (main.c:10)
+ n1: 7077 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 7077 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 7077 0x405D87: set_data_copier (storage.c:270)
+    n1: 7077 0x401BF7: new_element (bst.c:191)
+     n1: 7077 0x402619: insert_element (bst.c:346)
+      n1: 7077 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 7077 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 7077 0x401302: main (main.c:10)
+ n1: 4564 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4564 0x401C24: new_element (bst.c:192)
+   n1: 4564 0x402619: insert_element (bst.c:346)
+    n1: 4564 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4564 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4564 in 2 places, all below massif's threshold (01.00%)
+ n1: 3724 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3724 0x401C24: new_element (bst.c:192)
+   n1: 3724 0x402619: insert_element (bst.c:346)
+    n1: 3724 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3724 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3724 0x401302: main (main.c:10)
+ n1: 3724 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3724 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3724 0x405D87: set_data_copier (storage.c:270)
+    n1: 3724 0x401BF7: new_element (bst.c:191)
+     n1: 3724 0x402619: insert_element (bst.c:346)
+      n1: 3724 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3724 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3724 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=84
+#-----------
+time=1469141718
+mem_heap_B=206639
+mem_heap_extra_B=80705
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=1482099152
+mem_heap_B=207201
+mem_heap_extra_B=81039
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=1495126981
+mem_heap_B=207763
+mem_heap_extra_B=81373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=1501706797
+mem_heap_B=208387
+mem_heap_extra_B=81701
+mem_stacks_B=0
+heap_tree=detailed
+n10: 208387 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 58240 0x401BC4: new_element (bst.c:189)
+  n2: 58240 0x402619: insert_element (bst.c:346)
+   n1: 38800 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 38800 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 19400 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 19400 0x401302: main (main.c:10)
+     n1: 19400 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 19400 0x401302: main (main.c:10)
+   n1: 19440 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 19440 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 19440 0x401302: main (main.c:10)
+ n2: 31232 0x4022D7: new_set (bst.c:293)
+  n1: 31104 0x40241F: copy_set (bst.c:313)
+   n1: 31104 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 31104 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 31104 0x405D87: set_data_copier (storage.c:270)
+      n1: 31104 0x401BF7: new_element (bst.c:191)
+       n1: 31104 0x402619: insert_element (bst.c:346)
+        n1: 31104 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 31104 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 31104 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 15552 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 15552 0x405D87: set_data_copier (storage.c:270)
+   n1: 15552 0x401BF7: new_element (bst.c:191)
+    n1: 15552 0x402619: insert_element (bst.c:346)
+     n1: 15552 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 15552 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 15552 0x401302: main (main.c:10)
+ n1: 11640 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 11640 0x401BF7: new_element (bst.c:191)
+   n1: 11640 0x402619: insert_element (bst.c:346)
+    n1: 11640 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 11640 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5820 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5820 0x401302: main (main.c:10)
+      n1: 5820 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5820 0x401302: main (main.c:10)
+ n1: 7182 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 7182 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 7182 0x405D87: set_data_copier (storage.c:270)
+    n1: 7182 0x401BF7: new_element (bst.c:191)
+     n1: 7182 0x402619: insert_element (bst.c:346)
+      n1: 7182 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 7182 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 7182 0x401302: main (main.c:10)
+ n1: 4634 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4634 0x401C24: new_element (bst.c:192)
+   n1: 4634 0x402619: insert_element (bst.c:346)
+    n1: 4634 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4634 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4634 in 2 places, all below massif's threshold (01.00%)
+ n1: 3780 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3780 0x401C24: new_element (bst.c:192)
+   n1: 3780 0x402619: insert_element (bst.c:346)
+    n1: 3780 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3780 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3780 0x401302: main (main.c:10)
+ n1: 3780 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3780 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3780 0x405D87: set_data_copier (storage.c:270)
+    n1: 3780 0x401BF7: new_element (bst.c:191)
+     n1: 3780 0x402619: insert_element (bst.c:346)
+      n1: 3780 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3780 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3780 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=88
+#-----------
+time=1514815047
+mem_heap_B=208606
+mem_heap_extra_B=81874
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=1528044060
+mem_heap_B=209168
+mem_heap_extra_B=82208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=1541304103
+mem_heap_B=209730
+mem_heap_extra_B=82542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=91
+#-----------
+time=1547995016
+mem_heap_B=210354
+mem_heap_extra_B=82870
+mem_stacks_B=0
+heap_tree=detailed
+n10: 210354 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 59080 0x401BC4: new_element (bst.c:189)
+  n2: 59080 0x402619: insert_element (bst.c:346)
+   n1: 39360 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 39360 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 19680 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 19680 0x401302: main (main.c:10)
+     n1: 19680 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 19680 0x401302: main (main.c:10)
+   n1: 19720 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 19720 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 19720 0x401302: main (main.c:10)
+ n2: 31680 0x4022D7: new_set (bst.c:293)
+  n1: 31552 0x40241F: copy_set (bst.c:313)
+   n1: 31552 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 31552 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 31552 0x405D87: set_data_copier (storage.c:270)
+      n1: 31552 0x401BF7: new_element (bst.c:191)
+       n1: 31552 0x402619: insert_element (bst.c:346)
+        n1: 31552 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 31552 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 31552 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 15776 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 15776 0x405D87: set_data_copier (storage.c:270)
+   n1: 15776 0x401BF7: new_element (bst.c:191)
+    n1: 15776 0x402619: insert_element (bst.c:346)
+     n1: 15776 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 15776 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 15776 0x401302: main (main.c:10)
+ n1: 11808 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 11808 0x401BF7: new_element (bst.c:191)
+   n1: 11808 0x402619: insert_element (bst.c:346)
+    n1: 11808 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 11808 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5904 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5904 0x401302: main (main.c:10)
+      n1: 5904 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5904 0x401302: main (main.c:10)
+ n1: 7287 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 7287 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 7287 0x405D87: set_data_copier (storage.c:270)
+    n1: 7287 0x401BF7: new_element (bst.c:191)
+     n1: 7287 0x402619: insert_element (bst.c:346)
+      n1: 7287 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 7287 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 7287 0x401302: main (main.c:10)
+ n1: 4704 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4704 0x401C24: new_element (bst.c:192)
+   n1: 4704 0x402619: insert_element (bst.c:346)
+    n1: 4704 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4704 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4704 in 2 places, all below massif's threshold (01.00%)
+ n1: 3836 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3836 0x401C24: new_element (bst.c:192)
+   n1: 3836 0x402619: insert_element (bst.c:346)
+    n1: 3836 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3836 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3836 0x401302: main (main.c:10)
+ n1: 3836 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3836 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3836 0x405D87: set_data_copier (storage.c:270)
+    n1: 3836 0x401BF7: new_element (bst.c:191)
+     n1: 3836 0x402619: insert_element (bst.c:346)
+      n1: 3836 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3836 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3836 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)
+#-----------
+snapshot=92
+#-----------
+time=1561326651
+mem_heap_B=210573
+mem_heap_extra_B=83043
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=1574769549
+mem_heap_B=211135
+mem_heap_extra_B=83377
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=1588292927
+mem_heap_B=211697
+mem_heap_extra_B=83711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=95
+#-----------
+time=1595106826
+mem_heap_B=212321
+mem_heap_extra_B=84039
+mem_stacks_B=0
+heap_tree=peak
+n10: 212321 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 69836 0x4F2A5FF: monstartup (gmon.c:134)
+  n1: 69836 0x4011DB: __gmon_start__ (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+   n1: 69836 0x400E93: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+    n1: 69836 0x40117E: ??? (in /media/sf_2T1-IOOPM/sash7863/inlupp2/main)
+     n0: 69836 0x7: ???
+ n1: 59920 0x401BC4: new_element (bst.c:189)
+  n2: 59920 0x402619: insert_element (bst.c:346)
+   n1: 39920 0x405AF1: goods_insert_shelf (storage.c:226)
+    n2: 39920 0x4075FA: goods_add_to_shelf (storage.c:593)
+     n1: 19960 0x4069FE: addNTestGoods (storage.c:433)
+      n0: 19960 0x401302: main (main.c:10)
+     n1: 19960 0x406A5D: addNTestGoods (storage.c:435)
+      n0: 19960 0x401302: main (main.c:10)
+   n1: 20000 0x4064EC: store_insert_goods (storage.c:377)
+    n1: 20000 0x4069AA: addNTestGoods (storage.c:431)
+     n0: 20000 0x401302: main (main.c:10)
+ n2: 32128 0x4022D7: new_set (bst.c:293)
+  n1: 32000 0x40241F: copy_set (bst.c:313)
+   n1: 32000 0x405F66: getGoodsCpy (storage.c:297)
+    n1: 32000 0x405FF3: getGoodsCpyPtr (storage.c:305)
+     n1: 32000 0x405D87: set_data_copier (storage.c:270)
+      n1: 32000 0x401BF7: new_element (bst.c:191)
+       n1: 32000 0x402619: insert_element (bst.c:346)
+        n1: 32000 0x4064EC: store_insert_goods (storage.c:377)
+         n1: 32000 0x4069AA: addNTestGoods (storage.c:431)
+          n0: 32000 0x401302: main (main.c:10)
+  n0: 128 in 2 places, all below massif's threshold (01.00%)
+ n1: 16000 0x405FD8: getGoodsCpyPtr (storage.c:304)
+  n1: 16000 0x405D87: set_data_copier (storage.c:270)
+   n1: 16000 0x401BF7: new_element (bst.c:191)
+    n1: 16000 0x402619: insert_element (bst.c:346)
+     n1: 16000 0x4064EC: store_insert_goods (storage.c:377)
+      n1: 16000 0x4069AA: addNTestGoods (storage.c:431)
+       n0: 16000 0x401302: main (main.c:10)
+ n1: 11976 0x405DFE: shelf_data_copier (storage.c:276)
+  n1: 11976 0x401BF7: new_element (bst.c:191)
+   n1: 11976 0x402619: insert_element (bst.c:346)
+    n1: 11976 0x405AF1: goods_insert_shelf (storage.c:226)
+     n2: 11976 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n1: 5988 0x4069FE: addNTestGoods (storage.c:433)
+       n0: 5988 0x401302: main (main.c:10)
+      n1: 5988 0x406A5D: addNTestGoods (storage.c:435)
+       n0: 5988 0x401302: main (main.c:10)
+ n1: 7392 0x405F26: getGoodsCpy (storage.c:292)
+  n1: 7392 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 7392 0x405D87: set_data_copier (storage.c:270)
+    n1: 7392 0x401BF7: new_element (bst.c:191)
+     n1: 7392 0x402619: insert_element (bst.c:346)
+      n1: 7392 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 7392 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 7392 0x401302: main (main.c:10)
+ n1: 4774 0x405A30: shelf_key_generator (storage.c:205)
+  n1: 4774 0x401C24: new_element (bst.c:192)
+   n1: 4774 0x402619: insert_element (bst.c:346)
+    n1: 4774 0x405AF1: goods_insert_shelf (storage.c:226)
+     n1: 4774 0x4075FA: goods_add_to_shelf (storage.c:593)
+      n0: 4774 in 2 places, all below massif's threshold (01.00%)
+ n1: 3892 0x405C6D: goods_key_generator (storage.c:249)
+  n1: 3892 0x401C24: new_element (bst.c:192)
+   n1: 3892 0x402619: insert_element (bst.c:346)
+    n1: 3892 0x4064EC: store_insert_goods (storage.c:377)
+     n1: 3892 0x4069AA: addNTestGoods (storage.c:431)
+      n0: 3892 0x401302: main (main.c:10)
+ n1: 3892 0x405EB7: getGoodsCpy (storage.c:286)
+  n1: 3892 0x405FF3: getGoodsCpyPtr (storage.c:305)
+   n1: 3892 0x405D87: set_data_copier (storage.c:270)
+    n1: 3892 0x401BF7: new_element (bst.c:191)
+     n1: 3892 0x402619: insert_element (bst.c:346)
+      n1: 3892 0x4064EC: store_insert_goods (storage.c:377)
+       n1: 3892 0x4069AA: addNTestGoods (storage.c:431)
+        n0: 3892 0x401302: main (main.c:10)
+ n0: 2511 in 7 places, all below massif's threshold (01.00%)

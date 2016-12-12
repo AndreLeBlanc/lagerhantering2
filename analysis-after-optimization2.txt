@@ -1,0 +1,575 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 60.01      0.03     0.03   251498     0.00     0.00  get_successor
+ 20.00      0.04     0.01  4008213     0.00     0.00  string_comparator
+ 20.00      0.05     0.01   253999     0.00     0.00  search_aux
+  0.00      0.05     0.00  5278709     0.00     0.00  element_is_empty
+  0.00      0.05     0.00  4262210     0.00     0.00  get_element_key
+  0.00      0.05     0.00   505000     0.00     0.00  get_element_data
+  0.00      0.05     0.00   500000     0.00     0.00  iter_end
+  0.00      0.05     0.00   500000     0.00     0.00  set_getcount
+  0.00      0.05     0.00   497643     0.00     0.00  compare_keys
+  0.00      0.05     0.00   253500     0.00     0.00  isnum
+  0.00      0.05     0.00   253500     0.00     0.00  validShelfName
+  0.00      0.05     0.00   253000     0.00     0.00  search
+  0.00      0.05     0.00   253000     0.00     0.00  searchdata
+  0.00      0.05     0.00   251500     0.00     0.00  goods_search_shelf
+  0.00      0.05     0.00   250500     0.00     0.00  iter_getdata
+  0.00      0.05     0.00   249500     0.00     0.00  iter_next
+  0.00      0.05     0.00   249500     0.00     0.00  iter_nsteps
+  0.00      0.05     0.00     3503     0.00     0.00  check_allocation
+  0.00      0.05     0.00     2501     0.00     0.00  set_is_empty
+  0.00      0.05     0.00     2000     0.00     0.00  get_first_element
+  0.00      0.05     0.00     1501     0.00     0.00  set_foreachelement_to_new
+  0.00      0.05     0.00     1500     0.00     0.00  free_element
+  0.00      0.05     0.00     1500     0.00     0.00  free_element_data
+  0.00      0.05     0.00     1500     0.00     0.00  free_key
+  0.00      0.05     0.00     1500     0.00     0.00  insert_element
+  0.00      0.05     0.00     1500     0.00     0.00  new_element
+  0.00      0.05     0.00     1500     0.00     0.00  set_key_freer
+  0.00      0.05     0.00     1500     0.00     0.00  store_search_goods
+  0.00      0.05     0.00     1500     0.00     0.00  validName
+  0.00      0.05     0.00     1001     0.00     0.00  free_set
+  0.00      0.05     0.00     1001     0.00     0.00  iter_free
+  0.00      0.05     0.00     1001     0.00     0.00  iter_new
+  0.00      0.05     0.00     1001     0.00     0.00  iter_reset
+  0.00      0.05     0.00     1001     0.00     0.00  new_set
+  0.00      0.05     0.00     1000     0.00     0.00  freeGoods
+  0.00      0.05     0.00     1000     0.00     0.00  getName
+  0.00      0.05     0.00     1000     0.00     0.05  goods_add_to_shelf
+  0.00      0.05     0.00     1000     0.00     0.00  goods_insert_shelf
+  0.00      0.05     0.00     1000     0.00     0.00  shelf_data_copier
+  0.00      0.05     0.00     1000     0.00     0.00  shelf_get_name
+  0.00      0.05     0.00     1000     0.00     0.00  shelf_key_generator
+  0.00      0.05     0.00     1000     0.00     0.00  shelf_set_name
+  0.00      0.05     0.00     1000     0.00     0.05  store_search_shelf
+  0.00      0.05     0.00     1000     0.00     0.00  validAmount
+  0.00      0.05     0.00      999     0.00     0.00  search_parent
+  0.00      0.05     0.00      501     0.00     0.00  set_foreachelement_aux
+  0.00      0.05     0.00      500     0.00     0.00  copy_set
+  0.00      0.05     0.00      500     0.00     0.00  createGoods
+  0.00      0.05     0.00      500     0.00     0.00  getDescription
+  0.00      0.05     0.00      500     0.00     0.00  getGoodsCpy
+  0.00      0.05     0.00      500     0.00     0.00  getGoodsCpyPtr
+  0.00      0.05     0.00      500     0.00     0.00  goods_key_generator
+  0.00      0.05     0.00      500     0.00     0.00  setString
+  0.00      0.05     0.00      500     0.00     0.00  set_data_copier
+  0.00      0.05     0.00      500     0.00     0.00  set_data_freer
+  0.00      0.05     0.00      500     0.00     0.00  store_has_goods
+  0.00      0.05     0.00      500     0.00     0.00  store_insert_goods
+  0.00      0.05     0.00      500     0.00     0.00  validPrice
+  0.00      0.05     0.00        1     0.00    50.01  addNTestGoods
+  0.00      0.05     0.00        1     0.00     0.00  askForChar
+  0.00      0.05     0.00        1     0.00     0.00  createStore
+  0.00      0.05     0.00        1     0.00     0.00  createUndoDB
+  0.00      0.05     0.00        1     0.00     0.00  freeStore
+  0.00      0.05     0.00        1     0.00     0.00  freeUndoDB
+  0.00      0.05     0.00        1     0.00     0.00  readString
+  0.00      0.05     0.00        1     0.00     0.00  startMainMenu
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 20.00% of 0.05 seconds
+
+index % time    self  children    called     name
+                0.00    0.05       1/1           main [2]
+[1]    100.0    0.00    0.05       1         addNTestGoods [1]
+                0.00    0.05    1000/1000        goods_add_to_shelf [3]
+                0.00    0.00     500/500         store_insert_goods [16]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    0.05                 main [2]
+                0.00    0.05       1/1           addNTestGoods [1]
+                0.00    0.00       1/1           createStore [63]
+                0.00    0.00       1/1           startMainMenu [68]
+                0.00    0.00       1/1           freeStore [65]
+-----------------------------------------------
+                0.00    0.05    1000/1000        addNTestGoods [1]
+[3]     99.7    0.00    0.05    1000         goods_add_to_shelf [3]
+                0.00    0.05    1000/1000        store_search_shelf [4]
+                0.00    0.00    1000/1000        goods_insert_shelf [15]
+                0.00    0.00    1000/251500      goods_search_shelf [11]
+                0.00    0.00    1000/1500        store_search_goods [17]
+                0.00    0.00    1000/1500        validName [38]
+                0.00    0.00    1000/1000        validAmount [50]
+-----------------------------------------------
+                0.00    0.05    1000/1000        goods_add_to_shelf [3]
+[4]     99.1    0.00    0.05    1000         store_search_shelf [4]
+                0.00    0.04  249500/249500      iter_nsteps [7]
+                0.00    0.01  250500/251500      goods_search_shelf [11]
+                0.00    0.00  250500/250500      iter_getdata [28]
+                0.00    0.00  250500/500000      iter_end [24]
+                0.00    0.00    1000/2501        set_is_empty [30]
+                0.00    0.00    1000/253500      validShelfName [27]
+                0.00    0.00    1000/1001        iter_new [41]
+                0.00    0.00    1000/1001        iter_free [40]
+-----------------------------------------------
+                0.00    0.00    1998/251498      insert_element [14]
+                0.03    0.01  249500/251498      iter_next [6]
+[5]     77.5    0.03    0.01  251498         get_successor [5]
+                0.01    0.00 3509571/4008213     string_comparator [12]
+                0.00    0.00 3761069/4262210     get_element_key [22]
+                0.00    0.00 3761069/5278709     element_is_empty [21]
+-----------------------------------------------
+                0.00    0.04  249500/249500      iter_nsteps [7]
+[6]     76.9    0.00    0.04  249500         iter_next [6]
+                0.03    0.01  249500/251498      get_successor [5]
+                0.00    0.00  249500/500000      iter_end [24]
+-----------------------------------------------
+                0.00    0.04  249500/249500      store_search_shelf [4]
+[7]     76.9    0.00    0.04  249500         iter_nsteps [7]
+                0.00    0.04  249500/249500      iter_next [6]
+-----------------------------------------------
+                0.00    0.00     999/253999      search_parent [18]
+                0.01    0.00  253000/253999      search [9]
+[8]     22.5    0.01    0.00  253999         search_aux [8]
+                0.00    0.00  497643/497643      compare_keys [13]
+                0.00    0.00  751642/5278709     element_is_empty [21]
+                0.00    0.00  497643/4262210     get_element_key [22]
+-----------------------------------------------
+                0.00    0.01  253000/253000      searchdata [10]
+[9]     22.4    0.00    0.01  253000         search [9]
+                0.01    0.00  253000/253999      search_aux [8]
+-----------------------------------------------
+                0.00    0.00    1500/253000      store_search_goods [17]
+                0.00    0.01  251500/253000      goods_search_shelf [11]
+[10]    22.4    0.00    0.01  253000         searchdata [10]
+                0.00    0.01  253000/253000      search [9]
+                0.00    0.00  253000/505000      get_element_data [23]
+-----------------------------------------------
+                0.00    0.00    1000/251500      goods_add_to_shelf [3]
+                0.00    0.01  250500/251500      store_search_shelf [4]
+[11]    22.3    0.00    0.01  251500         goods_search_shelf [11]
+                0.00    0.01  251500/253000      searchdata [10]
+                0.00    0.00  251500/253500      validShelfName [27]
+-----------------------------------------------
+                0.00    0.00     999/4008213     insert_element [14]
+                0.00    0.00  497643/4008213     compare_keys [13]
+                0.01    0.00 3509571/4008213     get_successor [5]
+[12]    20.0    0.01    0.00 4008213         string_comparator [12]
+-----------------------------------------------
+                0.00    0.00  497643/497643      search_aux [8]
+[13]     2.5    0.00    0.00  497643         compare_keys [13]
+                0.00    0.00  497643/4008213     string_comparator [12]
+-----------------------------------------------
+                0.00    0.00     500/1500        store_insert_goods [16]
+                0.00    0.00    1000/1500        goods_insert_shelf [15]
+[14]     0.7    0.00    0.00    1500         insert_element [14]
+                0.00    0.00    1998/251498      get_successor [5]
+                0.00    0.00     999/999         search_parent [18]
+                0.00    0.00     999/4008213     string_comparator [12]
+                0.00    0.00    1998/4262210     get_element_key [22]
+                0.00    0.00    1500/1500        new_element [36]
+                0.00    0.00     999/5278709     element_is_empty [21]
+                0.00    0.00     999/2000        get_first_element [31]
+-----------------------------------------------
+                0.00    0.00    1000/1000        goods_add_to_shelf [3]
+[15]     0.5    0.00    0.00    1000         goods_insert_shelf [15]
+                0.00    0.00    1000/1500        insert_element [14]
+                0.00    0.00    1000/1000        shelf_set_name [49]
+-----------------------------------------------
+                0.00    0.00     500/500         addNTestGoods [1]
+[16]     0.3    0.00    0.00     500         store_insert_goods [16]
+                0.00    0.00     500/1500        insert_element [14]
+                0.00    0.00     500/500         store_has_goods [19]
+                0.00    0.00     500/1500        validName [38]
+                0.00    0.00     500/500         validPrice [61]
+                0.00    0.00     500/500         createGoods [53]
+                0.00    0.00     500/1001        freeGoods <cycle 1> [44]
+-----------------------------------------------
+                0.00    0.00     500/1500        store_has_goods [19]
+                0.00    0.00    1000/1500        goods_add_to_shelf [3]
+[17]     0.1    0.00    0.00    1500         store_search_goods [17]
+                0.00    0.00    1500/253000      searchdata [10]
+-----------------------------------------------
+                0.00    0.00     999/999         insert_element [14]
+[18]     0.1    0.00    0.00     999         search_parent [18]
+                0.00    0.00     999/253999      search_aux [8]
+-----------------------------------------------
+                0.00    0.00     500/500         store_insert_goods [16]
+[19]     0.0    0.00    0.00     500         store_has_goods [19]
+                0.00    0.00     500/1500        store_search_goods [17]
+-----------------------------------------------
+[20]     0.0    0.00    0.00    1001+6502    <cycle 1 as a whole> [20]
+                0.00    0.00     501+3000        set_foreachelement_aux <cycle 1> [51]
+                0.00    0.00    1501             set_foreachelement_to_new <cycle 1> [32]
+                0.00    0.00    1500             free_element <cycle 1> [33]
+                0.00    0.00    1500             free_element_data <cycle 1> [34]
+                0.00    0.00    1001             free_set <cycle 1> [39]
+                0.00    0.00    1000             freeGoods <cycle 1> [44]
+                0.00    0.00     500             set_data_freer <cycle 1> [60]
+-----------------------------------------------
+                0.00    0.00     999/5278709     insert_element [14]
+                0.00    0.00    3501/5278709     set_foreachelement_aux <cycle 1> [51]
+                0.00    0.00    5998/5278709     get_first_element [31]
+                0.00    0.00  250500/5278709     iter_getdata [28]
+                0.00    0.00  505000/5278709     get_element_data [23]
+                0.00    0.00  751642/5278709     search_aux [8]
+                0.00    0.00 3761069/5278709     get_successor [5]
+[21]     0.0    0.00    0.00 5278709         element_is_empty [21]
+-----------------------------------------------
+                0.00    0.00    1500/4262210     free_key [35]
+                0.00    0.00    1998/4262210     insert_element [14]
+                0.00    0.00  497643/4262210     search_aux [8]
+                0.00    0.00 3761069/4262210     get_successor [5]
+[22]     0.0    0.00    0.00 4262210         get_element_key [22]
+-----------------------------------------------
+                0.00    0.00    1500/505000      free_element_data <cycle 1> [34]
+                0.00    0.00  250500/505000      iter_getdata [28]
+                0.00    0.00  253000/505000      searchdata [10]
+[23]     0.0    0.00    0.00  505000         get_element_data [23]
+                0.00    0.00  505000/5278709     element_is_empty [21]
+-----------------------------------------------
+                0.00    0.00  249500/500000      iter_next [6]
+                0.00    0.00  250500/500000      store_search_shelf [4]
+[24]     0.0    0.00    0.00  500000         iter_end [24]
+                0.00    0.00  500000/500000      set_getcount [25]
+-----------------------------------------------
+                0.00    0.00  500000/500000      iter_end [24]
+[25]     0.0    0.00    0.00  500000         set_getcount [25]
+-----------------------------------------------
+                0.00    0.00  253500/253500      validShelfName [27]
+[26]     0.0    0.00    0.00  253500         isnum [26]
+-----------------------------------------------
+                0.00    0.00    1000/253500      store_search_shelf [4]
+                0.00    0.00    1000/253500      shelf_set_name [49]
+                0.00    0.00  251500/253500      goods_search_shelf [11]
+[27]     0.0    0.00    0.00  253500         validShelfName [27]
+                0.00    0.00  253500/253500      isnum [26]
+-----------------------------------------------
+                0.00    0.00  250500/250500      store_search_shelf [4]
+[28]     0.0    0.00    0.00  250500         iter_getdata [28]
+                0.00    0.00  250500/5278709     element_is_empty [21]
+                0.00    0.00  250500/505000      get_element_data [23]
+-----------------------------------------------
+                0.00    0.00       1/3503        readString [67]
+                0.00    0.00    1001/3503        new_set [43]
+                0.00    0.00    1001/3503        iter_new [41]
+                0.00    0.00    1500/3503        new_element [36]
+[29]     0.0    0.00    0.00    3503         check_allocation [29]
+-----------------------------------------------
+                0.00    0.00    1000/2501        store_search_shelf [4]
+                0.00    0.00    1501/2501        set_foreachelement_to_new <cycle 1> [32]
+[30]     0.0    0.00    0.00    2501         set_is_empty [30]
+-----------------------------------------------
+                0.00    0.00     999/2000        insert_element [14]
+                0.00    0.00    1001/2000        iter_reset [42]
+[31]     0.0    0.00    0.00    2000         get_first_element [31]
+                0.00    0.00    5998/5278709     element_is_empty [21]
+-----------------------------------------------
+                                1001             free_set <cycle 1> [39]
+                0.00    0.00     500/1001        copy_set [52]
+[32]     0.0    0.00    0.00    1501         set_foreachelement_to_new <cycle 1> [32]
+                0.00    0.00    1501/2501        set_is_empty [30]
+                                 501             set_foreachelement_aux <cycle 1> [51]
+-----------------------------------------------
+                                1500             set_foreachelement_aux <cycle 1> [51]
+[33]     0.0    0.00    0.00    1500         free_element <cycle 1> [33]
+                0.00    0.00    1500/1500        free_key [35]
+                                1500             free_element_data <cycle 1> [34]
+-----------------------------------------------
+                                1500             free_element <cycle 1> [33]
+[34]     0.0    0.00    0.00    1500         free_element_data <cycle 1> [34]
+                0.00    0.00    1500/505000      get_element_data [23]
+                                 500             set_data_freer <cycle 1> [60]
+-----------------------------------------------
+                0.00    0.00    1500/1500        free_element <cycle 1> [33]
+[35]     0.0    0.00    0.00    1500         free_key [35]
+                0.00    0.00    1500/4262210     get_element_key [22]
+                0.00    0.00    1500/1500        set_key_freer [37]
+-----------------------------------------------
+                0.00    0.00    1500/1500        insert_element [14]
+[36]     0.0    0.00    0.00    1500         new_element [36]
+                0.00    0.00    1500/3503        check_allocation [29]
+                0.00    0.00    1000/1000        shelf_data_copier [46]
+                0.00    0.00    1000/1000        shelf_key_generator [48]
+                0.00    0.00     500/500         set_data_copier [59]
+                0.00    0.00     500/500         goods_key_generator [57]
+-----------------------------------------------
+                0.00    0.00    1500/1500        free_key [35]
+[37]     0.0    0.00    0.00    1500         set_key_freer [37]
+-----------------------------------------------
+                0.00    0.00     500/1500        store_insert_goods [16]
+                0.00    0.00    1000/1500        goods_add_to_shelf [3]
+[38]     0.0    0.00    0.00    1500         validName [38]
+-----------------------------------------------
+                                1000             freeGoods <cycle 1> [44]
+                0.00    0.00       1/1001        freeStore [65]
+[39]     0.0    0.00    0.00    1001         free_set <cycle 1> [39]
+                                1001             set_foreachelement_to_new <cycle 1> [32]
+-----------------------------------------------
+                0.00    0.00       1/1001        freeStore [65]
+                0.00    0.00    1000/1001        store_search_shelf [4]
+[40]     0.0    0.00    0.00    1001         iter_free [40]
+-----------------------------------------------
+                0.00    0.00       1/1001        createStore [63]
+                0.00    0.00    1000/1001        store_search_shelf [4]
+[41]     0.0    0.00    0.00    1001         iter_new [41]
+                0.00    0.00    1001/3503        check_allocation [29]
+                0.00    0.00    1001/1001        iter_reset [42]
+-----------------------------------------------
+                0.00    0.00    1001/1001        iter_new [41]
+[42]     0.0    0.00    0.00    1001         iter_reset [42]
+                0.00    0.00    1001/2000        get_first_element [31]
+-----------------------------------------------
+                0.00    0.00       1/1001        createStore [63]
+                0.00    0.00     500/1001        copy_set [52]
+                0.00    0.00     500/1001        createGoods [53]
+[43]     0.0    0.00    0.00    1001         new_set [43]
+                0.00    0.00    1001/3503        check_allocation [29]
+-----------------------------------------------
+                                 500             set_data_freer <cycle 1> [60]
+                0.00    0.00     500/1001        store_insert_goods [16]
+[44]     0.0    0.00    0.00    1000         freeGoods <cycle 1> [44]
+                                1000             free_set <cycle 1> [39]
+-----------------------------------------------
+                0.00    0.00     500/1000        goods_key_generator [57]
+                0.00    0.00     500/1000        getGoodsCpy [55]
+[45]     0.0    0.00    0.00    1000         getName [45]
+-----------------------------------------------
+                0.00    0.00    1000/1000        new_element [36]
+[46]     0.0    0.00    0.00    1000         shelf_data_copier [46]
+-----------------------------------------------
+                0.00    0.00    1000/1000        shelf_key_generator [48]
+[47]     0.0    0.00    0.00    1000         shelf_get_name [47]
+-----------------------------------------------
+                0.00    0.00    1000/1000        new_element [36]
+[48]     0.0    0.00    0.00    1000         shelf_key_generator [48]
+                0.00    0.00    1000/1000        shelf_get_name [47]
+-----------------------------------------------
+                0.00    0.00    1000/1000        goods_insert_shelf [15]
+[49]     0.0    0.00    0.00    1000         shelf_set_name [49]
+                0.00    0.00    1000/253500      validShelfName [27]
+-----------------------------------------------
+                0.00    0.00    1000/1000        goods_add_to_shelf [3]
+[50]     0.0    0.00    0.00    1000         validAmount [50]
+-----------------------------------------------
+                                3000             set_foreachelement_aux <cycle 1> [51]
+                                 501             set_foreachelement_to_new <cycle 1> [32]
+[51]     0.0    0.00    0.00     501+3000    set_foreachelement_aux <cycle 1> [51]
+                0.00    0.00    3501/5278709     element_is_empty [21]
+                                1500             free_element <cycle 1> [33]
+                                3000             set_foreachelement_aux <cycle 1> [51]
+-----------------------------------------------
+                0.00    0.00     500/500         getGoodsCpy [55]
+[52]     0.0    0.00    0.00     500         copy_set [52]
+                0.00    0.00     500/1001        new_set [43]
+                0.00    0.00     500/1001        set_foreachelement_to_new <cycle 1> [32]
+-----------------------------------------------
+                0.00    0.00     500/500         store_insert_goods [16]
+[53]     0.0    0.00    0.00     500         createGoods [53]
+                0.00    0.00     500/500         setString [58]
+                0.00    0.00     500/1001        new_set [43]
+-----------------------------------------------
+                0.00    0.00     500/500         getGoodsCpy [55]
+[54]     0.0    0.00    0.00     500         getDescription [54]
+-----------------------------------------------
+                0.00    0.00     500/500         getGoodsCpyPtr [56]
+[55]     0.0    0.00    0.00     500         getGoodsCpy [55]
+                0.00    0.00     500/1000        getName [45]
+                0.00    0.00     500/500         getDescription [54]
+                0.00    0.00     500/500         copy_set [52]
+-----------------------------------------------
+                0.00    0.00     500/500         set_data_copier [59]
+[56]     0.0    0.00    0.00     500         getGoodsCpyPtr [56]
+                0.00    0.00     500/500         getGoodsCpy [55]
+-----------------------------------------------
+                0.00    0.00     500/500         new_element [36]
+[57]     0.0    0.00    0.00     500         goods_key_generator [57]
+                0.00    0.00     500/1000        getName [45]
+-----------------------------------------------
+                0.00    0.00     500/500         createGoods [53]
+[58]     0.0    0.00    0.00     500         setString [58]
+-----------------------------------------------
+                0.00    0.00     500/500         new_element [36]
+[59]     0.0    0.00    0.00     500         set_data_copier [59]
+                0.00    0.00     500/500         getGoodsCpyPtr [56]
+-----------------------------------------------
+                                 500             free_element_data <cycle 1> [34]
+[60]     0.0    0.00    0.00     500         set_data_freer <cycle 1> [60]
+                                 500             freeGoods <cycle 1> [44]
+-----------------------------------------------
+                0.00    0.00     500/500         store_insert_goods [16]
+[61]     0.0    0.00    0.00     500         validPrice [61]
+-----------------------------------------------
+                0.00    0.00       1/1           startMainMenu [68]
+[62]     0.0    0.00    0.00       1         askForChar [62]
+                0.00    0.00       1/1           readString [67]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[63]     0.0    0.00    0.00       1         createStore [63]
+                0.00    0.00       1/1001        new_set [43]
+                0.00    0.00       1/1001        iter_new [41]
+                0.00    0.00       1/1           createUndoDB [64]
+-----------------------------------------------
+                0.00    0.00       1/1           createStore [63]
+[64]     0.0    0.00    0.00       1         createUndoDB [64]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[65]     0.0    0.00    0.00       1         freeStore [65]
+                0.00    0.00       1/1001        free_set <cycle 1> [39]
+                0.00    0.00       1/1001        iter_free [40]
+                0.00    0.00       1/1           freeUndoDB [66]
+-----------------------------------------------
+                0.00    0.00       1/1           freeStore [65]
+[66]     0.0    0.00    0.00       1         freeUndoDB [66]
+-----------------------------------------------
+                0.00    0.00       1/1           askForChar [62]
+[67]     0.0    0.00    0.00       1         readString [67]
+                0.00    0.00       1/3503        check_allocation [29]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[68]     0.0    0.00    0.00       1         startMainMenu [68]
+                0.00    0.00       1/1           askForChar [62]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [1] addNTestGoods           [5] get_successor          [60] set_data_freer
+  [62] askForChar              [3] goods_add_to_shelf     [51] set_foreachelement_aux
+  [29] check_allocation       [15] goods_insert_shelf     [32] set_foreachelement_to_new
+  [13] compare_keys           [57] goods_key_generator    [25] set_getcount
+  [52] copy_set               [11] goods_search_shelf     [30] set_is_empty
+  [53] createGoods            [14] insert_element         [37] set_key_freer
+  [63] createStore            [26] isnum                  [46] shelf_data_copier
+  [64] createUndoDB           [24] iter_end               [47] shelf_get_name
+  [21] element_is_empty       [40] iter_free              [48] shelf_key_generator
+  [44] freeGoods              [28] iter_getdata           [49] shelf_set_name
+  [65] freeStore              [41] iter_new               [68] startMainMenu
+  [66] freeUndoDB              [6] iter_next              [19] store_has_goods
+  [33] free_element            [7] iter_nsteps            [16] store_insert_goods
+  [34] free_element_data      [42] iter_reset             [17] store_search_goods
+  [35] free_key               [36] new_element             [4] store_search_shelf
+  [39] free_set               [43] new_set                [12] string_comparator
+  [54] getDescription         [67] readString             [50] validAmount
+  [55] getGoodsCpy             [9] search                 [38] validName
+  [56] getGoodsCpyPtr          [8] search_aux             [61] validPrice
+  [45] getName                [18] search_parent          [27] validShelfName
+  [23] get_element_data       [10] searchdata             [20] <cycle 1>
+  [22] get_element_key        [58] setString
+  [31] get_first_element      [59] set_data_copier

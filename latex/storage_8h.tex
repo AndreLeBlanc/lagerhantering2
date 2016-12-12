@@ -1,0 +1,375 @@
+\hypertarget{storage_8h}{\section{storage.\-h File Reference}
+\label{storage_8h}\index{storage.\-h@{storage.\-h}}
+}
+{\ttfamily \#include $<$stdbool.\-h$>$}\\*
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structGoods}{Goods} \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T}
+\item 
+typedef struct \hyperlink{structStore}{Store} \hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$ \hyperlink{storage_8h_ad699e8d46bef2812922379f1ec12ccfd}{create\-Store} ()
+\item 
+void \hyperlink{storage_8h_aaba05e27a3033e0e3fc8a965ccbc2a60}{free\-Store} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$)
+\item 
+\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$ \hyperlink{storage_8h_a774e27b9e14bbac6d8f21d4b7c9812f3}{create\-Goods} (char $\ast$)
+\item 
+void \hyperlink{storage_8h_a64ebe9902e14bcc40b5ec780b2671c8b}{free\-Goods} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$ \hyperlink{storage_8h_a21e8ac832e29c085bec5d924e21197bb}{get\-Goods\-Cpy\-Ptr\-I} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, int)
+\item 
+\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$ \hyperlink{storage_8h_a685c96b95321cdba66412c05c5e931fd}{get\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, int)
+\item 
+int \hyperlink{storage_8h_ab59bee20b2bfacd61c8850bc867397f7}{get\-Count} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$)
+\item 
+char $\ast$ \hyperlink{storage_8h_a2766d2c9c3f01ac2bb12344e31efe0d8}{get\-Name} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+char $\ast$ \hyperlink{storage_8h_afa28934d803eb53c6d411e5732637763}{get\-Description} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+int \hyperlink{storage_8h_afcdbcae3154c6b614fbfa54b3ba389f0}{get\-Price} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+int \hyperlink{storage_8h_a854f4d6dcdefd79a718cbb35be46af8a}{get\-Amount} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+char $\ast$ \hyperlink{storage_8h_a931378b06085bffd0201abc7767be420}{get\-Shelf\-Name} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+void \hyperlink{storage_8h_a5dfc088b021bdf64dc50a2404b5f410c}{set\-Name} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$s, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g, char $\ast$n)
+\item 
+void \hyperlink{storage_8h_a5797fcf5eb0fe979c952e9ab46d7c965}{set\-Description} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$g, char $\ast$n)
+\item 
+void \hyperlink{storage_8h_a9b5cd1652407f04d71aa6dd790891708}{set\-Price} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, int)
+\item 
+void \hyperlink{storage_8h_a34f490b5b907bdf91dbfad8c063b1b24}{set\-Amount} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, int)
+\item 
+void \hyperlink{storage_8h_a3188c291f603d160e1697b88dc9d5b3b}{set\-Shelf\-Name} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, char $\ast$)
+\item 
+void \hyperlink{storage_8h_ae77634b1de785e0b0a3cd01ee764b2d9}{free\-And\-Set\-New\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, int, bool)
+\item 
+int \hyperlink{storage_8h_a102aff276912e50f8e2fc654a25de77c}{search\-Name} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, char $\ast$)
+\item 
+int \hyperlink{storage_8h_a7f5bc9536abd1ca44c7b21039ee9e8ae}{search\-Shelf\-Name} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, char $\ast$)
+\item 
+bool \hyperlink{storage_8h_a005bb74a688c00f384221f8f4396ed88}{valid\-Name} (char $\ast$)
+\item 
+bool \hyperlink{storage_8h_aba3f2349be86b6583dadfb5d93c5ae4b}{valid\-Shelf\-Name} (char $\ast$)
+\item 
+bool \hyperlink{storage_8h_aa9a38966c88ad1ff39d2d1b51d2468b1}{valid\-Index} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, int)
+\item 
+bool \hyperlink{storage_8h_a5109b7be817e484ccd737bf35d74d3eb}{valid\-Price} (int)
+\item 
+bool \hyperlink{storage_8h_a07fb892e1ae280e77dabe9ac852015cf}{valid\-Amount} (int)
+\item 
+bool \hyperlink{storage_8h_af4829798651ac162e05a01cd361714f8}{is\-Empty} (\hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$)
+\item 
+bool \hyperlink{storage_8h_ab35941ff5851baa64d8a0c57126ab3ae}{isnum} (char $\ast$)
+\item 
+bool \hyperlink{storage_8h_aa83dc0b1be85baed7315510fd0f2ca9f}{name\-Exists} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, char $\ast$)
+\item 
+bool \hyperlink{storage_8h_aa5a5d120cebc2eee08902944b80149f3}{shelf\-Exists} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, char $\ast$)
+\item 
+void \hyperlink{storage_8h_a62b309729515bb4159063da793f3bdad}{add\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, bool)
+\item 
+void \hyperlink{storage_8h_a6730e1ad3198aebd20cd243523bee854}{insert\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, \hyperlink{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{Goods\-T} $\ast$, int, bool)
+\item 
+bool \hyperlink{storage_8h_adb6cc5610e9dfd2409319fbb56e2accb}{remove\-And\-Shift} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, int, bool)
+\item 
+void \hyperlink{storage_8h_a524ed9def6e3f0cd40929046dc526ffe}{add\-N\-Test\-Goods} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$, int)
+\item 
+void \hyperlink{storage_8h_ae595dff6b34b7fbbf5e21d48f2fe2331}{undo\-Last\-Action} (\hyperlink{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{Store\-T} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}{\index{storage.\-h@{storage.\-h}!Goods\-T@{Goods\-T}}
+\index{Goods\-T@{Goods\-T}!storage.h@{storage.\-h}}
+\subsubsection[{Goods\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Goods} {\bf Goods\-T}}}\label{storage_8h_a78c8dd8e1f09773b54c900f30a1bcf6c}
+\hypertarget{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}{\index{storage.\-h@{storage.\-h}!Store\-T@{Store\-T}}
+\index{Store\-T@{Store\-T}!storage.h@{storage.\-h}}
+\subsubsection[{Store\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Store} {\bf Store\-T}}}\label{storage_8h_a4203ecaac1de3a49ea299d9e436672a7}
+
+
+\subsection{Function Documentation}
+\hypertarget{storage_8h_a62b309729515bb4159063da793f3bdad}{\index{storage.\-h@{storage.\-h}!add\-Goods@{add\-Goods}}
+\index{add\-Goods@{add\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{add\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void add\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{{\bf Goods\-T} $\ast$}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a62b309729515bb4159063da793f3bdad}
+\hypertarget{storage_8h_a524ed9def6e3f0cd40929046dc526ffe}{\index{storage.\-h@{storage.\-h}!add\-N\-Test\-Goods@{add\-N\-Test\-Goods}}
+\index{add\-N\-Test\-Goods@{add\-N\-Test\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{add\-N\-Test\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void add\-N\-Test\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a524ed9def6e3f0cd40929046dc526ffe}
+\hypertarget{storage_8h_a774e27b9e14bbac6d8f21d4b7c9812f3}{\index{storage.\-h@{storage.\-h}!create\-Goods@{create\-Goods}}
+\index{create\-Goods@{create\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{create\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Goods\-T}$\ast$ create\-Goods (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a774e27b9e14bbac6d8f21d4b7c9812f3}
+\hypertarget{storage_8h_ad699e8d46bef2812922379f1ec12ccfd}{\index{storage.\-h@{storage.\-h}!create\-Store@{create\-Store}}
+\index{create\-Store@{create\-Store}!storage.h@{storage.\-h}}
+\subsubsection[{create\-Store}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Store\-T}$\ast$ create\-Store (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_ad699e8d46bef2812922379f1ec12ccfd}
+\hypertarget{storage_8h_ae77634b1de785e0b0a3cd01ee764b2d9}{\index{storage.\-h@{storage.\-h}!free\-And\-Set\-New\-Goods@{free\-And\-Set\-New\-Goods}}
+\index{free\-And\-Set\-New\-Goods@{free\-And\-Set\-New\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{free\-And\-Set\-New\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void free\-And\-Set\-New\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{{\bf Goods\-T} $\ast$}]{, }
+\item[{int}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_ae77634b1de785e0b0a3cd01ee764b2d9}
+\hypertarget{storage_8h_a64ebe9902e14bcc40b5ec780b2671c8b}{\index{storage.\-h@{storage.\-h}!free\-Goods@{free\-Goods}}
+\index{free\-Goods@{free\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{free\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void free\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a64ebe9902e14bcc40b5ec780b2671c8b}
+\hypertarget{storage_8h_aaba05e27a3033e0e3fc8a965ccbc2a60}{\index{storage.\-h@{storage.\-h}!free\-Store@{free\-Store}}
+\index{free\-Store@{free\-Store}!storage.h@{storage.\-h}}
+\subsubsection[{free\-Store}]{\setlength{\rightskip}{0pt plus 5cm}void free\-Store (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_aaba05e27a3033e0e3fc8a965ccbc2a60}
+\hypertarget{storage_8h_a854f4d6dcdefd79a718cbb35be46af8a}{\index{storage.\-h@{storage.\-h}!get\-Amount@{get\-Amount}}
+\index{get\-Amount@{get\-Amount}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Amount (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a854f4d6dcdefd79a718cbb35be46af8a}
+\hypertarget{storage_8h_ab59bee20b2bfacd61c8850bc867397f7}{\index{storage.\-h@{storage.\-h}!get\-Count@{get\-Count}}
+\index{get\-Count@{get\-Count}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_ab59bee20b2bfacd61c8850bc867397f7}
+\hypertarget{storage_8h_afa28934d803eb53c6d411e5732637763}{\index{storage.\-h@{storage.\-h}!get\-Description@{get\-Description}}
+\index{get\-Description@{get\-Description}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Description}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-Description (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_afa28934d803eb53c6d411e5732637763}
+\hypertarget{storage_8h_a685c96b95321cdba66412c05c5e931fd}{\index{storage.\-h@{storage.\-h}!get\-Goods@{get\-Goods}}
+\index{get\-Goods@{get\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Goods\-T}$\ast$ get\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a685c96b95321cdba66412c05c5e931fd}
+\hypertarget{storage_8h_a21e8ac832e29c085bec5d924e21197bb}{\index{storage.\-h@{storage.\-h}!get\-Goods\-Cpy\-Ptr\-I@{get\-Goods\-Cpy\-Ptr\-I}}
+\index{get\-Goods\-Cpy\-Ptr\-I@{get\-Goods\-Cpy\-Ptr\-I}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Goods\-Cpy\-Ptr\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Goods\-T}$\ast$ get\-Goods\-Cpy\-Ptr\-I (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a21e8ac832e29c085bec5d924e21197bb}
+\hypertarget{storage_8h_a2766d2c9c3f01ac2bb12344e31efe0d8}{\index{storage.\-h@{storage.\-h}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a2766d2c9c3f01ac2bb12344e31efe0d8}
+\hypertarget{storage_8h_afcdbcae3154c6b614fbfa54b3ba389f0}{\index{storage.\-h@{storage.\-h}!get\-Price@{get\-Price}}
+\index{get\-Price@{get\-Price}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Price}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Price (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_afcdbcae3154c6b614fbfa54b3ba389f0}
+\hypertarget{storage_8h_a931378b06085bffd0201abc7767be420}{\index{storage.\-h@{storage.\-h}!get\-Shelf\-Name@{get\-Shelf\-Name}}
+\index{get\-Shelf\-Name@{get\-Shelf\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{get\-Shelf\-Name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-Shelf\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a931378b06085bffd0201abc7767be420}
+\hypertarget{storage_8h_a6730e1ad3198aebd20cd243523bee854}{\index{storage.\-h@{storage.\-h}!insert\-Goods@{insert\-Goods}}
+\index{insert\-Goods@{insert\-Goods}!storage.h@{storage.\-h}}
+\subsubsection[{insert\-Goods}]{\setlength{\rightskip}{0pt plus 5cm}void insert\-Goods (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{{\bf Goods\-T} $\ast$}]{, }
+\item[{int}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a6730e1ad3198aebd20cd243523bee854}
+\hypertarget{storage_8h_af4829798651ac162e05a01cd361714f8}{\index{storage.\-h@{storage.\-h}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!storage.h@{storage.\-h}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Empty (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_af4829798651ac162e05a01cd361714f8}
+\hypertarget{storage_8h_ab35941ff5851baa64d8a0c57126ab3ae}{\index{storage.\-h@{storage.\-h}!isnum@{isnum}}
+\index{isnum@{isnum}!storage.h@{storage.\-h}}
+\subsubsection[{isnum}]{\setlength{\rightskip}{0pt plus 5cm}bool isnum (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_ab35941ff5851baa64d8a0c57126ab3ae}
+\hypertarget{storage_8h_aa83dc0b1be85baed7315510fd0f2ca9f}{\index{storage.\-h@{storage.\-h}!name\-Exists@{name\-Exists}}
+\index{name\-Exists@{name\-Exists}!storage.h@{storage.\-h}}
+\subsubsection[{name\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool name\-Exists (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_aa83dc0b1be85baed7315510fd0f2ca9f}
+\hypertarget{storage_8h_adb6cc5610e9dfd2409319fbb56e2accb}{\index{storage.\-h@{storage.\-h}!remove\-And\-Shift@{remove\-And\-Shift}}
+\index{remove\-And\-Shift@{remove\-And\-Shift}!storage.h@{storage.\-h}}
+\subsubsection[{remove\-And\-Shift}]{\setlength{\rightskip}{0pt plus 5cm}bool remove\-And\-Shift (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{int}]{, }
+\item[{bool}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_adb6cc5610e9dfd2409319fbb56e2accb}
+\hypertarget{storage_8h_a102aff276912e50f8e2fc654a25de77c}{\index{storage.\-h@{storage.\-h}!search\-Name@{search\-Name}}
+\index{search\-Name@{search\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{search\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int search\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a102aff276912e50f8e2fc654a25de77c}
+\hypertarget{storage_8h_a7f5bc9536abd1ca44c7b21039ee9e8ae}{\index{storage.\-h@{storage.\-h}!search\-Shelf\-Name@{search\-Shelf\-Name}}
+\index{search\-Shelf\-Name@{search\-Shelf\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{search\-Shelf\-Name}]{\setlength{\rightskip}{0pt plus 5cm}int search\-Shelf\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a7f5bc9536abd1ca44c7b21039ee9e8ae}
+\hypertarget{storage_8h_a34f490b5b907bdf91dbfad8c063b1b24}{\index{storage.\-h@{storage.\-h}!set\-Amount@{set\-Amount}}
+\index{set\-Amount@{set\-Amount}!storage.h@{storage.\-h}}
+\subsubsection[{set\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Amount (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a34f490b5b907bdf91dbfad8c063b1b24}
+\hypertarget{storage_8h_a5797fcf5eb0fe979c952e9ab46d7c965}{\index{storage.\-h@{storage.\-h}!set\-Description@{set\-Description}}
+\index{set\-Description@{set\-Description}!storage.h@{storage.\-h}}
+\subsubsection[{set\-Description}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Description (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{g, }
+\item[{char $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a5797fcf5eb0fe979c952e9ab46d7c965}
+Sets description of a goods. 
+\begin{DoxyParams}{Parameters}
+{\em g} & The goods. \\
+\hline
+{\em n} & The new name \\
+\hline
+\end{DoxyParams}
+\hypertarget{storage_8h_a5dfc088b021bdf64dc50a2404b5f410c}{\index{storage.\-h@{storage.\-h}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{s, }
+\item[{{\bf Goods\-T} $\ast$}]{g, }
+\item[{char $\ast$}]{n}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a5dfc088b021bdf64dc50a2404b5f410c}
+Sets name of a goods. 
+\begin{DoxyParams}{Parameters}
+{\em s} & The store with the goods. \\
+\hline
+{\em g} & The goods. \\
+\hline
+{\em n} & The new name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyInvariant}{Invariant}
+\hyperlink{storage_8h_a005bb74a688c00f384221f8f4396ed88}{valid\-Name} (n) \&\& !\hyperlink{storage_8h_aa83dc0b1be85baed7315510fd0f2ca9f}{name\-Exists} (s, n) 
+\end{DoxyInvariant}
+\hypertarget{storage_8h_a9b5cd1652407f04d71aa6dd790891708}{\index{storage.\-h@{storage.\-h}!set\-Price@{set\-Price}}
+\index{set\-Price@{set\-Price}!storage.h@{storage.\-h}}
+\subsubsection[{set\-Price}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Price (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a9b5cd1652407f04d71aa6dd790891708}
+\hypertarget{storage_8h_a3188c291f603d160e1697b88dc9d5b3b}{\index{storage.\-h@{storage.\-h}!set\-Shelf\-Name@{set\-Shelf\-Name}}
+\index{set\-Shelf\-Name@{set\-Shelf\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{set\-Shelf\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Shelf\-Name (
+\begin{DoxyParamCaption}
+\item[{{\bf Goods\-T} $\ast$}]{, }
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a3188c291f603d160e1697b88dc9d5b3b}
+\hypertarget{storage_8h_aa5a5d120cebc2eee08902944b80149f3}{\index{storage.\-h@{storage.\-h}!shelf\-Exists@{shelf\-Exists}}
+\index{shelf\-Exists@{shelf\-Exists}!storage.h@{storage.\-h}}
+\subsubsection[{shelf\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}bool shelf\-Exists (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_aa5a5d120cebc2eee08902944b80149f3}
+\hypertarget{storage_8h_ae595dff6b34b7fbbf5e21d48f2fe2331}{\index{storage.\-h@{storage.\-h}!undo\-Last\-Action@{undo\-Last\-Action}}
+\index{undo\-Last\-Action@{undo\-Last\-Action}!storage.h@{storage.\-h}}
+\subsubsection[{undo\-Last\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void undo\-Last\-Action (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_ae595dff6b34b7fbbf5e21d48f2fe2331}
+\hypertarget{storage_8h_a07fb892e1ae280e77dabe9ac852015cf}{\index{storage.\-h@{storage.\-h}!valid\-Amount@{valid\-Amount}}
+\index{valid\-Amount@{valid\-Amount}!storage.h@{storage.\-h}}
+\subsubsection[{valid\-Amount}]{\setlength{\rightskip}{0pt plus 5cm}bool valid\-Amount (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a07fb892e1ae280e77dabe9ac852015cf}
+\hypertarget{storage_8h_aa9a38966c88ad1ff39d2d1b51d2468b1}{\index{storage.\-h@{storage.\-h}!valid\-Index@{valid\-Index}}
+\index{valid\-Index@{valid\-Index}!storage.h@{storage.\-h}}
+\subsubsection[{valid\-Index}]{\setlength{\rightskip}{0pt plus 5cm}bool valid\-Index (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\-T} $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_aa9a38966c88ad1ff39d2d1b51d2468b1}
+\hypertarget{storage_8h_a005bb74a688c00f384221f8f4396ed88}{\index{storage.\-h@{storage.\-h}!valid\-Name@{valid\-Name}}
+\index{valid\-Name@{valid\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{valid\-Name}]{\setlength{\rightskip}{0pt plus 5cm}bool valid\-Name (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a005bb74a688c00f384221f8f4396ed88}
+\hypertarget{storage_8h_a5109b7be817e484ccd737bf35d74d3eb}{\index{storage.\-h@{storage.\-h}!valid\-Price@{valid\-Price}}
+\index{valid\-Price@{valid\-Price}!storage.h@{storage.\-h}}
+\subsubsection[{valid\-Price}]{\setlength{\rightskip}{0pt plus 5cm}bool valid\-Price (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_a5109b7be817e484ccd737bf35d74d3eb}
+\hypertarget{storage_8h_aba3f2349be86b6583dadfb5d93c5ae4b}{\index{storage.\-h@{storage.\-h}!valid\-Shelf\-Name@{valid\-Shelf\-Name}}
+\index{valid\-Shelf\-Name@{valid\-Shelf\-Name}!storage.h@{storage.\-h}}
+\subsubsection[{valid\-Shelf\-Name}]{\setlength{\rightskip}{0pt plus 5cm}bool valid\-Shelf\-Name (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{storage_8h_aba3f2349be86b6583dadfb5d93c5ae4b}
